@@ -7,7 +7,7 @@
   <!-- end of head.html -->
 </head>
 <body>
-  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2005/01/16 19:11:06 $ \$Revision: 1.12 $" -->
+  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2005/01/22 23:38:27 $ \$Revision: 1.13 $" -->
   <!--#set var="file" value="index" -->
 
   <!-- start of header.html -->
@@ -57,6 +57,13 @@
 	The important thing to remember is to use the &quot;stdcall&quot; calling convention.</p>
 	<p>You can have up to 10 (20 in 5.3 beta3+) functions (i.e. function1 to function20).</p>
 	<p>If your plugin has a SmartieInit function (which takes no parameters and returns nothing) then it will be called when your plugin is first loaded. If your plugin has a SmartieFini function (which takes no parameters and returns nothing) then it will be called [in 5.3beta4+] just before your plugin is unloaded.</p>
+	<p>[New for 5.3 beta 4] Data from your plugin will be refreshed upto a maximum of 3 times a second (every 300ms).  If you want your plugins data to be refreshed more often (or less often) then you will need to define a new API 'GetMinRefreshInterval' which returns an integer, that defines the required minimal interval in mseconds between screen data refreshes. Smartie will then use the highest value (dll provided limit, or that of the "dll check interval" setting on the Misc tab of the settings). <br />
+	The expected function prototypes are:
+	<ul>
+		<li>Delphi: Function GetMinRefreshInterval: Integer; stdcall;</li>
+		<li>C: __declspec(dllexport) int __stdcall GetMinRefreshInterval()</li>
+		<li>C++: __declspec(dllexport) extern &quot;C&quot; int __stdcall GetMinRefresh()</li>
+	</ul></p>
 	<h3>.net plugins</h3>
 	<p>In LCD Smartie 5.3 beta 3 and above, .net plugins are supported.</p>
 	<p>Your .net assembly/dll needs to provide a public class called "LCDSmartie" with member functions called function1, function2, etc (upto function20). You only need to provide the functions you want.  They need to return a String and take two Strings as parameters. </p>
@@ -69,8 +76,17 @@
 	<ul>
 		<li>vb.net: Public Function function1(ByVal param1 As String, ByVal param2 As String) As String</li>
 		<li>VC++.net: String __gc *function1(String *param1, String *param2)</li>
-		<li>C#:  string function1(string param1, string param2)</li>
-	</ul>
+		<li>C#: public string function1(string param1, string param2)</li>
+	</ul></p>
+
+	<p>[New for 5.3 beta 4] Data from your plugin will be refreshed upto a maximum of 3 times a second (every 300ms).  If you want your plugins data to be refreshed more often (or less often) then you will need to define a new API 'GetMinRefreshInterval' which returns an integer, that defines the required minimal interval in mseconds between screen data refreshes. Smartie will then use the highest value (dll provided limit, or that of the "dll check interval" setting on the Misc tab of the settings). <br />
+	The expected function prototypes are:
+	<ul>
+
+		<li>vb.net: Public Function GetMinRefreshInterval() As Integer</li>
+		<li>VC++.net: int GetMinRefresh()</li>
+		<li>C#: public int GetMinRefreshInterval()</li>
+	</ul></p>
 
 
 	<h2>Tips</h2>
@@ -88,7 +104,7 @@
 
 	<p><strong>Tip:</strong> Plugins can be used in the command part of an action - the string it returns will be parsed as an action [So if the plugin returns WAPlay then winamp will play...</p>
 
-	<p><strong>Warning:</strong> Your dll will be called when ever the screen that references your dll is displayed and as often as the &quot;DLL check interval&quot; on the Misc settings tab (by default this is every 250ms). It's wise not to do any work that will take a long period of time because the whole of smartie will be blocked until the function returns. It's best to create a thread to do the real work, and the exported function simply copys out the cached result. </p>
+	<p><strong>Warning:</strong> Your dll will be called when ever the screen that references your dll is displayed and as often as the &quot;DLL check interval&quot; on the Misc settings tab (or your dll's limit if it's higher, which defaults to 300ms). It's wise not to do any work that will take a long period of time because the whole of smartie will be blocked until the function returns. It's best to create a thread to do the real work, and the exported function simply copys out the cached result. </p>
 
 </div>
   <!-- start of footer.html -->
