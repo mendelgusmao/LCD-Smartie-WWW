@@ -7,7 +7,7 @@
   <!-- end of head.html -->
 </head>
 <body>
-  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2005/02/11 23:26:45 $ \$Revision: 1.3 $" -->
+  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2005/02/12 10:25:13 $ \$Revision: 1.4 $" -->
   <!--#set var="file" value="speedfanplugin" -->
 
   <!-- start of header.html -->
@@ -21,7 +21,7 @@
   	<h1>SpeedFan Plugin for LCD Smartie</h1>
 
 	<h2>Download</h2>
-	<p>SpeedFan Plugin <a href="http://prdownloads.sourceforge.net/lcdsmartie/speedfan.Alpha1.zip?download">Alpha 1 can be downloaded here.</a></p>
+	<p>SpeedFan Plugin <a href="http://prdownloads.sourceforge.net/lcdsmartie/speedfan.Alpha2.zip?download">Alpha 2 can be downloaded here.</a></p>
 	<h2>Install</h2>
 	<ul>
 		<li>To install this plugin copy the speedfan.dll into the plugins directory of LCD Smartie. [Only the 5.3 final and above builds are supported.]</li>
@@ -29,9 +29,10 @@
 
 	<h2>Using the plugin</h2>
 	<p>To use the plugin you will need to insert commands into your screens.<br />
-	The command is: $dll(speedfan,[func],[num],0)<br />
+	The command is: $dll(speedfan,[func],[num],[precison])<br />
 	Where [func] is 1 for fan speeds, 2 for temp sensors, 3 for volt sensors.  <br />
-	[num] is the sensor number. </p>
+	[num] is the sensor number. <br />
+	[precison] is how many decimial digits to be shown; so for '1.23', 0 is '1', 1 is '1.2', 2 is '1.23', 3 is '1.230'</p>
 	<p>So, $dll(speedfan,2,3,0) will display the 3rd temp sensors reading.
 	</p>
 
