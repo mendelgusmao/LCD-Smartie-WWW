@@ -7,7 +7,7 @@
   <!-- end of head.html -->
 </head>
 <body>
-  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2005/01/23 01:26:02 $ \$Revision: 1.14 $" -->
+  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2005/01/23 19:43:57 $ \$Revision: 1.15 $" -->
   <!--#set var="file" value="index" -->
 
   <!-- start of header.html -->
@@ -31,8 +31,8 @@
 	<h2>Writing a plugin</h2>
 	<p>The source to simple demo plugins are available:</p>
 	<ul>
-		<li>in Delphi: <a href="http://prdownloads.sourceforge.net/lcdsmartie/Delphidemoplugin.zip?download">ZIP</a> or just <a href="http://cvs.sourceforge.net/viewcvs.py/lcdsmartie/lcdsmartie/DLL%20example/Delphi%20demo%20plugin/demo.dpr?view=markup">main source file</a></li>
-		<li>in C/C++: <a href="http://prdownloads.sourceforge.net/lcdsmartie/DemoC%2B%2BPlugin.zip?download">ZIP</a> or just <a href="http://cvs.sourceforge.net/viewcvs.py/lcdsmartie/lcdsmartie/DLL%20example/DemoC%2B%2BPlugin/demo.cpp?view=markup">main source file</a></li>
+		<li>in Delphi: <a href="http://prdownloads.sourceforge.net/lcdsmartie/delphidemoplugin.zip?download">ZIP</a> or just <a href="http://cvs.sourceforge.net/viewcvs.py/lcdsmartie/lcdsmartie/DLL%20example/Delphi%20demo%20plugin/demo.dpr?view=markup">main source file</a></li>
+		<li>in C/C++: <a href="http://prdownloads.sourceforge.net/lcdsmartie/DemoC%2B%2BPlugin.zip?download">ZIP</a> or just <a href="http://cvs.sourceforge.net/viewcvs.py/lcdsmartie/lcdsmartie/DLL%20example/DemoC%2B%2BPlugin/DemoC%2B%2BPlugin.cpp?view=markup">main source file</a></li>
 		<li>in vb.net: <a href="http://prdownloads.sourceforge.net/lcdsmartie/vbdotnetplugin.zip?download">ZIP</a> or just <a href="http://cvs.sourceforge.net/viewcvs.py/lcdsmartie/lcdsmartie/DLL%20example/vbdotnetplugin/Class1.vb?view=markup">main source file</a></li>
 		<li>in vc++.net: <a href="http://prdownloads.sourceforge.net/lcdsmartie/vcppdotnetplugin.zip?download">ZIP</a> or just <a href="http://cvs.sourceforge.net/viewcvs.py/lcdsmartie/lcdsmartie/DLL%20example/vcppdotnetplugin/vcppdotnetplugin.h?view=markup">main header file</a></li>
 		<li>in c#: <a href="http://prdownloads.sourceforge.net/lcdsmartie/csharpplugin.zip?download">ZIP</a> or just <a href="http://cvs.sourceforge.net/viewcvs.py/lcdsmartie/lcdsmartie/DLL%20example/csharpplugin/Class1.cs?view=markup">main source file</a></li>
@@ -62,7 +62,7 @@
 	<ul>
 		<li>Delphi: Function GetMinRefreshInterval: Integer; stdcall;</li>
 		<li>C: __declspec(dllexport) int __stdcall GetMinRefreshInterval()</li>
-		<li>C++: __declspec(dllexport) extern &quot;C&quot; int __stdcall GetMinRefresh()</li>
+		<li>C++: __declspec(dllexport) extern &quot;C&quot; int __stdcall GetMinRefreshInterval()</li>
 	</ul></p>
 	<h3>.net plugins</h3>
 	<p>In LCD Smartie 5.3 beta 3 and above, .net plugins are supported.</p>
