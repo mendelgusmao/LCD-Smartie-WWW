@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <title>LCD Smartie - A free open-source LCD program!</title>
+  <!-- start of head.html -->
+  <!--#include virtual="head.html" -->
+  <!-- end of head.html -->
+</head>
+<body>
+  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2005/01/19 10:39:45 $ \$Revision: 1.1 $" -->
+  <!--#set var="file" value="HDSet" -->
+
+  <!-- start of header.html -->
+  <!--#include virtual="header.html" -->
+  <!-- end of header.html -->
+
+  <!-- start of sidebar.html -->
+  <!--#include virtual="sidebar.html" -->
+  <!-- end of sidebar.html -->
+  <div id="content">
+	<h1>Parallel (HD44780 compatible) display configuration</h1>
+	<p>Select setup (highlighted in red):</p>
+	<img src="presssetup.jpg" />
+	<p>Setup screen will appear:</p>
+	<img src="HDSetup.jpg" />
+	<p>The important settings are highlighted in red.
+	<ul>
+		<li>Select "HD44780 (Parallel)".</li>
+		<li>Set the correct LCD Size for your display.</li>
+	</ul>
+	</p>
+	<p>Press &quot;HD44780 settings&quot; answer &quot;No&quot; to the question &quot;The HD44780 driver is not currently loaded. Should I apply your settings and load the driver?&quot;</p>
+	<img src="HDSettings.jpg" />
+	<p>Configure the settings for your display:
+	<ul>
+		<li>Port: the address of your parallel port (usually 378, but 278 and 3BC are also common).</li>
+		<li>Driver boot delay (s): Only change this setting if you are having trouble with LCD Smartie using your display too quickly after booting. </li>
+		<li>Timing multiplier: If your display fails to work or displays random characters then your display may need longer to process our commands - try setting it to 5.</li>
+		<li>Use alternative addressing: Use this if your display is a 1x16 and only half of the display is working.</li>
+	</ul></p>
+	<p>Press OK, and then OK again. Your HD44780 compatible display should now be working correctly with LCD Smartie! If it is not then please see the <a href="FAQ.htm">FAQ</a>.
+	</p>
+
+</div>
+  <!-- start of footer.html -->
+  <!--#include virtual="footer.html" -->
+  <!-- end of footer.html -->
+</body>
+</html>
