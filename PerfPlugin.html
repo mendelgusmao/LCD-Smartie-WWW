@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>LCD Smartie docs - plugins</title>
+  <link href="lcdsmartie.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div id="content">
+	<h1>Perf Plugin for LCD Smartie</h1>
+
+	<p>This is a plugin that makes it possible to display graphs of performance counters (such as % CPU Load). The graphs will appear on the LCD display, but currently Smartie's virtual display will display junk.</p>
+
+	<h2>Install</h2>
+	<p>To install this plugin copy the perf.dll into the plugins directory of LCD Smartie. [Only the 5.3 builds are supported.]</p>
+
+	<h2>Basic Use</h2>
+	<p>To use the plugin you will need to insert commands into the your screens.<br />
+	The basic form of the commands will only display a graph of the percentage of CPU use:<br />
+	<ul>
+		<li>Function 1: <strong>$dll(perf,1,[height]x[width],[name])</strong> - this will create a graph object called [name] that is [height] high and [width] wide, it will also display the top line of the graph.  [name] can be anything you want, it is only used to tie the different commands to the same graph.Example: $dll(perf,1,2x20,Test)</li>
+		<li>Function 2: <strong>$dll(perf,2,[name],[line])</strong> - this command is only needed if your graph is higher than 1 line high. This command displays a line from an already created (using the function above) graph object. The name must match that given in function 1. Line 1 is the bottom of the graph, line 2 second from bottom etc. Example: $dll(perf,2,Test,2)</li>
+	</ul></p>
+
+	<p>On a 2 line display, the lines entered into smartie will look something like this:</p>
+	<img src="2lineexample.jpg" />
+	<p>On a 4 line display, the lines entered into smartie will look something like this:</p>
+	<img src="4lineexample.jpg" />
+	
+	<h2>Advance Use</h2>
+
+	<h3>Function 1</h3>
+	<p>The format of function 1 is: $dll(perf,1,[options],[name])</p>
+	<p>[option] takes the form: HeightxWidth#Direction#BarStyle#SampleTime#min#max#CounterName<br />
+	Where: <br />
+	<ul>
+		<li>HeightxWidth is the size of the bar graph</li>
+		<li>Direction is one of: d, u, l, r   [for down/up/left/right] - currently only up/down supported. [default: u]</li>
+		<li>SampleTime is how often the counter value is fetched, in 1/10 seconds. [default: 5 (i.e. 0.5 seconds)]</li>
+		<li>BarStyle selects the custom characters to use - currently unused, should always be 1. [default: 1]</li>
+		<li>CounterName is a name of a performance counter. [default: \Processor(0)\% Processor Time] </li>
+		<li>min - used for scaling graph. [default: 0]</li>
+		<li>max - used for scaling graph. [default: 100]</li>
+	</ul>
+	</p>
+	<p>All options are optional except HeightxWidth, but the order must be maintained - so to leave BarStyle out, you must also leave out Sampletime, min, max and CounterName.</p>
+	<p>Examples:
+	<ul>
+		<li>$dll(pref,1,2x16#u#1#5#\Processor(0)\% Processor Time,Test1)</li>
+		<li>$dll(pref,1,2x16#u#1#5,Test2)</li>
+		<li>$dll(pref,1,4x20#d#1,Test3)</li>
+		<li>$dll(pref,1,2x16#u,Test4)</li>
+		<li>$dll(pref,1,4x40,Test5)</li>
+	</ul></p>
+
+
+	<p>The best way to find the name of a performance object is to use the administrator tool "performance monitor". <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/perfmon/base/performance_objects_and_counters.asp">This microsoft page</a> gives some details on the format (which even allows remote machines to be monitored). Here are some ideas (there are tons of others):
+	<ul>
+		<li><strong>\Processor(0)\% Processor Time</strong> - Cpu usage of the first processor.</li>
+		<li><strong>\Processor(1)\% Processor Time</strong> - Cpu usage of the 2nd processor.</li>
+		<li><strong>\Processor(_Total)\% Processor Time</strong> - Total cpu usage.</li>
+		<li><strong>\\REMOTECOMPUTER\Processor(0)\% Processor Time</strong> - The Cpu usage of the first processor on computer REMOTECOMPUTER.</li>
+		<li><strong>\Process(LCDSmartie)\% Processor Time</strong> - Cpu usage caused by LCD Smartie.</li>
+		<li><strong>\System\Processes</strong> - The number of active processes.</li>
+		<li><strong>\Paging File(_Total)\% Usage</strong> - Percentage of page file in use.</li>
+	</ul>
+
+	<h3>Function 2</h3>
+	<p>Same as basic use.</p>
+
+	<h3>Function 3</h3>
+	<p>Reserved for tiny graphs (1x8 max) where a bar is 1 pixel wide.</p>
+
+	<h3>Function 4</h3>
+	<p>This function fetches the value of a performance counter.</p>
+	<p>The format of function 4 is: $dll(perf,4,[SampleTime],[CounterName])</p>
+	<p>Example: $dll(pref,4,5,\Processor(0)\% Processor Time)</p>
+</body>
+</html>
