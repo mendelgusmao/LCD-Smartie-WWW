@@ -1,0 +1,984 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>LCD Smartie notes</title>
+  <link href="lcdsmartie.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div id="content">
+	<h1>Function notes</h1>
+
+	<h2>Winamp</h2>
+	
+	<table>
+		<tr>
+			<th>Function</th>
+			<th>Description</th>
+			<th>Example use</th>
+			<th>Example output</th>
+		</tr>
+		<tr>
+			<td>$WinampTitle</td>
+			<td>Current track title.<br />
+			Actual displayed text is controlled by the Advanced Title Formatting setting within WinAmp.
+			</td>
+			<td>$WinampTitle</td>
+			<td>My Bloody Valentine - Feed Me With Your Kiss<br />
+			Dinosaur Jr. - Out There</td>
+		</tr>
+		<tr>
+			<td>$WinampChannels</td>
+			<td>For current track, it's one of: mono, stereo</td>
+			<td>$WinampChannels</td>
+			<td>stereo<br />
+			mono</td>
+		</tr>
+		<tr>
+			<td>$WinampKBPS</td>
+			<td>Current tracks kbps</td>
+			<td>$WinampKBPS<br />
+			$WinampKBPSkbps</td>
+			<td>192<br />
+			192kbps
+			</td>
+		</tr>
+		<tr>
+			<td>$WinampFreq</td>
+			<td>Current tracks freq</td>
+			<td>$WinampFreq<br />
+			$WinampFreqkHz</td>
+			<td>44<br />
+			44kHz</td>
+		</tr>
+		<tr>
+			<td>$WinampStat</td>
+			<td>Current state, one of: paused, stopped, playing</td>
+			<td>$WinampStat</td>
+			<td>playing<br />
+			paused<br />
+			stopped</td>
+		</tr>
+		<tr>
+			<td>$WinampPosition([barlen])</td>
+			<td>Displays a position bar of length [barlen]</td>
+			<td>$WinampPosition(5)</td>
+			<td>-+---</td>
+		</tr>
+		<tr>
+			<td>$WinampPolo</td>
+			<td>Current tracks position.</td>
+			<td>$WinampPolo</td>
+			<td>2min 10sec<br />
+			1hrs 2min 10sec<br />
+			10sec<br />
+			</td>
+		</tr>
+		<tr>
+			<td>$WinampPosh</td>
+			<td>Current tracks position, in hrs:min:secs format.</td>
+			<td>$WinampPosh</td>
+			<td>2:10<br />
+			1:2:10<br />
+			10<br />
+			</td>
+		</tr>
+		<tr>
+			<td>$Winamppos</td>
+			<td>Current tracks position, in seconds.</td>
+			<td>$Winamppos</td>
+			<td>130<br />
+			3730<br />
+			10<br />
+			</td>
+		</tr>
+		<tr>
+			<td>$WinampRelo</td>
+			<td>Remaining time of current track.</td>
+			<td>$WinampRelo</td>
+			<td>2min 10sec<br />
+			1hrs 2min 10sec<br />
+			10sec<br />
+			</td>
+		</tr>
+		<tr>
+			<td>$WinampResh</td>
+			<td>Remaining time of current track, in hrs:mins:secs format</td>
+			<td>$WinampResh</td>
+			<td>2:10<br />
+			1:2:10<br />
+			10<br />
+			</td>
+		</tr>
+		<tr>
+			<td>$WinampRem</td>
+			<td>Remaining time of current track, in seconds</td>
+			<td>$WinampRem</td>
+			<td>130<br />
+			3730<br />
+			10<br />
+			</td>
+		</tr>
+		<tr>
+			<td>$WinampLengtl</td>
+			<td>Length of current track.</td>
+			<td>WinampLengtl</td>
+			<td>2min 10sec<br />
+			1hrs 2min 10sec<br />
+			10sec<br />
+			</td>
+		</tr>
+		<tr>
+			<td>$WinampLengts</td>
+			<td>Length of current track, in hrs:mins:secs format.</td>
+			<td>WinampLengts</td>
+			<td>2:10<br />
+			1:2:10<br />
+			10<br />
+			</td>
+		</tr>
+		<tr>
+			<td>$WinampLength</td>
+			<td>Length of current track, in seconds.</td>
+			<td>$WinampLengts</td>
+			<td>130<br />
+			3730<br />
+			10<br />
+			</td>
+		</tr>
+		<tr>
+			<td>$WinampTracknr</td>
+			<td>Track number of current track.</td>
+			<td>$WinampTracknr</td>
+			<td>10</td>
+		</tr>
+		<tr>
+			<td>$WinampTotalTracks</td>
+			<td>Total number of tracks in playlist.</td>
+			<td>$WinampTotalTracks</td>
+			<td>31</td>
+		</tr>
+	</table>
+
+	<h2>Network Stats</h2>
+
+	<table>
+		<tr>
+			<th>Function</th>
+			<th>Description</th>
+			<th>Example use</th>
+			<th>Example output</th>
+		</tr>
+		<tr>
+			<td>$NetIPaddress</td>
+			<td>Main IP address of computer.</td>
+			<td>$NetIPaddress</td>
+			<td>127.0.0.1</td>
+		</tr>
+		<tr>
+			<td>$NetAdapter([adapter])</td>
+			<td>Name of adapter number [adapter].<br />
+			[adapter] can be 0-9.</td>
+			<td>$NetAdapter(1)</td>
+			<td>3Com EtherLink PCI</td>
+		</tr>
+		<tr>
+			<td>$NetDownK([adapter])</td>
+			<td>Total downloaded in KBs via adapter number [adapter].<br />
+			[adapter] can be 0-9.</td>
+			<td>$NetDownK(1)<br />
+			$NetDownK(1)KB</td>
+			<td>45.3<br />
+			45.3KB</td>
+		</tr>
+		<tr>
+			<td>$NetUpK([adapter])</td>
+			<td>Total uploaded in KBs via adapter number [adapter].<br />
+			[adapter] can be 0-9.</td>
+			<td>$NetUpK(1)<br />
+			$NetUpK(1)KB</td>
+			<td>45.3<br />
+			45.3KB</td>
+		</tr>
+		<tr>
+			<td>$NetDownM([adapter])</td>
+			<td>Total downloaded in MBs via adapter number [adapter].<br />
+			[adapter] can be 0-9.</td>
+			<td>$NetDownM(1)<br />
+			$NetDownM(1)MB</td>
+			<td>45.3<br />
+			45.3MB</td>
+		</tr>
+		<tr>
+			<td>$NetUpM([adapter])</td>
+			<td>Total uploaded in MBs via adapter number [adapter].<br />
+			[adapter] can be 0-9.</td>
+			<td>$NetUpM(1)<br />
+			$NetUpM(1)MB</td>
+			<td>45.3<br />
+			45.3MB</td>
+		</tr>
+		<tr>
+			<td>$NetDownG([adapter])</td>
+			<td>Total downloaded in GBs via adapter number [adapter].<br />
+			[adapter] can be 0-9.</td>
+			<td>$NetDownG(1)<br />
+			$NetDownG(1)GB</td>
+			<td>45.3<br />
+			45.3GB</td>
+		</tr>
+		<tr>
+			<td>$NetUpG([adapter])</td>
+			<td>Total uploaded in GBs via adapter number [adapter].<br />
+			[adapter] can be 0-9.</td>
+			<td>$NetUpG(1)<br />
+			$NetUpG(1)GB</td>
+			<td>45.3<br />
+			45.3GB</td>
+		</tr>
+		<tr>
+			<td>$NetErrDown([adapter])</td>
+			<td>Total downloaded packets that were discarded via adapter number [adapter] because they contained errors.<br />
+			[adapter] can be 0-9.</td>
+			<td>$NetErrDown(1)</td>
+			<td>45</td>
+		</tr>
+		<tr>
+			<td>$NetErrUp([adapter])</td>
+			<td>Total uploaded packets that were discarded via adapter number [adapter] because they contained errors.<br />
+			[adapter] can be 0-9.</td>
+			<td>$NetErrUp(1)</td>
+			<td>45</td>
+		</tr>
+		<tr>
+			<td>$NetErrTot([adapter])</td>
+			<td>Total packets (up and down) that were discarded via adapter number [adapter] because they contained errors.<br />
+			[adapter] can be 0-9.</td>
+			<td>$NetErrTot(1)</td>
+			<td>90</td>
+		</tr>
+		<tr>
+			<td>$NetDiscDown([adapter])</td>
+			<td>Total downloaded packets that were discarded via adapter number [adapter] even if they didn't contain errors.<br />
+			[adapter] can be 0-9.</td>
+			<td>$NetDiscDown(1)</td>
+			<td>45</td>
+		</tr>
+		<tr>
+			<td>$NetDiscUp([adapter])</td>
+			<td>Total uploaded packets that were discarded via adapter number [adapter] even if they didn't contain errors.<br />
+			[adapter] can be 0-9.</td>
+			<td>$NetDiscUp(1)</td>
+			<td>45</td>
+		</tr>
+		<tr>
+			<td>$NetDiscTot([adapter])</td>
+			<td>Total packets (up and down) that were discarded via adapter number [adapter] even if they didn't contain errors.<br />
+			[adapter] can be 0-9.</td>
+			<td>$NetDiscTot(1)</td>
+			<td>90</td>
+		</tr>
+		<tr>
+			<td>$NetUniDown([adapter])</td>
+			<td>Downloaded unicast packets via adapter number [adapter].<br />
+			[adapter] can be 0-9.</td>
+			<td>$NetUniDown(1)</td>
+			<td>10</td>
+		</tr>
+		<tr>
+			<td>$NetUniUp([adapter])</td>
+			<td>Uploaded unicast packets via adapter number [adapter].<br />
+			[adapter] can be 0-9.</td>
+			<td>$NetUniUp(1)</td>
+			<td>10</td>
+		</tr>
+		<tr>
+			<td>$NetUniTot([adapter])</td>
+			<td>Total (up and down) unicast packets via adapter number [adapter].<br />
+			[adapter] can be 0-9.</td>
+			<td>$NetUniTot(1)</td>
+			<td>20</td>
+		</tr>
+		<tr>
+			<td>$NetNuniDown([adapter])</td>
+			<td>Downloaded non-unicast packets via adapter number [adapter].<br />
+			[adapter] can be 0-9.</td>
+			<td>$NetNuniDown(1)</td>
+			<td>10</td>
+		</tr>
+		<tr>
+			<td>$NetNuniUp([adapter])</td>
+			<td>Uploaded non-unicast packets via adapter number [adapter].<br />
+			[adapter] can be 0-9.</td>
+			<td>$NetNuniUp(1)</td>
+			<td>10</td>
+		</tr>
+		<tr>
+			<td>$NetNuniTot([adapter])</td>
+			<td>Total (up and down) non-unicast packets via adapter number [adapter].<br />
+			[adapter] can be 0-9.</td>
+			<td>$NetNuniTot(1)</td>
+			<td>20</td>
+		</tr>
+		<tr>
+			<td>$NetPackTot([adapter])</td>
+			<td>Total (up and down) packets (both unicast and non-unicast) via adapter number [adapter].<br />
+			[adapter] can be 0-9.</td>
+			<td>$NetPackTot(1)</td>
+			<td>40</td>
+		</tr>
+		<tr>
+			<td>$NetSpDownK([adapter])</td>
+			<td>Download speed in KB/s of adapter number [adapter].<br />
+			[adapter] can be 0-9.</td>
+			<td>$NetSpDownK(1)</td>
+			<td>10.2</td>
+		</tr>
+		<tr>
+			<td>$NetSpDownM([adapter])</td>
+			<td>Download speed in MB/s of adapter number [adapter].<br />
+			[adapter] can be 0-9.</td>
+			<td>$NetSpDownM(1)</td>
+			<td>10.2</td>
+		</tr>
+		<tr>
+			<td>$NetSpUpK([adapter])</td>
+			<td>Upload speed in KB/s of adapter number [adapter].<br />
+			[adapter] can be 0-9.</td>
+			<td>$NetSpUpK(1)</td>
+			<td>10.2</td>
+		</tr>
+		<tr>
+			<td>$NetSpUpM([adapter])</td>
+			<td>Upload speed in MB/s of adapter number [adapter].<br />
+			[adapter] can be 0-9.</td>
+			<td>$NetSpUpM(1)</br />
+			$NetSpUpM(1)MB/s</td>
+			<td>10.2<br />
+			10.2MB/s</td>
+		</tr>
+
+	</table>
+
+	<h2>Sysinfo</h2>
+
+	<table>
+		<tr>
+			<th>Function</th>
+			<th>Description</th>
+			<th>Example use</th>
+			<th>Example output</th>
+		</tr>
+		<tr>
+			<td>$Username</td>
+			<td>Name of user running smartie.</td>
+			<td>$Username</td>
+			<td>Administrator</td>
+		</tr>
+		<tr>
+			<td>$Computername</td>
+			<td>Hostname</td>
+			<td>$Computername</td>
+			<td>VMWare1</td>
+		</tr>
+		<tr>
+			<td>$CPUType</td>
+			<td>Type of CPU (only first processor on multi-processor machines)</td>
+			<td>$CPUType</td>
+			<td>Intel Pentium III</td>
+		</tr>
+		<tr>
+			<td>$CPUSpeed</td>
+			<td>Speed of CPU in MHz (only first processor on multi-processor machines)</td>
+			<td>$CPUSpeed<br />
+			$CPUSpeedMhz</td>
+			<td>750<br />
+			750Mhz</td>
+		</tr>
+		<tr>
+			<td>$CPUUsage%</td>
+			<td>CPU Usage percentage (only first processor on multi-processor machines)</td>
+			<td>$CPUUsage%<br />
+			$CPUUsage%%</td>
+			<td>50<br />
+			50%</td>
+		</tr>
+		<tr>
+			<td>$UpTime</td>
+			<td>How long the computer has been running.<br />
+			Format is: [YEARS]yrs [MONTHS]mts [DAYS]dys [HOURS]hrs [MINUTES]mins [SECONDS]secs<br />
+			years/months/days/hours/mins will only appear if the system has been up that long.</td>
+			<td>$UpTime</td>
+			<td>09secs<br />
+				1min 09secs<br />
+				1hr 1min 09secs<br />
+				1dys 1hr 1min 09secs<br />
+				1mts 1dys 1hr 1min 09secs<br />
+				1yr 1mts 1dys 1hr 1min 09secs
+			</td>
+		</tr>
+
+		<tr>
+			<td>$UpTims</td>
+			<td>How long the computer has been running.<br />
+				Short version of $Uptime - only shows the three top units and uses only one letter for unit type.<br />
+			</td>
+			<td>$UpTims</td>
+			<td>09s<br />
+				1m 09s<br />
+				1h 1m 09s<br />
+				1d 1h 1m<br />
+				1m 1d 1h<br />
+				1y 1m 1d
+			</td>
+		</tr>
+
+		<tr>
+			<td>$MemFree</td>
+			<td>How much memory in MBs is free.</td>
+			<td>$MemFree<br />
+			$MemFreeMB</td>
+			<td>1000<br />
+	       		1000MB</td>
+		</tr>
+		<tr>
+			<td>$MemUsed</td>
+			<td>How much memory in MBs is used.</td>
+			<td>$MemUsed<br />
+			$MemUsedMB</td>
+			<td>1000<br />
+	       		1000MB</td>
+		</tr>
+		<tr>
+			<td>$MemTotal</td>
+			<td>Total Memory in MB.</td>
+			<td>$MemTotal<br />
+			$MemTotalMB</td>
+			<td>2000<br />
+	       		2000MB</td>
+		</tr>
+		<tr>
+			<td>$PageFree</td>
+			<td>How much page memory in MBs is free.</td>
+			<td>$PageFree<br />
+			$PageFreeMB</td>
+			<td>1000<br />
+	       		1000MB</td>
+		</tr>
+		<tr>
+			<td>$PageUsed</td>
+			<td>How much page memory in MBs is used.</td>
+			<td>$PageUsed<br />
+			$PageUsedMB</td>
+			<td>1000<br />
+	       		1000MB</td>
+		</tr>
+		<tr>
+			<td>$PageTotal</td>
+			<td>Total page memory in MB.</td>
+			<td>$PageTotal<br />
+			$PageTotalMB</td>
+			<td>2000<br />
+	       		2000MB</td>
+		</tr>
+		<tr>
+			<td>$MemF%</td>
+			<td>Percentage of memory free.</td>
+			<td>$MemF%<br />
+			$MemF%%</td>
+			<td>10<br />
+	       		10%</td>
+		</tr>
+		<tr>
+			<td>$MemU%</td>
+			<td>Percentage of memory used.</td>
+			<td>$MemU%<br />
+			$MemU%%</td>
+			<td>90<br />
+	       		90%</td>
+		</tr>
+		<tr>
+			<td>$PageF%</td>
+			<td>Percentage of page memory free.</td>
+			<td>$PageF%<br />
+			$PageF%%</td>
+			<td>10<br />
+	       		10%</td>
+		</tr>
+		<tr>
+			<td>$PageU%</td>
+			<td>Percentage of page memory used.</td>
+			<td>$PageU%<br />
+			$PageU%%</td>
+			<td>90<br />
+	       		90%</td>
+		</tr>
+		<tr>
+			<td>$HDFreg([disk])</td>
+			<td>Free disk space on disk [disk] in GB.</td>
+			<td>$HDFreg(C)<br />
+			$HDFreg(C)GB</td>
+			<td>10<br />
+	       		10GB</td>
+		</tr>
+		<tr>
+			<td>$HDFree([disk])</td>
+			<td>Free disk space on disk [disk] in MB.</td>
+			<td>$HDFree(C)<br />
+			$HDFree(C)MB</td>
+			<td>10<br />
+	       		10MB</td>
+		</tr>
+		<tr>
+			<td>$HDUseg([disk])</td>
+			<td>Used disk space on disk [disk] in GB.</td>
+			<td>$HDUseg(C)<br />
+			$HDUseg(C)GB</td>
+			<td>10<br />
+	       		10GB</td>
+		</tr>
+		<tr>
+			<td>$HDUsed([disk])</td>
+			<td>Used disk space on disk [disk] in MB.</td>
+			<td>$HDUsed(C)<br />
+			$HDUsed(C)MB</td>
+			<td>10<br />
+	       		10MB</td>
+		</tr>
+		<tr>
+			<td>$HDF%([disk])</td>
+			<td>Percentage of free disk space on disk [disk].</td>
+			<td>$HDF%(C)<br />
+			$HDF%(C)%</td>
+			<td>10<br />
+	       		10%</td>
+		</tr>
+		<tr>
+			<td>$HDTotag([disk])</td>
+			<td>Total size of disk [disk] in GB.</td>
+			<td>$HDTotag(C)<br />
+			$HDTotag(C)GB</td>
+			<td>10<br />
+	       		10GB</td>
+		</tr>
+		<tr>
+			<td>$HDTotal([disk])</td>
+			<td>Total size of disk [disk] in MB.</td>
+			<td>$HDTotal(C)<br />
+			$HDTotal(C)MB</td>
+			<td>10<br />
+	       		10MB</td>
+		</tr>
+		<tr>
+			<td>$ScreenReso</td>
+			<td>Current screen resolution.</td>
+			<td>$ScreenReso</td>
+			<td>1280x1024</td>
+		</tr>
+	</table>
+
+	<h2>MBM stats</h2>
+	For the following to work, you need <a href="http://mbm.livewiredev.com/">MBM</a> installed. Development on MBM has stopped - but it can still be downloaded and is still useful.
+	<table>
+		<tr>
+			<th>Function</th>
+			<th>Description</th>
+			<th>Example use</th>
+			<th>Example output</th>
+		</tr>
+		<tr>
+			<td>$Tempname[num]</td>
+			<td>Name of temperature sensor number [num].<br />
+				[num] can be 1-11.
+			</td>
+			<td>$Tempname2</td>
+			<td>CPU</td>
+		</tr>
+		<tr>
+			<td>$Temp[num]</td>
+			<td>Value of temperature sensor number [num].<br />
+				[num] can be 1-11.</td>
+			<td>$Temp2</td>
+			<td>42.4</td>
+		</tr>
+		<tr>
+			<td>$Fanname[num]</td>
+			<td>Name of fan speed sensor number [num].<br />
+				[num] can be 1-11.</td>
+			<td>$Fanname2</td>
+			<td>GPU</td>
+		</tr>
+		<tr>
+			<td>$FanS[num]</td>
+			<td>Value of fan speed sensor number [num].<br />
+				[num] can be 1-11.</td>
+			<td>$FanS2<br />
+			$FanS2rpm</td>
+			<td>10000<br />
+			10000rpm</td>
+		</tr>
+		<tr>
+			<td>$Voltname[num]</td>
+			<td>Name of voltage sensor number [num].<br />
+				[num] can be 1-11.</td>
+			<td>$Voltname2</td>
+			<td>5v</td>
+		</tr>
+		<tr>
+			<td>$Voltage[num]</td>
+			<td>Value of voltage sensor number [num].<br />
+				[num] can be 1-11.</td>
+			<td>$Voltage</td>
+			<td>4.95</td>
+		</tr>
+	</table>
+
+
+	<h2>Email</h2>
+	Email account details are setup in the Email tab of the setup form.
+	<table>
+		<tr>
+			<th>Function</th>
+			<th>Description</th>
+			<th>Example use</th>
+			<th>Example output</th>
+		</tr>
+		<tr>
+			<td>$Email[num]</td>
+			<td>Number of emails in pop mail box number [num].<br />
+				[num] can be 0-9. 
+			</td>
+			<td>$Email1</td>
+			<td>5</td>
+		</tr>
+		<tr>
+			<td>$EmailSub[num]</td>
+			<td>The subject line of the last email in in pop mail box number [num].<br />
+				[num] can be 0-9.
+			</td>
+			<td>$EmailSub1</td>
+			<td>Re: LCD Smartie bug report</td>
+		</tr>
+		<tr>
+			<td>$EmailFrom[num]</td>
+			<td>The from address of the last email in in pop mail box number [num].<br />
+				[num] can be 0-9.
+			</td>
+			<td>$EmailFrom1</td>
+			<td>Robert Smith</td>
+		</tr>
+	</table>
+
+	<h2>SETI@home</h2>
+	<a href="http://setiathome.ssl.berkeley.edu/">SETI@home</a> account details are configured in the SETI@home tab of the setup form.
+	<table>
+		<tr>
+			<th>Function</th>
+			<th>Description</th>
+			<th>Example use</th>
+			<th>Example output</th>
+		</tr>
+		<tr>
+			<td>$SETIResults</td>
+			<td>The number of SETI results you've returned.</td>
+			<td>$SETIResults</td>
+			<td>25</td>
+		</tr>
+		<tr>
+			<td>$SETICPUTime</td>
+			<td>Total CPU time given.</td>
+			<td>$SETICPUTime</td>
+			<td>11.940 years</td>
+		</tr>
+		<tr>
+			<td>$SETIAverage</td>
+			<td>Average CPU time per a work unit.</td>
+			<td>$SETIAverage</td>
+			<td>39 hr 01 min 37.4 secs</td>
+		</tr>
+		<tr>
+			<td>$SETIAverage</td>
+			<td>Average CPU time per a work unit.</td>
+			<td>$SETIAverage</td>
+			<td>39 hr 01 min 37.4 secs</td>
+		</tr>
+		<tr>
+			<td>$SETILastresult</td>
+			<td>Average CPU time per a work unit.</td>
+			<td>$SETILastresult</td>
+			<td>Tue Nov 30 18:07:12 2004 UTC</td>
+		</tr>
+		<tr>
+			<td>$SETIusertime</td>
+			<td>How long you're been a SET@home user.</td>
+			<td>$SETIusertime</td>
+			<td>5.573 years</td>
+		</tr>
+		<tr>
+			<td>$SETIrank</td>
+			<td>Your rank.</td>
+			<td>$SETIrank</td>
+			<td>5.573 years</td>
+		</tr>
+		<tr>
+			<td>$SETIsharingrank</td>
+			<td>Users sharing your rank.</td>
+			<td>$SETIsharingrank</td>
+			<td>43</td>
+		</tr>
+		<tr>
+			<td>$SETImoreWU</td>
+			<td>Percentage of users who have complete less work than you.</td>
+			<td>$SETImoreWU<br />
+			$SETImoreWU%</td>
+			<td>97.800<br />
+			97.800%</td>
+		</tr>
+		<tr>
+			<td>$SETtotalusers</td>
+			<td>Total number of users registered for SETI@home</td>
+			<td>$SETItotalusers</td>
+			<td>5268520</td>
+		</tr>
+	</table>
+
+	<h2>Folding@home</h2>
+	Folding@home account details are configured in the FOLD@home tab of the setup form.
+	<table>
+		<tr>
+			<th>Function</th>
+			<th>Description</th>
+			<th>Example use</th>
+			<th>Example output</th>
+		</tr>
+		<tr>
+			<td>$FOLDmemsine</td>
+			<td>Date of joining Folding@home.</td>
+			<td>No longer supported</td>
+			<td>No longer supported</td>
+		</tr>
+		<tr>
+			<td>$FOLDlastwu</td>
+			<td>Date of last work unit.</td>
+			<td>$FOLDlastwu</td>
+			<td>2004-11-29 20:07:35</td>
+		</tr>
+		<tr>
+			<td>$FOLDactproc</td>
+			<td>Active processors (within 7 days)</td>
+			<td>$FOLDactproc</td>
+			<td>18</td>
+		</tr>
+		<tr>
+			<td>$FOLDteam</td>
+			<td>Team name</td>
+			<td>$FOLDteam</td>
+			<td>Overclockers Australia</td>
+		</tr>
+		<tr>
+			<td>$FOLDscore</td>
+			<td>Score</td>
+			<td>$FOLDscore</td>
+			<td>5069917</td>
+		</tr>
+		<tr>
+			<td>$FOLDrank</td>
+			<td>Overall rank</td>
+			<td>$FOLDrank</td>
+			<td>5</td>
+		</tr>
+		<tr>
+			<td>$FOLDwu</td>
+			<td>Work units completed.</td>
+			<td>$FOLDwu</td>
+			<td>127564</td>
+		</tr>
+	</table>
+
+	<h2>Game stats</h2>
+	The server used to obtain server stats is configured in the gamestats tab of the setup form - and is configurable for each line of the screen.
+	<table>
+		<tr>
+			<th>Function</th>
+			<th>Description</th>
+			<th>Example use</th>
+			<th>Example output</th>
+		</tr>
+		<tr>
+			<td>$Half-life[funcnum]</td>
+			<td>Get a half-life stat, where [funcnum] is:<br />
+			<ul>
+				<li>1 = server name</li>
+				<li>2 = current map</li>
+				<li>3 = number of players on server</li>
+				<li>4 = number of frags for each player</li>
+			</ul></td>
+			<td>$Half-life1</td>
+			<td>BobsServer</td>
+		</tr>
+		<tr>
+			<td>$Unreal[funcnum]</td>
+			<td>Get a unreal stat, where [funcnum] is:<br />
+			<ul>
+				<li>1 = server name</li>
+				<li>2 = current map</li>
+				<li>3 = number of players on server</li>
+				<li>4 = number of frags for each player</li>
+			</ul></td>
+			<td>$Unreal1</td>
+			<td>BobsServer</td>
+		</tr>
+		<tr>
+			<td>$QuakeII[funcnum]</td>
+			<td>Get a Quake II stat, where [funcnum] is:<br />
+			<ul>
+				<li>1 = server name</li>
+				<li>2 = current map</li>
+				<li>3 = number of players on server</li>
+				<li>4 = number of frags for each player</li>
+			</ul></td>
+			<td>$QuakeII1</td>
+			<td>BobsServer</td>
+		</tr>
+		<tr>
+			<td>$QuakeIII[funcnum]</td>
+			<td>Get a Quake III stat, where [funcnum] is:<br />
+			<ul>
+				<li>1 = server name</li>
+				<li>2 = current map</li>
+				<li>3 = number of players on server</li>
+				<li>4 = number of frags for each player</li>
+			</ul></td>
+			<td>$QuakeIII1</td>
+			<td>BobsServer</td>
+		</tr>
+	</table>
+
+	<h2>Misc</h2>
+	<table>
+		<tr>
+			<th>Function</th>
+			<th>Description</th>
+			<th>Example use</th>
+			<th>Example output</th>
+		</tr>
+		<tr>
+			<td>$Rss([url],[type])<br />
+			$Rss([url],[type],[itemnum])<br />
+			$Rss([url],[type],[itemnum],[maxfreq])</td>
+			<td>Process a RSS feed from url [url].<br />
+			[type] is t for title, d for description, or b for both<br />
+			[itemnum] is the item number you want to display (0=all)
+			[maxfreq] is the number of hours that must past before checking the feed again - this can be important as some sites ban users that fetch the feed more often than that stated in the T&Cs.<br />
+			DEFAULT: [itemnum] defaults to 0, [maxfreq] default to no limit.
+	       		</td>
+			<td>$Rss(http://somesite.com/rss.xml,t,1)</td>
+			<td>[top headline from somesite]</td>
+		</tr>
+		<tr>
+			<td>$Count([num1]#[num2]#...#[numn])</td>
+			<td>Add [num1] [num2] [num3] etc together.</td>
+			<td>$Count(1#2#3)<br />
+			$Count($HDFree(C)#$HDFree(D))</td>
+			<td>6<br />
+			20032</td>
+		</tr>
+		<tr>
+			<td>$Chr([asciicode])</td>
+			<td>Inserts ascii character at index [asciicode].</td>
+			<td>$Chr(65)</td>
+			<td>A</td>
+		</tr>
+		<tr>
+			<td>$MObutton([key])</td>
+			<td>Displays 1 if the last key was <key> otherwise 0.</td>
+			<td>$MObutton(A)</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>$Flash([text]$)$</td>
+			<td>Flashes text [text]. The extra $s are required.</td>
+			<td>$Flash(hello$)$</td>
+			<td><br />
+			hello</td>
+		</tr>
+		<tr>
+			<td>$Fill([num])</td>
+			<td>Insert spaces until the current character position is [num], so any following text will be position at [num].</td>
+			<td>A$Fill(5)B</td>
+			<td>A&nbsp;&nbsp;&nbsp;B</td>
+		</tr>
+		<tr>
+			<td>$Right([text],$[num]%)</td>
+			<td>Insert spaces so the text [text] is right justified in a space of [num] characters. The extra $ and % are required.</td>
+			<td>AA$Right(hi,$5%)B</td>
+			<td>AA&nbsp;&nbsp;&nbsp;hiB</td>
+		</tr>
+
+		<tr>
+			<td>$Bar([value],[maxvalue],[barsize])</td>
+			<td>Draw a hoz. graph, where:<br />
+			[value] the value being graphed. <br />
+			[maxvalue] is the maximum value expected of [value].<br />
+			[barsize] is the size of the bar in characters.<br />
+			</td>
+			<td>$Bar($CPUUsage%,100,20)</td>
+			<td>[a bar graph of length 20]</td>
+		</tr>
+		<tr>
+			<td>$LogFile([file],[line])</td>
+			<td>Read a line from the end of a file [file], where:<br />
+			[line] is 0-3. 0 fetches the last line, 3 fetches the fourth line from the bottom.
+			</td>
+			<td>$LogFile(c:\bob.txt,0)</td>
+			<td>[last line from c:\bob.txt]</td>
+		</tr>
+		<tr>
+			<td>$File([file],[line])</td>
+			<td>Read a line from a file [file], where:<br />
+			[line] is the line number (counting from the beginning).
+			</td>
+			<td>$File(c:\bob.txt,1)</td>
+			<td>[first line from c:\bob.txt]</td>
+		</tr>
+		<tr>
+			<td>$CustomChar([char#],[d1],[d2],[d3],[d4],[d5],[d6],[d7])</td>
+			<td>Define a custom character. [char#] can be 1-8.
+			</td>
+			<td>$CustomChar(7,4,4,4,4,4,4,4,0)</td>
+			<td>[character 7 is now a | symbol]</td>
+		</tr>
+		<tr>
+			<td>$DnetDone</td>
+			<td>Distributed.net RC5/OGR done<br />(file location defined in Misc tab of setup)</td>
+			<td>$DnetDone</td>
+			<td>50</td>
+		</tr>
+		<tr>
+			<td>$DnetSpeed</td>
+			<td>Distributed.net RC5/OGR speed<br />(file location defined in Misc tab of setup)</td>
+			<td>$DnetSpeed</td>
+			<td>50</td>
+		</tr>
+		<tr>
+			<td>$Time([format])</td>
+			<td>Display the time in the format [format]<br />
+				[format] is defined is directly passed the <a href="http://www.delphibasics.co.uk/RTL.asp?Name=FormatDateTime">FormatDateTime</a> function. </td>
+			<td>$Time(d/m/y)<br />
+			$Time(ddd d of mmm yyyy)</td>
+			<td>12/11/04<br />
+			Wednesday 9 of February 2004</td>
+		</tr>
+		<tr>
+			<td>$dll([dll],[funcnum],[params1],[params2])</td>
+			<td>Call function function[funcnum] in dll [dll] with parameters [params1] and [params2].<br />
+			[funcnum] can be 1-10 </td>
+			<td>$dll(mydll.dll,2,hello,there)</td>
+			<td>[function2 is called; function2('hello','there') and it's return value is displayed]</td>
+		</tr>
+	</table>
+	</div>
+
+</body>
+</html>

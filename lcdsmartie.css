@@ -1,0 +1,547 @@
+/* CSS Document */
+
+/***********************************************/
+/* HTML tag styles                             */
+/***********************************************/ 
+
+body{
+	font-family: Arial,sans-serif;
+	color: #333333;
+	background-color: #ffffff;
+	line-height: 1.166;	
+	margin: 0px;
+	padding: 0px;
+}
+
+a:link, a:hover {
+	color: #006699;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #006699;
+	text-decoration: none;
+}
+
+#content a:link {
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+/* overrides decoration from previous rule for hovered links */
+
+#news{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-left: 140px;
+	padding-left: 15px;
+	padding-right: 15px;
+	/*text-align: center;*/
+	border-bottom: 1px solid #cccccc;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Arial,sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+h1{
+ font-family: Verdana,Arial,sans-serif;
+ font-size: 120%;
+ color: #334d55;
+}
+
+h2{
+ font-size: 114%;
+ color: #006699;
+}
+
+h3{
+ font-size: 100%;
+ color: #334d55;
+}
+
+h4{
+ font-size: 100%;
+ font-weight: normal;
+ color: #333333;
+}
+
+h5{
+ font-size: 100%;
+ color: #334d55;
+}
+
+ul{
+ list-style-type: square;
+}
+
+ul ul{
+ list-style-type: disc;
+}
+
+ul ul ul{
+ list-style-type: none;
+}
+
+label{
+ font: bold 100% Arial,sans-serif;
+ color: #334d55;
+}
+
+#MOSupported {
+	padding-top: 5px;
+	text-align: center; /* For IE */
+}
+
+#MOSupported p{
+	text-align: left;
+}
+
+#MOSupported table{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	border: thin solid black;
+	width: auto;
+}
+
+#MOSupported th, td{
+	padding-right: 10px;
+}
+
+#MOSupported span.supported{
+	color: green;
+}
+
+#MOSupported span.notsupported{
+	color: red;
+}
+				
+
+div.experimentimgs{
+	text-align: center; /* for IE */
+}
+
+table.experimentimgs{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+/***********************************************/
+/* Layout Divs                                 */
+/***********************************************/
+
+#creditimg{
+	float: right;
+	display: block;
+}
+
+#masthead{
+	margin: 0;
+	padding: 10px 0px;
+	border-bottom: 1px solid #cccccc;
+	width: 100%;
+	clear: both;
+}
+
+#mastfoot{
+	clear: both;
+	top: 10px;
+	margin-top: 10px;
+	padding-top: 10px;
+	border-top: 1px solid #cccccc;
+	width: 100%;
+}
+
+#footerspace{
+	clear: both;
+	padding: 10px;
+}
+
+#babelfish{
+	border-top: 1px solid #ccc;
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#babelfish img{
+	border: 0px;
+}
+
+#poll{
+	/*display: block;*/
+	border-top: 1px solid #ccc;
+	padding-left: 10px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	font-size: 80%;
+}
+
+#poll p.center{
+	text-align: center;
+}
+
+#poll form{
+	text-align: center;
+}
+
+#poll li{
+	text-align: left;
+	padding-bottom: 5px;
+}
+
+#navBar{
+	float:left;
+	/*margin-left: 10px;*/
+	/*padding-left: 10px;*/
+	/*margin-right: 5%;*/
+	background-color: #eeeeee;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	width: 140px;
+}
+
+#content{
+  /*float:right;*/
+	/*width: 75%;*/
+	/*margin: 0;*/
+	/*padding-left: 3px;*/
+	/*margin-left: 160px;
+	padding-right: 15px;*/
+}
+
+#google{
+	text-align: center; /* for IE */
+}
+
+#google table{
+	background-color: #ffffff;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10%;
+	text-align: left;
+}
+
+
+#google img{
+	border: 0px;
+}
+
+#google a{
+	border: 0px;
+}
+
+#google label.small{
+	font-size: smaller;
+}
+
+#csswarning {
+	display: none;
+}
+
+#content li{
+	padding-top: 5px;
+}
+
+#cvstag{
+	text-align: right;
+	font-size: xx-small;
+	padding-right: 10px;
+	float: right;
+	clear: both;
+}
+
+#sf_img{
+	float: left;
+	padding-left: 10px;
+}
+
+#sf_img img{
+	border: 0px;
+}
+
+
+/***********************************************/
+/*Component Divs                               */
+/***********************************************/
+a.current {
+	font-weight: bold;
+}
+
+#validmarkup {
+	text-align: right;
+}
+#vistors {
+	font-style: italic;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+#firefox {
+	text-align: center;
+	border-top: 1px solid #ccc;
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#firefox img {
+	border: 0px;
+}
+#validmarkup img{
+	border: 0px;
+	float: right;
+}
+
+#siteName{
+	margin: 0px;
+	padding: 0px 0px 10px 10px;
+	text-align: center;
+}
+
+
+/*************** #pageName styles **************/
+
+#pageName{
+	padding: 0px 0px 10px 10px;
+}
+
+
+/************* #globalNav styles **************/
+
+#globalNav{
+	color: #cccccc;
+	padding: 0px 0px 0px 10px;
+	white-space: nowrap;
+	border-bottom-color: #000000;
+	border-bottom-width: thin;
+	text-align: center;
+}
+
+#globalNav img{
+	display: block;
+}
+
+#globalNav a {
+	font-size: 90%;
+	padding: 0px 4px 0px 0px; 
+}
+
+
+/************* #breadCrumb styles *************/
+
+#breadCrumb{
+	font-size: 80%;
+	padding: 5px 0px 5px 10px;
+}
+
+
+/************** .feature styles ***************/
+
+.feature{
+	padding: 0px 0px 10px 10px;
+	font-size: 80%;
+}
+
+.feature h3{
+	padding: 30px 0px 5px 0px;
+	text-align: center;
+}
+
+.feature img{
+	float: left;
+	padding: 0px 10px 0px 0px;
+	margin: 0 5px 5px 0;
+}
+/* adjust margins to change separation between the feature image and text flowing around it */
+
+
+/************** .story styles *****************/
+
+.story{
+	clear: both;
+	padding: 10px 0px 0px 10px;
+	font-size: 80%;
+}
+
+.story p{
+	padding: 0px 0px 10px 0px;
+}
+
+
+/************* #siteInfo styles ***************/
+
+#siteInfo{
+	clear: both;
+	border: 1px solid #cccccc;
+	font-size: 75%;
+	color: #cccccc;
+	padding: 10px 10px 10px 10px;
+	margin-top: 0px;
+}
+/* negative top margin pulls siteinfo up so its top border overlaps (and thus lines up with)
+	the bottom border of the navBar in cases where they touch */
+
+#siteInfo img{
+	padding: 4px 4px 4px 0px;
+	vertical-align: middle;
+}
+
+
+/************* #search styles ***************/
+
+#maillist{
+	padding: 5px 0px 5px 0px;
+	border-top: 1px solid #cccccc;
+	/*font-size: 90%;*/
+}
+
+#maillist form{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+#maillist label{
+	font-size: 80%;
+	font-weight: normal;
+	padding-left: 10px;
+	display: block;
+	margin: 0px;
+	text-align: left;
+}
+#maillist table{
+	width: 100%;
+}
+#maillist td{
+	text-align: center;
+}
+
+/*********** #navBar link styles ***********/
+
+#navBar ul a:link, #navBar ul a:visited {display: block;}
+#navBar ul {list-style: none; margin: 0; padding: 0;}
+
+/* hack to fix IE/Win's broken rendering of block-level anchors in lists */
+#navBar li {border-bottom: 1px solid #EEE;}
+
+/* fix for browsers that don't need the hack */
+html>body #navBar li {border-bottom: none;}
+
+
+/*********** #sectionLinks styles ***********/
+
+#sectionLinks{
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	border-bottom: 1px solid #cccccc;
+	font-size: 90%;
+}
+
+#sectionLinks ul ul {
+	background-color: #ffffff;
+	border-bottom: 1px solid #cccccc;
+	padding-left: 15px;
+}
+
+#sectionLinks ul ul a{
+	background-color: #eeeeee;
+        border-left: 1px solid #cccccc;
+}
+
+#sectionLinks a{
+	border-bottom: 1px solid #cccccc;
+	padding: 2px 0px 2px 10px;
+	width: 100%;
+	width: auto;
+}
+
+#sectionLinks a:hover{
+	background-color: #dddddd;
+}
+
+#experimentimgs{
+	border: 0px;
+	text-align: center; /*For IE*/
+}
+
+#experimentimgs table{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#experimentimgs td{
+	padding: 10px;
+}
+
+
+/*********** .relatedLinks styles ***********/
+
+.relatedLinks{
+	margin: 0px;
+	padding: 0px 0px 10px 10px;
+	font-size: 90%;
+}
+
+.relatedLinks h3{
+	padding: 10px 0px 2px 0px;
+}
+
+
+/************** #headlines styles **************/
+
+#headlines{
+	margin: 0px;
+	padding: 10px 0px 20px 10px;
+	font-size: 80%;
+}
+
+#headlines p{
+	padding: 5px 0px 5px 0px;
+}
+
+#frontimages{
+	border: 0px;
+	text-align: center; /*For IE*/
+}
+
+#frontimages table{
+	margin-left: auto;
+	margin-right: auto;
+}
+#frontimages td{
+	width: 33%;
+}
+
+img.palmscreen {
+	border: thin solid black;
+}
+
+#center {
+	text-align: center;
+}
+
+#weblog img {
+	border: 0px;
+	height: 0px;
+	width: 0px;
+	/*display: none;*/
+}
+
+#content th{
+	text-align: left;
+}
+#content td{
+	font-family: Tahoma,sans-serif,arial;
+	vertical-align: top;
+	border: 1px solid black;
+	margin: 0px;
+}
