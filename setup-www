@@ -1,0 +1,12 @@
+#!/bin/sh
+FROM=/home/groups/l/lc/lcdsmartie
+TO=/home/groups/l/lc/lcdsmartie/htdocs-new
+
+chmod 775 $TO
+chmod 444 $TO/*
+chmod 775 $TO/images
+chmod 444 $TO/images/*
+
+ln -s index.htm index.html
+
+echo "DO NOT EDIT THESE FILES HERE - EDIT THEM IN CVS" > $TO/README
