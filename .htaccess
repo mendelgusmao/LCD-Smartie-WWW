@@ -7,6 +7,7 @@ redirect 301 /main.htm http://lcdsmartie.sourceforge.net
 redirect 301 /top.htm http://lcdsmartie.sourceforge.net
 redirect 301 /menu.htm http://lcdsmartie.sourceforge.net
 redirect 301 /wishlist.htm http://lcdsmartie.sourceforge.net
+redirect 301 /dllsource.zip http://lcdsmartie.sourceforge.net/plugins.html
 
 XBitHack on
 Options +Includes
