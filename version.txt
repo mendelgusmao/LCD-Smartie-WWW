@@ -1,1 +1,1 @@
-5.2.0.2Custom chars, interactions, better DLL support+bugfix
+5.3.0.1PreAlpha1: First OpenSource build
