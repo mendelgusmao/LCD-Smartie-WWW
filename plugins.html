@@ -29,11 +29,11 @@
 	<p>The dll need not be written in Delphi, it can be written in any language.</p>
 	<p>In C the expected prototype would be:
 	<ul>
-		<li>char*   __stdcall function1(char *param1, *param2); </li>
+		<li>__declspec(dllexport) char*   __stdcall function1(char *param1, char *param2); </li>
 	</ul></p>
 	<p>In C++ it would be:
 	<ul>
-		<li> extern &quot;C&quot;  char*   __stdcall function1(char *param1, *param2);</li>
+		<li>__declspec(dllexport) extern &quot;C&quot;  char*   __stdcall function1(char *param1, *param2);</li>
 	</ul>
 	The important thing to remember is to use the &quot;stdcall&quot; calling convention.</p>
 
