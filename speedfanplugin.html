@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <title>LCD Smartie - A free open-source LCD program!</title>
+  <!-- start of head.html -->
+  <!--#include virtual="head.html" -->
+  <!-- end of head.html -->
+</head>
+<body>
+  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2005/02/11 22:35:19 $ \$Revision: 1.1 $" -->
+  <!--#set var="file" value="speedfanplugin" -->
+
+  <!-- start of header.html -->
+  <!--#include virtual="header.html" -->
+  <!-- end of header.html -->
+
+  <!-- start of sidebar.html -->
+  <!--#include virtual="sidebar.html" -->
+  <!-- end of sidebar.html -->
+  <div id="content">
+  	<h1>SpeedFan Plugin for LCD Smartie</h1>
+
+	<h2>Download</h2>
+	<p>SpeedFan Plugin <a href="http://prdownloads.sourceforge.net/lcdsmartie/speedfanplugin.Alpha1.zip?download">Alpha 1 can be downloaded here.</a></p>
+	<h2>Install</h2>
+	<ul>
+		<li>To install this plugin copy the speedfan.dll into the plugins directory of LCD Smartie. [Only the 5.3 final and above builds are supported.]</li>
+	</ul>
+
+	<h2>Using the plugin</h2>
+	<p>To use the plugin you will need to insert commands into the your screens.<br />
+	The command is $dll(speedfan,[func],[num],0). Where [func] is 1 for fan speeds, 2 for temp sensors, 3 for volt sensors.  [num] is the sensor number. So, $dll(speedfan,2,3,0) will display the 3rd temp sensors reading.
+	</p>
+
+</div>
+  <!-- start of footer.html -->
+  <!--#include virtual="footer.html" -->
+  <!-- end of footer.html -->
+</body>
+</html>
