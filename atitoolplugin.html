@@ -7,7 +7,7 @@
   <!-- end of head.html -->
 </head>
 <body>
-  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2005/02/12 16:21:28 $ \$Revision: 1.1 $" -->
+  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2005/02/12 20:49:31 $ \$Revision: 1.2 $" -->
   <!--#set var="file" value="atitoolplugin" -->
 
   <!-- start of header.html -->
@@ -29,19 +29,24 @@
 
 	<h2>Using the plugin</h2>
 	<p>To use the plugin you will need to insert commands into your screens.<br />
-	The command is: $dll(atitool,1,[num],0)<br />
+	The command is: $dll(atitool,1,[num],[precision])<br />
 	Where [num] is:<br />
 	<ul>
 		<li>1: 2D / 3D mode</li>
-		<li>2: Temp Sensor</li>
+		<li>2: Environment Temp Sensor</li>
 		<li>3: GPU Temp Sensor</li>
-		<li>4: Temp Sensor Min Reading</li>
-		<li>5: Temp Sensor Max Reading</li>
-		<li>6: Temp Sensor Average Reading</li>
+		<li>10: Core frequency</li>
+		<li>11: Memory frequency</li>
+	</ul>
+	<ul>
+		<li>4: Environment Temp Sensor Min Reading</li>
+		<li>5: Environment Temp Sensor Max Reading</li>
+		<li>6: Environment Temp Sensor Average Reading</li>
 		<li>7: GPU Temp Sensor Min Reading</li>
 		<li>8: GPU Temp Sensor Max Reading</li>
 		<li>9: GPU Temp Sensor Average Reading</li>
 	</ul>
+	[precision] states how many decimial places to display, so for '1.23', 0 = '1', 1 = '1.2', 2 = '1.23', 3 = '1.230'.
 
 	</p>
 	<p>So, $dll(atitool,1,3,0) will display the GPU temp sensors reading.
