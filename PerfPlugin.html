@@ -7,7 +7,7 @@
   <!-- end of head.html -->
 </head>
 <body>
-  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2004/12/30 19:13:32 $ \$Revision: 1.16 $" -->
+  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2004/12/31 16:31:31 $ \$Revision: 1.17 $" -->
   <!--#set var="file" value="index" -->
 
   <!-- start of header.html -->
@@ -31,7 +31,7 @@
 	<p>This plugin redefines the custom characters, so only one type of graph can be on the display at once (i.e. you can have two or more graphs but they must use the same barstyle and direction). [Except, there can only be one &quot;Tiny graphs&quot; at a time on screen].</p>
 
 	<h2>Download</h2>
-	<p>Perf Plugin <a href="http://prdownloads.sourceforge.net/lcdsmartie/perfplugin.Alpha2.zip?download">Alpha 2 can be downloaded here.</a></p>
+	<p>Perf Plugin <a href="http://prdownloads.sourceforge.net/lcdsmartie/perfplugin.Alpha3.zip?download">Alpha 3 can be downloaded here.</a></p>
 	<h2>Install</h2>
 	<p>To install this plugin copy the perf.dll into the plugins directory of LCD Smartie. [Only the 5.3 beta 1 and above builds are supported.]</p>
 	<p>The zip file also includes a config-perf.ini file which shows how the plugin can be used - backup your config.ini file before renaming this as config.ini.</p>
@@ -60,7 +60,7 @@
 		<li>HeightxWidth is the size of the bar graph</li>
 		<li>Direction is one of: d, u, l, r   [for down/up/left/right]. [default: u]</li>
 		<li>SampleTime is how often the counter value is fetched, in 1/10 seconds. [default: 5 (i.e. 0.5 seconds)]</li>
-		<li>BarStyle selects the custom characters to use. 0 means no custom characters (so you can define your own), 1 means a solid bar, 99 and 100 are special cases for &quot;Tiny graphs&quot;, see below for details. [default: 1]</li>
+		<li>BarStyle selects the custom characters to use. 0 means no custom characters (so you can define your own), 1 means a solid bar, 99 is for &Tiny graphs&quot;, etc. The full list of styles is at the end of this page. [default: 1]</li>
 		<li>min - used for scaling graph. [default: 0]</li>
 		<li>max - used for scaling graph. [default: 100]</li>
 		<li>CounterName is a name of a performance counter. [default: \Processor(0)\% Processor Time] </li>
@@ -91,9 +91,16 @@
 	</ul>
 
 	<h4>Tiny Graphs</h4>
-	<p>When barStyle of 99 is used then a tiny graph will be produced, where each bar is only 1 pixel wide. The graph can be up to 8 characters wide and only 1 character high (so, 1x8 or less).</p>
+	<p>When a barStyle of 99 or above is used then a tiny graph will be produced, where each bar is only 1 pixel wide. The graph can be up to 8 characters wide and only 1 character high (so, 1x8 or less).</p>
 	<p>Users with Crystalfontz displays that are gapless between character cells (i.e. 631, 632, 634) can use a barStyle of 100 to get a gapless graph!</p>
 	<p><strong>NB: </strong> Only directions up and down are supported with tiny graphs.</p>
+	<p>Here is the full list of Tiny graph styles:
+	<ul>
+		<li>99 - a normal tiny graph. [Uses characters of 5 by 8 pixels].</li>
+		<li>100 - Crystalfontz special! Produces gapless graphs on supported displays. [Uses characters of 6 by 8 pixels].</li>
+		<li>101 - Crystalfontz special! As 100, but leave bottom pixels empty (so to leave a vertical gap on gapless screens, such as the 631). [Uses characters of 6 by 7 pixels].</li>
+		<li>102 - As 99 but leave bottom pixels empty. Useful for cheap LCDs where the bottom line is a solid bar rather than pixels. [Uses characters of 5 by 7 pixels].</li>
+	</ul>
 
 	<h3>Function 2</h3>
 	<p>Same as basic use function 2.</p>
@@ -102,6 +109,21 @@
 	<p>This function fetches the value of a performance counter.</p>
 	<p>The format of function 4 is: $dll(perf,4,[SampleTime],[CounterName])</p>
 	<p>Example: $dll(perf,4,5,\Processor(0)\% Processor Time)</p>
+
+	<h3>Bar Styles</h3>
+	<p>For Tiny graphs styles see Tiny graphs section.</p>
+	<p>The following styles are defined:
+	<ul>
+		<li>0 - none; define your own characters.</li>
+		<li>1 - solid.
+		<ul>
+			<li>2 - Crystalfontz special! Solid and gapless on supported displays.</li>
+			<li>3 - Crystalfontz special! As 2, but leave bottom row empty (so to leave a vertical gap on gapless displays.</li>
+			<li>4 - Solid but leave bottom row empty. This is useful on cheap displays where the bottom row is a solid bar rather than pixels.</li>
+		</ul></li>
+		<li>5 - Thin bars.</li>
+		<li>9 - Outlined bars.</li>
+	</ul>
 
 </div>
   <!-- start of footer.html -->
