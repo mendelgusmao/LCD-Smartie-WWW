@@ -1,13 +1,23 @@
-<?xml version="1.0"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
 <head>
-	<title>LCD Smartie docs - plugins</title>
-  <link href="lcdsmartie.css" rel="stylesheet" type="text/css" />
+  <title>LCD Smartie - A free open-source LCD program!</title>
+  <!-- start of head.html -->
+  <!--#include virtual="head.html" -->
+  <!-- end of head.html -->
 </head>
 <body>
-	<div id="content">
+  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2004/12/28 01:26:42 $ \$Revision: 1.6 $" -->
+  <!--#set var="file" value="index" -->
+
+  <!-- start of header.html -->
+  <!--#include virtual="header.html" -->
+  <!-- end of header.html -->
+
+  <!-- start of sidebar.html -->
+  <!--#include virtual="sidebar.html" -->
+  <!-- end of sidebar.html -->
+  <div id="content">
 	<h1>Plugin interface</h1>
 
 	<p>The current plugin interface isn't very pretty, but it's useable.</p>
@@ -46,10 +56,10 @@
 	<p><strong>Tip:</strong> Although only strings are passed, you can still use numbers.  You simply convert the strings into numbers, perform your calculation and then convert the result back to a string.</p>
 
 	<p><strong>Warning:</strong> Your dll will be called when ever the screen that references your dll is displayed and as often as the scroll timer (by default this is every 200ms). It's wise not to do any work that will take a long period of time because the whole of smartie will be blocked until the function returns. It's best to create a thread to do the real work, and the exported function simply copys out the cached result. </p>
- <!--  Weblog stuff -->
-  <div id="weblog">
-    <!--#include virtual="/pslogger2.php" -->
-    <script type="text/javascript" src="/js/awstats_misc_tracker.js"></script>
-  </div>
+
+</div>
+  <!-- start of footer.html -->
+  <!--#include virtual="footer.html" -->
+  <!-- end of footer.html -->
 </body>
-</html>
+</html>>
