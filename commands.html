@@ -7,7 +7,7 @@
   <!-- end of head.html -->
 </head>
 <body>
-  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2005/01/11 17:05:55 $ \$Revision: 1.6 $" -->
+  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2005/01/11 19:21:21 $ \$Revision: 1.7 $" -->
   <!--#set var="file" value="index" -->
 
   <!-- start of header.html -->
@@ -916,9 +916,9 @@
 		</tr>
 		<tr>
 			<td>$Fill([num])</td>
-			<td>Insert spaces until the current character position is [num], so any following text will be position at [num].</td>
+			<td>Insert spaces until the current character position is [num], so any following text will be position at [num]+1.</td>
 			<td>A$Fill(5)B</td>
-			<td>A&nbsp;&nbsp;&nbsp;B</td>
+			<td>A&nbsp;&nbsp;&nbsp;&nbsp;B</td>
 		</tr>
 		<tr>
 			<td>$Right([text],$[num]%)</td>
