@@ -3,6 +3,10 @@ order allow,deny
 deny from all
 </Files>
 
+redirect 301 /main.htm http://lcdsmartie.sourceforge.net
+redirect 301 /top.htm http://lcdsmartie.sourceforge.net
+redirect 301 /menu.htm http://lcdsmartie.sourceforge.net
+redirect 301 /wishlist.htm http://lcdsmartie.sourceforge.net
 
 XBitHack on
 Options +Includes
