@@ -7,7 +7,7 @@
   <!-- end of head.html -->
 </head>
 <body>
-  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2004/12/28 01:26:41 $ \$Revision: 1.17 $" -->
+  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2004/12/31 00:04:14 $ \$Revision: 1.18 $" -->
   <!--#set var="file" value="index" -->
 
   <!-- start of header.html -->
@@ -72,7 +72,11 @@
 "Disable Performance Counters" Key. If this is set to 1 then try changing it
 to 0 and rebooting.</p>
 
-
+<h2>I'm getting the error &quot;dlportio.sys driver was not loaded. Port I/O will have no effect&quot;</h2>
+<p>Install <a href="port95nt.exe">port95nt</a> if you haven't already.</p>
+<p>Otherwise, run regedit and visit &quot;HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dlportio&quot;. Change the Start value to &quot;1&quot; and reboot.</p>
+<p>If that doesn't work then run regedit and visit &quot;HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services&quot;. Delete the key &quot;dlportio&quot;, reboot and reinstall port95nt.</p>
+	
 </div>
   <!-- start of footer.html -->
   <!--#include virtual="footer.html" -->
