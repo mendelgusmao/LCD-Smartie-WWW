@@ -7,7 +7,7 @@
   <!-- end of head.html -->
 </head>
 <body>
-  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2005/01/13 14:42:27 $ \$Revision: 1.9 $" -->
+  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2005/01/19 11:34:34 $ \$Revision: 1.10 $" -->
   <!--#set var="file" value="index" -->
 
   <!-- start of header.html -->
@@ -1004,7 +1004,8 @@
 		<tr>
 			<td>$dll([dll],[funcnum],[params1],[params2])</td>
 			<td>Call function function[funcnum] in dll [dll] with parameters [params1] and [params2].<br />
-			[funcnum] can be 1-10 </td>
+			[dll] is the name of the dll, you may leave off the .dll extension if you wish.<br />
+			[funcnum] can be 1-20</td>
 			<td>$dll(mydll.dll,2,hello,there)</td>
 			<td>[function2 is called; function2('hello','there') and it's return value is displayed]</td>
 		</tr>
