@@ -25,7 +25,6 @@
 		<li>One written in C/C++: <a href="http://prdownloads.sourceforge.net/lcdsmartie/DemoC%2B%2BPlugin.zip?download">ZIP</a> or just <a href="http://cvs.sourceforge.net/viewcvs.py/lcdsmartie/lcdsmartie/DLL%20example/DemoC%2B%2BPlugin/demo.cpp?view=markup">main source file</a></li>
 	</ul>
 	<p>A plugin is a dll that is placed in the plugins subdirectory.<br />
-	A <a href="http://lcdsmartie.sourceforge.net/dllsource.zip">demo dll written in Delphi</a> is available.<br />
 	The expected prototype of the exported function is:
 	<ul>
 		<li>Function function1(param1:pchar;param2:pchar):pchar; stdcall;</li>
@@ -38,7 +37,7 @@
 	</ul></p>
 	<p>In C++ it would be:
 	<ul>
-		<li>__declspec(dllexport) extern &quot;C&quot;  char*   __stdcall function1(char *param1, *param2);</li>
+		<li>__declspec(dllexport) extern &quot;C&quot;  char*   __stdcall function1(char *param1, char *param2);</li>
 	</ul>
 	The important thing to remember is to use the &quot;stdcall&quot; calling convention.</p>
 
