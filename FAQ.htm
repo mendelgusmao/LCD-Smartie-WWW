@@ -18,11 +18,19 @@
 <p>There isn't much documentation at the moment. But now that LCD Smartie is open-source we hope for that to change. <a href="docs.html">Here's the beginnings of some documentation</a>.
 
 <h2>Which LCD's are supported?</h2>
-<p>Almost all LCD's with a 44780 controller, a Matrix Orbital controller, a Crystalfontz one, or a PalmOS device (when used with <a href="http://palmorb.sourceforge.net">PalmOrb</a>):<br />
-1x10, 1x16, 1x20, 1x24, 1x40, <br />
-2x16, 2x16, 2x20, 2x24, 2x40, <br />
-4x16, 4x20, 4x40</p>
-<p>Currently for HD44780 devices, only 8bit wiring is supported.</p>
+<ul>
+	<li>All serial/usb Crystalfontz displays.</li>
+	<li>All serial/usb Matrix Orbital displays.</li>
+	<li>All parallel connected LCD's with a HD44780 compatible controller and with 8bit wiring (<a href="http://lcdsmartie.sourceforge.net/circuits.htm">using this wiring</a>).</li>
+	<li>Most serial/usb/BT/IR PalmOS devices (when used with <a href="http://palmorb.sourceforge.net">PalmOrb</a>)</li>
+</ul>
+<p>Currently supported sizes (can add more if required):
+<ul>
+	<li>1x10, 1x16, 1x20, 1x24, 1x40,</li> 
+	<li>2x16, 2x16, 2x20, 2x24, 2x40,</li>
+	<li>4x16, 4x20, 4x40</li>
+</ul>
+</p>
 
 <h2>How do I get LCD Smartie working with my PalmOS PDA?</h2>
 <p>Install <a href="http://palmorb.sourceforge.net">PalmOrb</a> on your palm, and configure smartie as if it was a Matrix Orbital 4x20 display.</p>
