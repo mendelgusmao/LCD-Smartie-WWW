@@ -9,14 +9,21 @@
 <body>
 	<div id="content">
 	<h1>Perf Plugin for LCD Smartie</h1>
+		<img src="TinyGraph.jpg" /><br />
+		<img src="TinyGraph2.jpg" /><br />
+		<img src="2x16.jpg" /><br />
 
 	<p>This is a plugin that makes it possible to display bar-graphs of performance counters (such as % CPU Load). The graphs will appear on the LCD display, but currently Smartie's virtual display will display junk.</p>
 
+	<h2>Limitations</h2>
+	<p>This plugin redefines the custom characters, so only one type of graph can be on the display at once (i.e. you can have two or more graphs but they must use the same barstyle and direction). [Except, there can only be one &quot;Tiny graphs&quot; at a time on screen].</p>
+
 	<h2>Install</h2>
 	<p>To install this plugin copy the perf.dll into the plugins directory of LCD Smartie. [Only the 5.3 builds are supported.]</p>
+	<p><strong>Ignore that - it's currently part of the alpha release</strong></p>
 
 	<h2>Basic Use</h2>
-	<p>To use the plugin you will need to insert commands into the your screens.<br />
+	<p>To use the plugin you will need to insert commands into the your screens - please ensure that all graph lines have a consistant scroll setting (i.e. all on or all off)!<br />
 	The basic form of the commands will only display a graph of the percentage of CPU use:<br />
 	<ul>
 		<li>Function 1: <strong>$dll(perf,1,[height]x[width],[name])</strong> - this will create a graph object called [name] that is [height] high and [width] wide, it will also display the top line of the graph.  [name] can be anything you want, it is only used to tie the different commands to the same graph.Example: $dll(perf,1,2x20,Test)</li>
@@ -38,7 +45,7 @@
 		<li>HeightxWidth is the size of the bar graph</li>
 		<li>Direction is one of: d, u, l, r   [for down/up/left/right] - currently only up/down supported. [default: u]</li>
 		<li>SampleTime is how often the counter value is fetched, in 1/10 seconds. [default: 5 (i.e. 0.5 seconds)]</li>
-		<li>BarStyle selects the custom characters to use - currently unused, should always be 1. [default: 1]</li>
+		<li>BarStyle selects the custom characters to use. 0 means no custom characters (this allow you to define your own), 1 means a solid bar, 99 and 100 are special cases for &quot;Tiny graphs&quot;, see below for details. [default: 1]</li>
 		<li>CounterName is a name of a performance counter. [default: \Processor(0)\% Processor Time] </li>
 		<li>min - used for scaling graph. [default: 0]</li>
 		<li>max - used for scaling graph. [default: 100]</li>
@@ -66,11 +73,12 @@
 		<li><strong>\Paging File(_Total)\% Usage</strong> - Percentage of page file in use.</li>
 	</ul>
 
-	<h3>Function 2</h3>
-	<p>Same as basic use.</p>
+	<h4>Tiny Graphs</h4>
+	<p>When barStyle of 99 is used then a tiny graph will be produced, where each bar is only 1 pixel wide. The graph can be up to 8 characters wide and only 1 character wide (so, 1x8 or less).</p>
+	<p>Users with Crystalfontz displays that are gapless between character cells can use a barStyle of 100 to get a gapless graph!</p>
 
-	<h3>Function 3</h3>
-	<p>Reserved for tiny graphs (1x8 max) where a bar is 1 pixel wide.</p>
+	<h3>Function 2</h3>
+	<p>Same as basic use function 2.</p>
 
 	<h3>Function 4</h3>
 	<p>This function fetches the value of a performance counter.</p>
