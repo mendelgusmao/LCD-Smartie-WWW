@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>LCD Smartie docs - plugins</title>
+  <link href="lcdsmartie.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div id="content">
+	<h1>Plugin interface</h1>
+
+	<p>The current plugin interface isn't very pretty, but it's useable.</p>
+	<h2>Using a plugin</h2>
+	<p>
+	The $dll function is used to access plugins. <br />
+	It's syntax is: $dll([dllname],[function_number],[parameter1],[parameter2])<br />
+	An example: $dll(demo.dll,5,hello,there)<br />
+	This will call "function5" in demo.dll with the parameters hello and there, and then display it's output on the display.
+
+	<h2>Writing a plugin</h2>
+	<p>A plugin is a dll that is placed in the plugins subdirectory.<br />
+	A <a href="http://lcdsmartie.sourceforge.net/dllsource.zip">demo dll written in Delphi</a> is available.<br />
+	The expected prototype of the exported function is:
+	<ul>
+		<li>Function function1(param1:pchar;param2:pchar):pchar; stdcall;</li>
+	</ul>
+	</p>
+	<p>The dll need not be written in Delphi, it can be written in any language.</p>
+	<p>In C the expected prototype would be:
+	<ul>
+		<li>char*   __stdcall function1(char *param1, *param2); </li>
+	</ul></p>
+	<p>In C++ it would be:
+	<ul>
+		<li> extern &quot;C&quot;  char*   __stdcall function1(char *param1, *param2);</li>
+	</ul>
+	The important thing to remember is to use the &quot;stdcall&quot; calling convention.</p>
+
+	<p><strong>Tip:</strong> Although only two parameters are passed, you can use more by parsing the parameters, for example $dll(demo.dll,5,param1#param2,param3) could be used and the real 1st parameter (param1#param2) could be parsed into two parameters (param1 and param2).</p>
+		
+	<p><strong>Tip:</strong> Although only strings are passed, you can still use numbers.  You simply convert the strings into numbers, perform your calculation and then convert the result back to a string.</p>
+
+	<p><strong>Warning:</strong> Your dll will be called when ever the screen that references your dll is displayed and as often as the scroll timer (by default this is every 200ms). It's wise not to do any work that will take a long period of time because the whole of smartie will be blocked until the function returns. It's best to create a thread to do the real work, and the exported function simply copys out the cached result. </p>
+</body>
+</html>
