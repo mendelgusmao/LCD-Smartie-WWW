@@ -7,7 +7,7 @@
   <!-- end of head.html -->
 </head>
 <body>
-  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2004/12/28 01:26:42 $ \$Revision: 1.3 $" -->
+  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2005/01/11 16:29:01 $ \$Revision: 1.4 $" -->
   <!--#set var="file" value="index" -->
 
   <!-- start of header.html -->
@@ -25,6 +25,7 @@
 	<ul>
 		<li><strong>-hide</strong>: On startup, minimise to the system tray.</li>
 		<li><strong>-totalhide</strong>: On startup, disappear! but remain running in the background.</li>
+		<li><strong>-config [filename]</strong>: Name of config file to use; config.ini by default. [example: -config config2.ini]</li>
 	</ul>
 
 	<h2>Hidden config options</h2>
@@ -33,6 +34,12 @@
 		<li>In the [General Settings] section:
 			<ul>
 				<li><strong>MinFadeContrast</strong>: This setting defines the lowest point of the contrast when using the contrast fade screen interaction. Many LCD screen go blank long before reaching 0 contrast - so contrast fade may appear to be doing nothing for a long period of time. If you set this to your LCD's lowest visible contrast then the contrast fade interaction will greatly improve.</li>
+				<li><strong>LCDType</strong> can be set to 5 to use the <a href="testdriver.html">Test Driver</a> - other values can be set via the UI but not 5.</li>
+			</ul>
+		</li>
+		<li>In the [Test Driver] section:
+			<ul>
+				<li>These settings are described on the <a href="testdriver.html">Test Driver</a> page.</li>
 			</ul>
 		</li>
 	</ul>
