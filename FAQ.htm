@@ -45,6 +45,14 @@ If than your LCD don't work, it's proberbly broken or you didn't make the correc
 
 </P>
 
+<P><FONT color="#003000" face=Tahoma size=2><B>Why is my CPU Usage always at 0?</B></FONT><BR>
+<FONT color="#000000" face=Tahoma size=2><I>LCD Smartie uses the CPU Usage Performance counters to get the current CPU load. These are disabled on some machines - please check the registry key "HKEY_LOCAL_MACHINE\SYSTEM
+\CurrentControlSet\Services\PerfOS\Performance" to check for existence of 
+"Disable Performance Counters" Key. If this is set to 1 then try changing it
+to 0 and rebooting.</I></FONT></P>
+
+</P>
+
 <hr />
 <a href="http://sourceforge.net/" title="External Link: SourceForge.net"><img src="http://sourceforge.net/sflogo.php?group_id=122330&amp;type=1" height="31" width="88" alt="SourceForge.net Logo" /></a>
 
