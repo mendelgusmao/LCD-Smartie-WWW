@@ -7,7 +7,7 @@
   <!-- end of head.html -->
 </head>
 <body>
-  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2005/01/17 20:36:03 $ \$Revision: 1.2 $" -->
+  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2005/01/18 00:24:00 $ \$Revision: 1.3 $" -->
   <!--#set var="file" value="index" -->
 
   <!-- start of header.html -->
@@ -58,7 +58,7 @@
 		<li>Defining the size of the graph: <strong>$dll(winamp,1,[height]x[width],0)</strong> - this will create a spectrum graph that is [height] high and [width] wide, it will also display the top line of the spectrum graph. Example: $dll(winamp,1,2x20,0)</li>
 		<li>(only needed if graph is higher than 1 line) Displaying line 2 of the spectrum graph: <strong>$dll(winamp,2,0,0)</strong></li>
 		<li>(only needed if graph is higher than 2 lines) Displaying line 3 of the spectrum graph: <strong>$dll(winamp,3,0,0)</strong></li>
-		<li>(only needed if graph is higher than 3 line2) Displaying line 3 of the spectrum graph: <strong>$dll(winamp,4,0,0)</strong></li>
+		<li>(only needed if graph is higher than 3 lines) Displaying line 3 of the spectrum graph: <strong>$dll(winamp,4,0,0)</strong></li>
 	</ul></p>
 
 	<p>On a 2 line display, the lines entered into smartie will look something like this:</p>
@@ -68,11 +68,14 @@
 
 	<p>You will also want to change your refresh interval (on Screens page) and dll check interval (on Misc tab) rate as low as possible (12 is perfect, 25 is v.good, 75 fair...).  Some displays (9600 baud and below) may not be able to handle the high volume of information - in this case raise the intervals.</p>
 
+	<p>You will need to start the winamp plugin &quot;Spectrum Analyser for LCDSmartie&quot; (in winamp, press shift-cntrl-k).
+
 	<h2>Tips</h2>
 	<ul>
 		<li>Both refresh interval and dll check interval must be low, otherwise the graph will be choppy. But there's no point going lower than 12.</li>
 		<li>CPU load of winamp and LCD Smartie can be reduced by minimising their windows.</li>
 		<li>Raising the process prority of LCD Smartie (using task manager) to "Above average" or "High" (but never "real time") will help avoid choppyness when other programs are using the cpu.</li>
+		<li>You can cause the plugin to auto run by selecting the winamp option 'Auto execute visualization plugin on playback' which can be found in Perferences-&gt;Plugins</li>
 	</ul>
 	
 	<h2>Advance Use</h2>
