@@ -16,8 +16,8 @@ chmod 555 $TO/da/*.htm
 
 ln -s index.htm $TO/index.html
 
-ln -s ../head.html da/head.html
-ln -s ../header.html da/header.html
-ln -s ../footer.html da/footer.html
+ln -s ../head.html $TO/da/head.html
+ln -s ../header.html $TO/da/header.html
+ln -s ../footer.html $TO/da/footer.html
 
 echo "DO NOT EDIT THESE FILES HERE - EDIT THEM IN CVS" > $TO/README
