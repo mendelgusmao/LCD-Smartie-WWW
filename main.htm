@@ -1,0 +1,415 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+<HEAD>
+  <META http-equiv=Content-Type content="text/html; charset=iso-8859-15">
+  <META NAME="Copyright" content="© 2001-2002 BasieP. All Rights Reserved">
+  <META NAME="Author" content="BasieP">
+  <META NAME="Description" content="LCD Smartie homepage">
+  <META NAME="Keywords" content="BasieP, great, cool, Seti@home, Seti, Distributed.net, distributed, LCD, Liquid Crystal Display, Matrix Orbital, network, stats, serial, parallel, Character LCD, Program, best, features, sofware, download, cool, news, fanspeed, temps, mbm5, tweakers.net, winamp, CNN World News, Tom's Hardware headlines, statbar, weather, temperatures, works">
+  <TITLE>LCD Smartie - by BasieP - Main.htm</TITLE>
+  <STYLE>
+      BODY{
+        font-family:Tahoma;
+        font-size:x-small;
+      }
+      TH{
+        font-family:Tahoma;
+        font-size:x-small;
+      }
+      TD{
+        font-family:Tahoma;
+        font-size:x-small;
+      }
+  </STYLE>
+</HEAD>
+
+<BODY background="white.jpg" bgcolor="#DEDEDE" text="#000000" link="#006000" alink="#006000" vlink="#003000">
+<P><br><B><U><FONT size=4 color="#FF0000" face=Tahoma>Main Info</FONT></U></B></P>
+
+Hello and welcome at the LCD Smartie site. LCD Smartie is software you can use to show a lot of different things on your LCD. It supports LCD's with a <a target="_blank" href="http://semiconductor.hitachi.com">Hitachi</a> <a target="_blank" href="http://www.doc.ic.ac.uk/~ih/doc/lcd/">HD44780 Controller</a>, a <a href="http://www.matrixorbital.com" target="_blank">Matrix Orbital</A> Serial LCD or <A href="http://www.crystalfontz.com/" target="_blank">Crystalfontz</A> serial LCD.<BR><BR>
+
+For example: your CPU temp, or cooler speed. But also the <A target="_blank" href="http://www.cnn.com">CNN</A>
+World News or Stocks indexes!<BR>This great program is absolutely free to download right here.
+<BR><BR>
+
+<P><B><FONT color="#FF0000" face=Tahoma>News:</B></FONT><BR><br>
+
+
+<FONT size=2 face=Tahoma color="#003000"><B><A NAME="28-10-2004"></A>28-10-2004 - <A href="http://lcdsmartie.sourceforge.net">Smartie going open source!</A></FONT></B></P>
+<BLOCKQUOTE>
+  <P><FONT face=Tahoma size=2>
+  After very long time not updating this site, finally there is something to say. As many of you might allready know, I stopped coding LCD Smartie.<BR>
+  This is not only because i just don't have time for it anymore, but also because the code is really a mess. Smartie was my first program i wrote and therefor isn't quite the best kind of code.<BR>
+  In example, when i first started coding I didn't use functions, and kept reading files. Later on i added some functions, and read files into an array. I changed content of the data files every update of smartie, so even that's a mess.<BR><BR>
+
+  Now i was mailed some time ago by a guy named 'Chris Lansley' who lives (i guess) in the UK. He told me what many people did before: 'make smartie opensource!'.<BR>
+  Because I didn't have any plans for the code and was accually hopeless that i could find a programmer who accually WANTS to program new versions of smartie, i decided to make smartie opensource.<BR>
+  A new sourceforge project has been started, and i have to say that i won't be helping you with it, but perhaps some really smart programmer(s) can understand how the crappy smartie code works, and can blow some new live in it.<BR><BR>
+
+  <b>url:</b><BR>
+  <a href="http://sourceforge.net/projects/lcdsmartie/">http://sourceforge.net/projects/lcdsmartie/</a><BR><BR>
+
+  This will most likely be the last update of this site, so i wish you all a very fun farewell <img src="smile.gif">
+  </FONT></P>
+</BLOCKQUOTE>
+
+
+<FONT size=2 face=Tahoma color="#003000"><B><A NAME="13-4-2003"></A>13-4-2003 - <A href="smartied.htm">Version 5.2</A></FONT></B></P>
+<BLOCKQUOTE>
+  <P><FONT face=Tahoma size=2>
+    Version 5.2 of LCD Smartie is accually done, but it hasn't been tested much. i will place it here as version 5.2.0.1.<BR><BR>
+
+    <B>new featues/changes</B><BR>
+    first of all the hardest to understand. This is the new 'time' feature.<BR>
+    it replaces the $Date and $Time functions. it now works by using: <I>$Time(a lot of text here)</I><BR>
+    all the text between the () will be parsed. below there is a list of what will be replaced:<BR>
+    <TABLE border=0>
+    <TR><TD>c</TD><TD>Displays the date using the format given by the ShortDateFormat global variable, followed by the time using the format given by the LongTimeFormat global variable. The time is not displayed if the date-time value indicates midnight precisely.</TD></TR>
+	<TR><TD>d</TD><TD>Displays the day as a number without a leading zero (1-31).</TD></TR>
+	<TR><TD>dd</TD><TD>Displays the day as a number with a leading zero (01-31).</TD></TR>
+	<TR><TD>ddd</TD><TD>Displays the day as an abbreviation (Sun-Sat) using the strings given by the ShortDayNames global variable.</TD></TR>
+	<TR><TD>dddd</TD><TD>Displays the day as a full name (Sunday-Saturday) using the strings given by the LongDayNames global variable.</TD></TR>
+	<TR><TD>ddddd</TD><TD>Displays the date using the format given by the ShortDateFormat global variable.</TD></TR>
+	<TR><TD>dddddd</TD><TD>Displays the date using the format given by the LongDateFormat global variable.</TD></TR>
+	<TR><TD>e</TD><TD>Displays the year in the current period/era as a number without a leading zero (Japanese, Korean and Taiwanese locales only).</TD></TR>
+	<TR><TD>ee</TD><TD>Displays the year in the current period/era as a number with a leading zero (Japanese, Korean and Taiwanese locales only).</TD></TR>
+	<TR><TD>g</TD><TD>Displays the period/era as an abbreviation (Japanese and Taiwanese locales only).</TD></TR>
+	<TR><TD>gg</TD><TD>Displays the period/era as a full name. (Japanese and Taiwanese locales only).</TD></TR>
+	<TR><TD>m</TD><TD>Displays the month as a number without a leading zero (1-12). If the m specifier immediately follows an h or hh specifier, the minute rather than the month is displayed.</TD></TR>
+	<TR><TD>mm</TD><TD>Displays the month as a number with a leading zero (01-12). If the mm specifier immediately follows an h or hh specifier, the minute rather than the month is displayed.</TD></TR>
+	<TR><TD>mmm</TD><TD>Displays the month as an abbreviation (Jan-Dec) using the strings given by the ShortMonthNames global variable.</TD></TR>
+	<TR><TD>mmmm</TD><TD>Displays the month as a full name (January-December) using the strings given by the LongMonthNames global variable.</TD></TR>
+	<TR><TD>yy</TD><TD>Displays the year as a two-digit number (00-99).</TD></TR>
+	<TR><TD>yyyy</TD><TD>Displays the year as a four-digit number (0000-9999).</TD></TR>
+	<TR><TD>h</TD><TD>Displays the hour without a leading zero (0-23).</TD></TR>
+	<TR><TD>hh</TD><TD>Displays the hour with a leading zero (00-23).</TD></TR>
+	<TR><TD>n</TD><TD>Displays the minute without a leading zero (0-59).</TD></TR>
+	<TR><TD>nn</TD><TD>Displays the minute with a leading zero (00-59).</TD></TR>
+	<TR><TD>s</TD><TD>Displays the second without a leading zero (0-59).</TD></TR>
+	<TR><TD>ss</TD><TD>Displays the second with a leading zero (00-59).</TD></TR>
+	<TR><TD>z</TD><TD>Displays the millisecond without a leading zero (0-999).</TD></TR>
+	<TR><TD>zzz</TD><TD>Displays the millisecond with a leading zero (000-999).</TD></TR>
+	<TR><TD>t</TD><TD>Displays the time using the format given by the ShortTimeFormat global variable.</TD></TR>
+	<TR><TD>tt</TD><TD>Displays the time using the format given by the LongTimeFormat global variable.</TD></TR>
+	<TR><TD>am/pm</TD><TD>Uses the 12-hour clock for the preceding h or hh specifier, and displays 'am' for any hour before noon, and 'pm' for any hour after noon. The am/pm specifier can use lower, upper, or mixed case, and the result is displayed accordingly.</TD></TR>
+	<TR><TD>a/p</TD><TD>Uses the 12-hour clock for the preceding h or hh specifier, and displays 'a' for any hour before noon, and 'p' for any hour after noon. The a/p specifier can use lower, upper, or mixed case, and the result is displayed accordingly.</TD></TR>
+	<TR><TD>ampm</TD><TD>Uses the 12-hour clock for the preceding h or hh specifier, and displays the contents of the TimeAMString global variable for any hour before noon, and the contents of the TimePMString global variable for any hour after noon.</TD></TR>
+	<TR><TD>/</TD><TD>Displays the date separator character given by the DateSeparator global variable.</TD></TR>
+	<TR><TD>:</TD><TD>Displays the time separator character given by the TimeSeparator global variable.</TD></TR>
+    <TR><TD>'xx'/"xx"</TD><TD>Characters enclosed in single or double quotes are displayed as-is, and do not affect formatting.</TD></TR>
+    </TABLE><BR><BR>
+
+    Further I made it posible to change the custom characters. this works by using <I>$CustomChar(1,31,31,31,31,31,31,31,31)</I><BR>
+    in this example we change customchar 1 (first number). there are 8 custom chars, so you can use 1 to 8.<BR>
+    the following 8 numbers are the rows of a character. This is how you can look at your character:<BR>
+    <TABLE border=1>
+    <TR><TD>16</TD><TD>8</TD><TD>4</TD><TD>2</TD><TD>1</TD></TR>
+    <TR><TD>16</TD><TD bgcolor="#FF0000">8</TD><TD bgcolor="#FF0000">4</TD><TD bgcolor="#FF0000">2</TD><TD bgcolor="#FF0000">1</TD></TR>
+    <TR><TD bgcolor="#FF0000">16</TD><TD>8</TD><TD>4</TD><TD>2</TD><TD>1</TD></TR>
+    <TR><TD bgcolor="#FF0000">16</TD><TD>8</TD><TD>4</TD><TD>2</TD><TD>1</TD></TR>
+    <TR><TD>16</TD><TD bgcolor="#FF0000">8</TD><TD bgcolor="#FF0000">4</TD><TD bgcolor="#FF0000">2</TD><TD>1</TD></TR>
+    <TR><TD>16</TD><TD>8</TD><TD>4</TD><TD>2</TD><TD bgcolor="#FF0000">1</TD></TR>
+    <TR><TD>16</TD><TD>8</TD><TD>4</TD><TD>2</TD><TD bgcolor="#FF0000">1</TD></TR>
+    <TR><TD bgcolor="#FF0000">16</TD><TD bgcolor="#FF0000">8</TD><TD bgcolor="#FF0000">4</TD><TD bgcolor="#FF0000">2</TD><TD>1</TD></TR>
+    </TABLE>
+    Lets say you wan't the letter 'S'. the sum of the fields that are collored is the number you should place in the $CustomChar field<BR>
+    Here you get: <I>$CustomChar(1,0,15,16,16,14,1,1,30)</I><BR><BR>
+
+    I made a logfile function that strips off the last xx lines of a textfile, and shows them, changed all the bars into one function (<I>$Bar()</I>) and did a lot bugfixes
+    I did some more stuff, but that's up to you to find out. <img src="wink.gif">
+  </FONT></P>
+</BLOCKQUOTE>
+
+<FONT size=2 face=Tahoma color="#003000"><B><A NAME="27-1-2003"></A>27-1-2003 - Site move</FONT></B></P>
+<BLOCKQUOTE>
+  <P><FONT face=Tahoma size=2>
+    Well first off all a very good new year (yes i'm late).<BR>
+    I got the great news that my provider is going to stop. That means this site goes down also. I moved it <A href="http://backupteam.gamepoint.net/smartie/">here</A><BR>
+    that is: <B><A href="http://backupteam.gamepoint.net/smartie/">http://backupteam.gamepoint.net/smartie/</A></B><BR><BR>
+
+    This means that also the 'auto-update' function doesn't work anymore.<BR>
+    Therefor I had planned a new release of smartie with just a few updates and fixes somewhere around now, but a german guy (thanx René) wrote a driver for the HD66712 and i have to inplant that also <IMG src="wink.gif" border=0><BR>
+    A New version will come out as soon as i have that code inplented (promise)
+  </FONT></P>
+</BLOCKQUOTE>
+
+<FONT size=2 face=Tahoma color="#003000"><B><A NAME="25-11-2002"></A>25-11-2002 - New link and a picture</FONT></B></P>
+<BLOCKQUOTE>
+  <P><FONT face=Tahoma size=2>
+    I added a <A href="links.htm">link</A> to the <A href="http://members.lycos.co.uk/jmhplugs/" target="_blank">site of Julian AKA [-JMH-]</A>. He hopes to make a lot of plugins for LCD Smartie. You can download beta versions there and talk about the plugins.<BR>
+    Also added a new <A href="shots.htm">pic</A>.
+  </FONT></P>
+</BLOCKQUOTE>
+
+<FONT size=2 face=Tahoma color="#003000"><B><A NAME="6-10-2002"></A>6-10-2002 - <A href="smartied.htm">I recieved the first plugin from Julian</A></FONT></B></P>
+<BLOCKQUOTE>
+  <P><FONT face=Tahoma size=2>
+    I recieved a plugin today from Julian AKA [-JMH-]. It is made for winamp 3 users to get the winamp info into LCD smartie.
+  </FONT></P>
+</BLOCKQUOTE>
+
+<FONT size=2 face=Tahoma color="#003000"><B><A NAME="11-9-2002"></A>11-9-2002 - <A href="smartied.htm">LCD Smartie 5.1.0.3 bugfixed</A></FONT></B></P>
+<BLOCKQUOTE>
+  <P><FONT face=Tahoma size=2>
+    And again I released a bug fixed version LCD Smartie 5.1.<BR>
+    I also made a very nice (if i may say that) skin function that accually works :P<BR>
+    the standard demo.dll file is has a celcius to farhenheit converter included now, it't in the last function and can be called like this:
+    <I>$dll(demo.dll,0,$Temp1,x)</I>
+  </FONT></P>
+</BLOCKQUOTE>
+
+<FONT size=2 face=Tahoma color="#003000"><B><A NAME="20-8-2002"></A>20-8-2002 - <A href="smartied.htm">LCD Smartie 5.1.0.2 bugfixed</A></FONT></B></P>
+<BLOCKQUOTE>
+  <P><FONT face=Tahoma size=2>
+    Ok, I released a bug fixed version LCD Smartie 5.1 today. There were some troubles with $HDxxx and weather.com didn't work alright.<BR>
+    I also made a GotoTheme(x) and GotoScreen(x) function for your events. This was requested ;)
+    And I fixed the skin function
+  </FONT></P>
+</BLOCKQUOTE>
+
+<FONT size=2 face=Tahoma color="#003000"><B><A NAME="16-8-2002"></A>16-8-2002 - <A href="smartied.htm">finally LCD Smartie 5.1 released!</A></FONT></B></P>
+<BLOCKQUOTE>
+  <P><FONT face=Tahoma size=2>
+    Ok, here it is. Version 5.1<BR>
+    <IMG src="SHOT1.JPG"><BR><BR>
+    I have lots of new things i'm going to introduce below. First i want to say a few things that have changed.
+    First of all my E-mail adres. That is now <A href="mailto:basiep@rendo.dekooi.nl">BasieP@rendo.dekooi.nl</a>. It has changed because in the last version of LCD Smartie (5.0) i used a default setting for the pop3 email server. and checking for email was set 'enabled' by default.<br>
+    so i got a call from my isp a few weeks ago (about 15-7) if could explain why they got so many tries to connect to there mail server. I didn't know nothing (offcourse <IMG src="wink.gif">) and asked howmuch.<BR>
+    So they told me it was over <b>150</b> connections a minute.....<BR>
+    well this time i left the field blank <IMG src="wink.gif"><BR><BR>
+
+    <A target="_blank" href="shot51_1_b.jpg"><IMG border=0 alt="normal config screen" src="shot51_1_s.jpg"></A>&nbsp;
+    <A target="_blank" href="shot51_2_b.jpg"><IMG border=0 alt="event config screen" src="shot51_2_s.jpg"></A>
+
+    <BR><BR>
+    <B>further changes:</B><BR>
+    - I have made a checkbox for all you guys with a dial up connection. If you turn it off you don't check for a new version @ startup. This does also mean that you don't get a popup if you want to make a connection (dialup)<BR>
+    - Fixed Gamestats (which didn't work in 5.0)<BR>
+    - 20 screens instead of 10<BR>
+    - 10 pop3 email adresses instead of 1<BR>
+    - Upgraded Motherboard Monitor support (new version also works now)<BR>
+    - Randomize screens feature<BR><BR>
+
+
+    <B>new things:</B><BR>
+    - Winamp Status<BR>
+    - Network statistics (speeds, totals, errors and more)<BR>
+    - Weather.com support (for people in America)<BR>
+    - Folding@home statistics<BR>
+    - I made a very simple skin function so you can skin for yourself. (check the 'images' directory)<BR>
+    - Theme feature (which allowes you to make several 'theme's' which you can 'play' separatedly<BR>
+    - Resume on next line (will cut of the text that is to long for the screen, and pastes it on the next line)<BR>
+    - Center Text (will center the text on that line)<BR>
+    - Events screen where you can make your own events  (i.e. skip all winamp tracks with a low bitrate, or flash your backlight 5 times when you have email<BR>
+    - Full support for Matrix Orbital buttons and keypads. (Also the LK404-55)<BR>
+    - $Counter  (counts back to a specific day or time)<BR>
+    - $dll()  (support for plugins)<BR>
+    - $Count()  (Counts several, not limited, decimal values together)<BR>
+    - $Right()  (alligns a small peace of text to the right)<BR>
+    - $Flash()  (let't the text between the brackets flash)<BR>
+    - Lots of small and big bug fixes (i.e. the shutdown bug; Thanx supressor)<BR><BR>
+
+    And again <A href="list.htm" target="_blank">here</A> is the full list of features<BR><BR>
+
+    <B>Plugin support (dll):</B><BR>
+    Ok, as i said above, I now have plugin support.<BR>
+    This means you all can start writing your own plugins now.<BR>
+    Herefor I made an example dll which you can download <A href="smartied.htm">here</A>. But before you download the file i would like to explain something.<BR>
+    the dll format is very simple. It is build with 10 functions. Those are always the same (same name) the dll can be named whatever you like. <BR>
+    When you call the dll you call it with 2 parameters. You don't have to use both, but you do have to call them with both.<BR>
+    If you want to use more parameters you can simply make some weird method of parsing like:<BR>
+    <I>'$dll(foo.dll,3,param1#param2#param3,param4#param5)'</I><BR>
+    this DOES mean that you have to substract the parameters 1, 2 and 3 out of the accual parameter: 'param1'. That is something you have to do in the dll itself. <BR><BR>
+
+    hope you all start programming right away so there will come lots of plugins <IMG border=0 src="wink.gif"><BR>
+    If you have made a plugin, please mail it to me and i will put it on the site.<BR><BR>
+
+    <B>Shortcuts:</B><BR>
+    ok i also made shortcuts to the basic functions. it's just like winamp, activate the main screen and press the button<BR>
+    Z = Winamp Last Track<BR>
+    X = Winamp Play<BR>
+    C = Winamp Pause<BR>
+    V = Winamp Stop<BR>
+    B = Winamp Next Track<BR>
+    N = Backlight on/off<BR>
+    M = Freeze screen (the screen rotation freezes, and only the active screen will be updated)<BR>
+    , = Last Screen<BR>
+    . = Next Screen<BR>
+    / = Refresh all data (inet data, mbm, email, hd size, etc.)<BR>
+    K = Last Theme<BR>
+    L = Next Theme<BR><BR>
+
+  </FONT>
+</BLOCKQUOTE>
+
+<b><FONT size=2 face=Tahoma color="#003000"><A NAME="8-3-2002"></A>8-3-2002 - New site</FONT></B></P>
+<BLOCKQUOTE>
+  <P><FONT face=Tahoma size=2>
+    I build a new site, the old one was kinda boring.. this one is also, but I hope it's only temporary.<BR><BR>
+
+    I also am working on verion 5.1. This will not contain much new stuff, but only a few bug fixes and some other requests. Like:<BR>
+    - 20 Screens instead of 10<BR>
+    - 10 Pop3 Email accounts instead of 1<BR>
+    - CF bugfix<BR>
+    - Gamestats fix<BR>
+    - Network Stats<BR>
+    - Weather.com support<BR>
+    - 'Resume on next line'<BR>
+    and some small things more
+  </FONT>
+</BLOCKQUOTE>
+
+<FONT size=2 face=Tahoma color="#003000"><B><A NAME="24-1-2002"></A>24-1-2002 - <A href="smartied.htm">LCD Smartie 5.0 released!</A></FONT></B></P>
+
+<BLOCKQUOTE>
+  <P><FONT face=Tahoma size=2>Today Smartie 5.0 has been officialy released, it has a whole lot of new features, inluding the wanted serial support.<BR></FONT>
+  <FONT face=Tahoma size=2>Here i will show a list of features and how to use them:<BR><BR>
+  <B>- Setup screen is compleetly renewed:<BR></B>
+
+  <BLOCKQUOTE>
+  <A href="setup.jpg" target="_new"><IMG alt=setup border=0 src="setup_sm.jpg"></A><BR>
+    1: tab's which you can use to cycle trough your features<BR>
+    2: the list with features on the current tab<BR>
+    &nbsp;&nbsp;&nbsp; show here are the most uncommen, so i will explain how you use them:
+    <BLOCKQUOTE>
+      <B>E-mail</B>: This text will be replaced by the number of mail you have currently on the server (you must fill in your username + passw)<BR>
+      <B>Distributed.net Client</B>: The Distributed.net client's logfiles will be shown here (just make sure you select the logfile first)<BR>
+      <B>Degree symbol</B>: the degree symbol will be shown on your LCD (also if it's not a normal character)<BR>
+      <B>Block</B>: Same as degree, but then a full size (usually black) block<BR>
+      <B>Mail sign</B>: Same as degree, but then a little mail picture<BR>
+      <B>Euro sign</B>: Same as degree, but then the Euro sign (not a valid char in the ascii set, and so neither on your LCD)<BR>
+      <B>$File("x:\xx\xx\xx.xx",xx)</B> this will show the xx line of the specified file in your LCD, note that you don't place spaces in the command. You can use all the program variables in the file as well<BR>
+      <B>$Fill(xx)</B>: the 'xx' here has to be replaced with a number. The text on the LCD is going to be filled till the number you fill in there. So if you fill in: "Hello, this is:$Fill(20)ME!" your LCD will show: "Hello, this is:&nbsp;&nbsp;&nbsp;&nbsp; ME!" where the 'M' of 'ME!' starts at position 21<BR>
+    </BLOCKQUOTE>
+    3: When you press this button the command you selected in the box above (2) will be inserted in the active line (the green one)<BR>
+    4: The 4 lines of your LCD, if you have a 2 lines LCD you can just use the first 2<BR>
+    5: The LCD settings, and port speed (for serial)<BR><BR>
+
+    <A href="MOset.jpg" target="_blank"><IMG alt="Matrix Orbital settings" border=0 src="MOset_sm.jpg"></A><BR>
+    This image is a shot of the special Matrix Orbital functions, and will give a nice extra tint to the whole LCD thingy:<BR>
+    The first 6 lines are for the GPO's (General Purpose Output)<BR>
+    1: the expression note that 'None' has the value '-1'<BR>
+    2: the operator ('&gt;' = bigger, '&lt;' = smaller, '=' = same as etc)<BR>
+    3: the value<BR>
+    4: the output channel<br>
+    5: the input channel
+    <BLOCKQUOTE>
+      Note that for the hardware wireing of those GPO's you should know that on the LCD is only one row of pins. These consists of two kinds: 'rows' and 'columns'. Here is an example of the LK404-55:<br>
+     <A href="LK404-55.gif" target="_new">"<IMG alt="LK404-55 back" border=0 src="LK404-55_sm.gif"></A><BR><BR>
+     <IMG alt="" border=0 src="ConnectLK.gif"><BR>When any of these pin combinations are shorted electrically, as in a keypress. Pin 1 is indicated on the connector layout diagram above. Pins 1 through 5 are columns and pins 6 through 16 are rows.<BR>
+     The keypad is scanned whenever a key is pressed. There is no continuous key scan. This means that the keypresses are dealt with immediately without any appreciable latency. This also prevents electrical noise which is caused by continuous key scans.
+    </BLOCKQUOTE>
+    6: the funtion bind to the input channel<BR>
+    7: the contrast of the LCD
+  </BLOCKQUOTE>
+  <B>
+  - Serial support for Matrix-Orbital LCD's<BR>
+  - Serial support for Crystalfontz LCD's<BR>
+  - 4x40 Support for the Parallel HD44780 LCD<BR>
+  - Full support of MotherBoard Monitor 5.1 and all it's variables.<BR>
+  - Seti@home stats included<BR>
+  - Some custom charactar support (little icons)<BR>
+  - Winamp Position bar, current time and total time (last 2 in both seconds and minutes/seconds)<BR>
+  - Bars for CPU usage, Memory usage, Pagefile usage and hardisk C to H usage</B><BR>
+  &nbsp;&nbsp;Full list of features is available <A href="list.htm" target="_new">here</A><BR><BR>
+
+  <B><I>NOTES:</I></B><BR>
+  <I>Exit bug:</I><BR>
+  I know there is a problem when you close the program. This is only so if you are using a parallel LCD, or you use the headlines, and close while you are retreiving them.<BR>
+  In the first case, your program will propperly hang, and has to be killed. ;( In the second one, you just have to click the 'x' only one time!! and then wait for a while. If you clicked the 'x' more times you will most likely have to kill the program again.<BR><BR>
+
+  <I>gamestats (Qstat.exe)</I><BR>
+  You will soon find out that when you are going to retreive 4 gamestats (4 lines) at once, that Smartie could lag a little (depending on your connection). Also you must know that if you are playing Return To Casle Wolfensteijn you have to set the gamestats to Quake3 because this is the same engine (Q3 engine). This with al the games like that; so 'Counter-Strike' is 'Half-life', and 'Wheel of Time' is 'Unreal Tournament'.<BR>
+  And also: if you are unsure of the port the server uses, you can try the default port. That will automaticly done if you don't fill in any port.<BR><BR>
+
+  <I>Plugins</I><BR>
+  I told you that there would be plugins in version 5. Well sadly i had to remove them. This was because they were very slow (you have to send and receive data very often).<BR>
+  Instead i made those nice 'a-lot-of-text-files' thing. <IMG border=0 alt="" src="smile.gif"><BR><BR>
+
+  <I>Winamp Title bug</I><BR>
+  well this is NOT a bug, but a setting. You have to go to the propperties of winamp (Ctrl-P), go to Options-Display, and make sure that you have set 'Scroll song title in the Windows taskbar' turned OFF!<BR><BR>
+
+  <I>CPU Usage</I><BR>
+  There were a few complains on the CPU load of the program. I personaly don't have any problems with it. What means that the average load is less then 3% on my <A href="http://www.amd.com" target="_new">AMD</A> Athlon 800Mhz. This is with <A href="http://www.matrixorbital.com" target="_new">Matrix Orbital<A> LCD. With a HD44780 controlled LCD, it is below 4%.<BR>
+  When you still have a high CPU usage (above 7%) you can turn off the bars (CPU usage bar, memory usage bar, Pagefile usage bar, and all the harddisk bars)<BR><BR>
+
+  <I>Language packs</I><BR>
+  Yes, I know I removed them, because nobody realy used them, and they were not used for all buttons etc. (and i thought that anyone should know english)
+</BLOCKQUOTE>
+
+<P><FONT size=2 face=Tahoma color="#003000"><B><A NAME="3-12-2001"></A>3-12-2001 - Linux Smartie died</B></FONT>
+<BLOCKQUOTE>
+  <FONT face=Tahoma size=2>Okay, a few day's ago i told you that Servowire was working on gSmartie (Linux version of Smartie), but today he told me he already quited.<BR>
+  Of course i was deeply shocked of this tragedy... <IMG border=0 alt="" src="smile.gif"> <BR>
+  But anyway: He said that there were allready very good programs for linux, so he didn't need to make a new one..<BR>
+  And he's absolutly right if you ask me.. :) </FONT>
+</BLOCKQUOTE>
+
+<FONT size=2 face=Tahoma color="#003000"><B><A NAME="29-11-2001"></A>29-11-2001 - Working on version 5.0</B></FONT>
+<BLOCKQUOTE>
+  <FONT face=Tahoma size=2>
+  I have added Plugin support allready, and i will add serial support to!<BR>
+  I got help from an employee from Matrix Orbital who is going to help me with this.<BR>
+  Algeroth and I are working on adding external buttons for the parallel driver. These can be used to scroll ur LCD, or skip a track in winamp.<BR><BR>
+
+  Also Servowire continued making gSmartie (gnome) for linux. It is written in C++, and uses a C driver.</FONT>
+</BLOCKQUOTE>
+
+<FONT size=2 face=Tahoma color="#003000"><B><A NAME="1-11-2001"></A>1-11-2001 - Version 4.0 is out!</B></FONT>
+<BLOCKQUOTE>
+  <FONT face=Tahoma size=2>
+  added:<BR>
+  - <a href="http://www.qstat.org" target="new">qstat</a> game stats for Counter-Strike, Unreal Tournament, Quake2, Quake3<BR>
+  - CPU type (like AMD Athlon, AMD Duron, Intel Pentium III)<BR>
+  - Screen resolution</FONT>
+</BLOCKQUOTE>
+
+<FONT size=2 face=Tahoma color="#003000"><B><A NAME="16-10-2001"></A>16-10-2001 - Version 3.1 is out!</B></FONT>
+<BLOCKQUOTE>
+  <FONT face=Tahoma size=2>
+  - added proxy settings, and did some bug fixes</FONT>
+</BLOCKQUOTE>
+
+<FONT size=2 face=Tahoma color="#003000"><B><A NAME="24-8-2001"></A>24-8-2001 - Version 3.0 is out!</B></FONT>
+<BLOCKQUOTE>
+  <FONT face=Tahoma size=2>
+  - CNN World News<BR>
+  - Tom's Hardware Headlines<BR>
+  - Stocks indexes (AEX, etc)<BR>
+  - A new driver (no more popups)<BR>
+  - A '-register' commandline function (writes the smartie lines in ur register under: 'HKEY_LOCAL_MACHINE\SOFTWARE\LCDSmartie\')<BR>
+  - Redid the Tweakers.net headlines (no more dll)<BR>
+  - Redid the Distributed.net client stats (auto detects RC5/OGR)<BR>
+  - Made a snap funtion so that smartie snaps to the edges of your screen.<BR><BR>
+
+   we also did a HUGE bugfix; the longer you had smartie working the more it started to shake <IMG border=0 alt="" src="smile.gif"><BR>
+   and again we did also something about the to high CPU usage and memory usage.</FONT>
+</BLOCKQUOTE><BR>
+
+<FONT size=2 face=Tahoma color="#003000"><B>??-?-2001 - We already did have this stuff from 1.0b and 2.0:</B></FONT>
+<BLOCKQUOTE>
+  <FONT face=Tahoma size=2>
+  - Winamp display (track, lengte, bitrate)<BR>
+  - Distributed.net client (OGR, RC5)<BR>
+  - Time (time,date,uptime)<BR>
+  - the weather (in Holland)<BR>
+  - Motherboard Monitor 5 (temps, fanspeeds)<BR>
+  - Sysinfo (CPUspeed, free memory, free HD space en CPU usage)<BR>
+  - Tweakers.net headlines (in Dutch; thanks to Jelmervos)<BR>
+  - Extra file (inc. variables like: $fan1, $temp1, $temp2, $time, $uptime, $rc5done, $OGRspeed, $memfree, $totalmem, $winamptitle, $cpuusage1,$cpuusage2 etc.)<BR>
+  - the '-LCD' function in the commandline (Smartie skips the LCD test and send his data to your LCD. (Could lagif u don't have a LCD) <BR>
+  - the '-NoLCD' function in the commandline (Smartie will NOT send data to ur LCD)<BR>
+  - the '-hide' function in the commandline (minimize's LCD Smartie direct to the system tray)<BR>
+  - Screen's funtion (more screens which will scroll through ur LCD)</FONT>
+</BLOCKQUOTE>
+
+<B><FONT face=Tahoma color="#ff0000" size=3>Special thanks:</FONT></B><BR><BR>
+<FONT face=Tahoma size=2>Lots of thanks for Teabeats for the 4x40 driver for the HD44780 controlled LCD's<BR>
+Henry from Matrix Orbital for his support for the serial support<BR>
+MnM(tm) for the help and the LCD component (we didn't use)<BR>
+Nicap, Diamon, MURDOCK, Stoffie, Dennis Nijhuis and others for the beta-testing<BR>
+And further everybody of <A target="_new" href="http://gathering.tweakers.net">Gathering of Tweakers</A> for their help and suggestions</FONT><BR><BR>
+
+</BODY>
+</HTML>

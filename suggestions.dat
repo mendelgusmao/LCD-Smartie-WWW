@@ -1,0 +1,1233 @@
+I.Nendels
+This is not a Suggestion but i have a problem. I tried to mail BasieP but his mail-adres is wrong.<br>I have a problem with SETI@home, i can't get the stats on my LCD dsplay. i have set my e-mail adres correct but nothing will show. all the other functions work fine. <br>If someone knows a sollution, please send me an E-mail at ian@inendels.nl
+12-08-02 16:39
+I.Nendels
+This is not a Suggestion but i have a problem. I tried to mail BasieP but his mail-adres is wrong.<br>I have a problem with SETI@home, i can't get the stats on my LCD dsplay. i have set my e-mail adres correct but nothing will show. all the other functions work fine. <br>If someone knows a sollution, please send me an E-mail at ian@inendels.nl
+12-08-02 16:39
+Species9408
+Great program, but I would like support for winamp 3 :-)<br><br>one more thing; at http://members.lycos.nl/basiep/suggest.php you said that smartie would be open source in the future. Any idea when?
+13-08-02 11:01
+BasieP
+i am not adding winamp 3 support yet for 2 reasons:<br>1: winamp 3 takes for 1 single mp3 file about 11 MB of your RAM, and uses about 26% of a 800Mhz system and 21% of a 1400Mhz system.. (so don't use it)<br>2: they don't made a complete API for it, which means IF i should make support i have to change that everytime they change somehting<br>
+14-08-02 12:53
+BIGHard
+what's up with next version of LCDSmartie??<br>hurry :)
+14-08-02 16:45
+Species9408
+I didn't notice that (i have an Athlon XP 2000+ +512meg ram btw) but then I understand. I guess I have to search for an older version then ;-)<br><br>One other suggestion: at the download page there's a link to port95nt, but that link is dead :-(
+14-08-02 17:41
+BasieP
+thanx for the broken link report.. (damn got to find that thing again)
+16-08-02 17:52
+Joe Schrey (jschrey@cogeco.ca)
+I have heard alot of people complain that LCD Smartie has alot of memory leaks, well I was recently on the motherboard monitor site (http://mbm.livewiredev.com/) and they have addressed a memory leak problem with their 5.2.x version, the newest version corrects that. Check it out, hopefully it will correct some problems. The actual link to the update is: http://mbm.livewiredev.com/download/MBMUPDATE.zip<br><br>Check it out!
+28-01-03 2:24
+SH
+As far as I understand, there are a couple of inputlines available on the parallel port (i.e. "paper out" and "busy") which could be used as input buttons for LCDSmartie. Is it possible to include support for these in the next release?
+29-01-03 14:30
+ibragimus (ibr@aport.ru)
+Dear Author!<br>Had you ever seen what happenes on the screen when non-Latin letter are used at the winamp tags?:).I got lots of Russian mp3s, and all tags looks nice inside emulated LCD, but on the real one... just set of unreadable signs. I m sure that LCD supports russian characters and couldn't understand what difference:(.<br>Thank for your great work anyway!
+29-01-03 20:44
+ibragimus (ibr@aport.ru)
+Dear Author!<br>Had you ever seen what happenes on the screen when non-Latin letter are used at the winamp tags?:).I got lots of Russian mp3s, and all tags looks nice inside emulated LCD, but on the real one... just set of unreadable signs. I m sure that LCD supports russian characters and couldn't understand what produces that difference:(.<br>Thank for your great work anyway!
+29-01-03 20:46
+Rutat
+How about a few more text/file handlers? Substrings, left, right, mid, etc.<br><br>But anyway, it is an AWESOME piece of work!<br><br>Tom
+30-01-03 3:04
+Jens Johansson
+Make support for buttons via the paralell-port. It would be nice to for example select wich screen to show with some buttons next to the LCD display...<br><br>jens.johansson@kentor.se
+31-01-03 20:21
+XzTrAz
+FPS meter.. current frames per second.<br>would be wery nice.
+01-02-03 17:31
+jon@jonhassall.com
+I would like:<br><br>Current window open title name<br><br>And something like:<br> Highest CPU useage task stats like CPU time, %, disk I/O etc.<br><br>Just basically something that says what tasks the computer is doing
+01-02-03 17:53
+XzTrAz again...
+Put the Features list link in the mainmenu..<br>make the mainmenu frame<br>Put the news in the mainframe<br>:)<br><br>more suggestions. <br>Volume bar (master volume and other volumes?)<br><br>possibility to show historical graph<br><br>like<br>..:!::!..:!:.. or something.. with black blocks<br><br>the fps meter could be done with fraps http://www.fraps.com/<br><br>Nero!<br><br>Mirc.<br><br>weather outside usa. like europe and sweden.. :)  dont know where to poll but there are somewhere.. iwe seen it in other apps.<br><br>And by the way.. great proggie!! <br><br>micke@jmg.s......e<br>due to antispam remove the dots between s and e<br>
+01-02-03 20:31
+Dameon
+hey i got a suggestion and a bit of advise...the suggestion is that i would like to see some transitions for the screens...i would like to be able to have a matrix effect where letters drop in something like that and etc. i would also like hot buttons to be able to change the screen to the next one, and freeze the current screen from anywhere in windows....i like to see different system stats while i'm in games and i can't exet out everytime to change the screen or freee it...crystalcontrol has this implemented...can u implement this aswell? also i found a way to get WMP9 song stats on my lcd through ur program...i used a plugin for wmp9 called nowplaying...originally designed for coolmon, but it creates a simple text document with the song stats on it. so i use this command $File("C:\Program Files\Windows Media Player\playinfo.txt",1) to access it and it works perfectly =)
+02-02-03 11:28
+SquallStrife
+XzTrAz: FPS in what?? Quake3/Halflife?? that would be pretty rad. And yer like tom said.. some more text processing stuff would be cool. Maybe even ability to read INI files. Something like $ini(filename.ini,variablename)<br><br>That assumes that all INI files follow the following format:<br><br>[section]<br>variablename=value<br>
+03-02-03 5:10
+Fabricio
+Start Smartie as a service
+03-02-03 6:09
+Michael
+Hi, what about the option to grab news from *any* website (or at least if there is some data in .rss format) ?
+04-02-03 7:15
+Sean
+Ability to change which pins are the control pins for the LCD to allow for variation in wiring choice
+04-02-03 21:06
+jc.junior
+LCD Smartie is compatible with lcds 4 bits data bus? <br>jc.junior@padron.com.br<br>
+05-02-03 12:16
+Frecca
+LCD Smartie is one of the best programs ever, thank you!!!<br><br>I got a 4*40 display and was thinking, how about a visualisation for winamp? Perhaps a one that would look like the bars in the original Winamp under the time. Or then a simple VU-Meter..<br>What do you think? Is the LCDs fast enough for this use?
+05-02-03 13:26
+Luki
+It's is a very good program for my serial LCD, but since i use the d-link trunking sw for my nic's i can't use the nic stats :( - they would be interesting at lans ;)
+06-02-03 16:32
+Seamen
+I have an error while opening LCDsmartie...i get the errormessage "Are you missing some pictures?"...what is wrong?? THX for help...Seamen 181099@nord-com.net
+06-02-03 21:14
+ser2
+Greatest LCd program ever ! Awaiting 4 customizing user signs. greetz !
+07-02-03 13:42
+Max
+Try to make smartie using the USB interface, and please the circuits!
+08-02-03 13:04
+blacknite
+i am having problems getting my disk space to work, and trying to get network stats to work. also, weather from weather.com stopped working sometime last month
+08-02-03 18:50
+blacknite
+if you have a suggestion to the above, email me at sirblacknite@hotmail.com
+08-02-03 18:51
+future.child
+First of all.......Great program !<br>just one thing :<br>can mbm5 info update interval made shorter then one minute ? comes in handy when displaying cpu core temp.  
+09-02-03 0:24
+future.child
+First of all.......Great program !<br>just one thing :<br>can mbm5 info update interval made shorter then one minute ? comes in handy when displaying cpu core temp.  
+09-02-03 0:24
+OrbDemon
+Any chace of some Serv-U FTP stats, like maybe number of users connected, upload/download speeds, current/newest file etc etc. <br><br>Looks like a great programme - I'm in the process of wiring up my LCD!<br><br>Cheers.
+09-02-03 19:01
+Spud
+I'm running Win98SE, the none of the Internet things work, the temperatures don't work with MBM 5.1 or 5.2, and I get a BSOD when LCDSmartie tries to access the Winamp screen while Winamp is not running or if I shutdown Winamp while on the Winamp screen.
+09-02-03 21:11
+Spud
+And also, you could incorporate the Crystalfontz built-in per-pixel scrolling for Crystalfontz serial displays, looks better and doesn't take up bandwidth like your software scrolling. :)  I know I'm making a lot of criticisms here, but your LCDSmartie is still great, and is now my permenent LCD software. :D
+09-02-03 21:13
+Spud
+Ahh, none of the drive space variables work either! :(
+09-02-03 21:29
+Coca-Cola
+BasieP, excellent work....<br><br>For me, everything work just fine....just 2 things don´t work here:<br><br>1- Stats of HDD drives.<br>2- Stats of internet (cnn, etc)<br><br>I have a suggestion that I think is quite simple to do, and very useful:<br><br>- Display the HDD labels....for cds that are on the tray... this would be very useful to me!
+10-02-03 3:28
+anon
+Could you add support for 1x16 LCD that has to be controlled as 2x8?
+10-02-03 18:14
+Richard
+Output to a pcf8574 port extender chip running on an i2c bus on the serial port of the computer.<br>This chip is very much like the parallel port.<br>the i2c bus uses only two wires.
+11-02-03 11:25
+Dravis Tipping
+Just wondering if I could get a feature implemented where any key from a keyboard would serve as the<br>$MObutton(x) function, so I can control the program via a mini-hackedup keyboard I have that uses a AT Keyboard connector on a older system (it's just a keyboard- it just sends the letters, but it isn't a full keyboard..).
+11-02-03 16:04
+John
+It would be nice to for example select wich screen to show with some buttons next to the LCD display so LCD tell what the buttons are eg like a ATM
+12-02-03 14:24
+Kacper
+User-define size of display (I use 3 x 24 LCD display)
+13-02-03 8:25
+John
+Can you make it to operate relay on the parallel
+13-02-03 9:30
+ST8
+Is it just me or does this not work with mbm 5.1.0.7? All my values come up as 0 :\
+13-02-03 12:23
+Daniel
+Hi - first of all - good work! nice Program<br><br>but would you allow me - that i port i to Linux? (with Kylix)<br><br>please mail me!<br>(dackermann@logistik-konzepte.com)
+14-02-03 9:39
+Morpheus
+Sorry for my english! I want to know that, how can I attach the LCD to the serial port or to the USB. I heard that It's possible. And i want to know, how can I build my LCD into to the 5 1/4 slot. THX for the ansver. I you know anything of it please send an email for me. THX morpheus@netelek.hu
+14-02-03 16:04
+DaKrunz
+Really sweet program !<br>Would it be possible to make some kind of animation.. f.ex. when you start a game, let's say CS, you get a anime of a bullet flying from one end of the lcd too the other.<br>Maybe it could be made, by letting the program execute a movie-file in the restricted pixel, f.ex. 4x20... So maybe its more a plugin, where you can make the movie-file and then use smartie too execute it?<br>Just an idea.
+14-02-03 16:42
+jonp
+Do this program have support for nforce 2 chipset (monitoring temp, volt ++)
+16-02-03 9:57
+Yannick
+Hello, I find your program very complete but I think that it misses a parameter nevertheless: address IP of its computer. Will that be added to the next version?<br>thx & bye
+16-02-03 15:18
+ser2
+I wish to send you plugin for display non-english winamp titles, but you have no e-mail at now. And I really awaitin' for UDG reprogramming, it will make your program useful much more. THX. ser2@mail.ru
+17-02-03 9:09
+RoBSki!
+My page: http://www.gheos.com/avr
+17-02-03 12:41
+Wishmaster
+First you make a very good work!!<br><br>I run E-mule a lot of time, is it possible to show the emule stats (down- & upload speed and so on)??<br><br>thx 
+17-02-03 13:07
+Wishmaster
+First you make a very good work!!<br><br>I run E-mule a lot of time, is it possible to show the emule stats (down- & upload speed and so on)??<br><br>thx 
+17-02-03 13:07
+spock
+First of all, great job! Wishlist: numbers should be possible to be displayed in fixed digits, like "007" instead of "7" or "3.900" instead of "3.6"; then date format like 05/07/03, not only 05/07/2003, maybe even just 05/07; time format without seconds (all these should be fairly easy to implement); finally, a hdd usage meter (measuring how "hard" the hard drive is working) would be nice! Last, stopped winamp playtime should be "0:00" and not "0".<br><br>Live long and prosper...<br>
+18-02-03 0:32
+JonS
+First I got to say this is an excellent program. It turns out I bought many odd sized lcds for my computers. Is it possible to add support for 2X32 lcds or is there a current workaround. right now I just have to be careful of how I do the layout. That the only thing I can think of right now. Thanks for all the work you've done. It's appreciated.
+21-02-03 4:26
+Mikael Backlund
+Hi, It would be nice to have a option to run the HD44780 in 4 bit mode instead of just the 8 bit. A lot of displays only have the 4 bit option.<br>If i got it correct its just to send 2 4 bit words instead of one 8 bit.
+21-02-03 14:53
+Peter Gant
+Have some way of making information bars such as disk space free flash when they reach a preset value. E.g. bar flashes if disk space free < 5%.<br><br>Cool program though .
+24-02-03 11:55
+Marcos
+First of all, bravo for the good work!A couple of suggestions: <br>First of all, and I think that others will agree, it would be very useful if the program had the option of automatically loading at Windows Startup (in minimised form on the system tray at the right of the taskbar).<br>Second, since Windows Media Player is the most commonly used media software it would be nice if it displayed its contents as in Winamp. Customisation of actions with other software would also be very useful, but of course I understand that all of the above have to be done one step at a time!<br>Anyway, the success of what you've got is based on the fact that it's easy to use and pretty reliable. Any suggestions should be taken as a compliment of your work because it means people are enjoying your creation!:)
+25-02-03 0:41
+Alex
+This isn't really a suggestion and I couldn't find it anywhere else on your site. I can't get your program to run. It says that there are images missing and I have downloaded the lastest 5.1 2nd bugfix. Are there directories I need to place certain files to get it to work? Thanks
+26-02-03 3:01
+XzTrAz
+SquallStrife the fps meter would work on all direcx and OpenGl games/apps. read at www.fraps.com
+26-02-03 7:59
+amullins65
+For all of you who wish to have LCD Smartie start in the minimized mode I have a suggestion. if you make a shortcut to the .exe file and then go to the properties of that shortcut and under the shortcut tab of the properties menu click on the pull down box for "Run:" and change it to minimize. Then just put that shortcut in your statup folder THIS WILL START IT IN MINIMIZED MODE!!!
+28-02-03 4:29
+Kaapeli
+How about a link to the program's website? It seems that there are ZERO references to the original website with the program package. It took a while for me to find out this website.
+28-02-03 19:13
+shelby230
+Anyone know why LCD Smartie tries to connect to:<br>ip28-43-171-209.toro1.na.psigh.com:http
+28-02-03 20:42
+Flaming
+FTP status monitor would be nice ;)
+01-03-03 23:28
+Flaming
+I saw the dll function and thought of mIRC's dll function and tried with a mIRC plugin dll. It didn't work... Maybe you could fix something so i can use mplayerc.dll? check http://vobsub.edensrising.com/mpc.php?PHPSESSID=7f1baca2afe1274ef15b58192f1e41eb for more info...
+01-03-03 23:37
+tony@780tech.com
+I have done some research in the past that seems to suggest These LCD modules can be attached thru the Serial port insetad of parallel ? I am currently using parallel for another hardware project.<br><br>Is it possible use LCD smartie sending data thru serial, instead of parallel ???<br><br>ALso does it support multiple parallel ports (LPT1, LPT2 & LPT3) ??<br><br>Regards.<br><br>Tony@780tech.com
+02-03-03 2:24
+linux_inside
+4-Bit Mode Would Be cool so that you could use the Spare Data lines To hook up to switches so u can program them like the crystalfonz ones so um switches would be great (Hint Hint)
+02-03-03 6:35
+Flaming
+showing your current ip number would be nice ;)<br><br>and maybe a forum for the homepage?<br>i could host one for you...<br><br>one more thing, maybe you could fix that the textinput (where you put the text that goes on the lcd) is as many characters as the lcd you choose is wide? so if i got a 2x20 the textinput field is just 20 characters wide...<br><br>Just a thougt!<br>// Flaming
+02-03-03 15:34
+Al
+Any chance of making this fab program work with the Lost in Space LCD??<br><br>Thanks,<br><br>Al
+03-03-03 1:10
+Frecca
+Hey!<br>Is there a chance of making the "News" look better, My display is full of signs and text about the CNN page and the news get lost int the mess...
+03-03-03 8:23
+Florian
+First of all ==>>Great Programm!!<br>Can you implement a support for ASUSProb?<br>I don´t know why but Motherboard monitor won´t run with LCD Smartie and MY Computer :-)<br><br><br>THX a lot Florian<br>
+03-03-03 22:23
+Fridge
+I really like the file function, but I miss the possibility of loading external files, like http://www.yourdomain.com/file.php, to show dynamic content.
+05-03-03 17:42
+mr-fiero
+would be great to have it display pico logger information. i already use LCD smartie and the pico logger but have not figured out how to interface the dll to read pico logger. i think it would be simple. i have the pico logger monitoring my house power consumption and would like to display realtime what power is being used on the LCD. if you want to help me with the software i will give you details for the hardware involved, and it is so inexpensive and easy!
+05-03-03 22:19
+ReSooR
+What about making LCD Smartie OPEN SOURCE? it could create a whole evolution :)
+07-03-03 17:54
+Luki
+It'd be great if it can show a pre-defined *.txt file. Because it's for hobby programer easier to write in a txt file as a new program
+08-03-03 18:27
+UnLoGiC
+"What about making LCD Smartie OPEN SOURCE? it could create a whole evolution :)"<br><br>Sounds like a good idea, I'm sure it would speed up the development alot!
+08-03-03 22:01
+Machs_FueL
+i think that MBM is a bit of a hog.. could you write in support for LCD smartie to work with a smaller app like MBProbe? or maybe build in fan and temp support?
+10-03-03 1:00
+Machs_FueL
+i think that MBM is a bit of a hog.. could you write in support for LCD smartie to work with a smaller app like MBProbe? or maybe build in fan and temp support?
+10-03-03 1:00
+Machs_FueL
+i think that MBM is a bit of a hog.. could you write in support for LCD smartie to work with a smaller app like MBProbe? or maybe build in fan and temp support?
+10-03-03 1:01
+Chad
+2 things:<br><br>First, I've been toying with it for a while, but I still can't get weather.com or news to work. I'd REALLY like to have those if possible.<br><br>Second, would it be possible at all to display upcoming Outlook appointments and tasks? I use Outlook to keep organized, but I hate having to keep it open all the time.<br><br>Just a few thoughts. Keep up the good work.
+10-03-03 18:06
+Chad
+And one more thing: When Winamp times are less than 1 minutes, it displays the time as just "7" or "15" as opposed to "0:07" or "0:15". Is there any way this could be added as an option?
+10-03-03 18:09
+radhome.de
+please mail me, so i can send you the hd66712 file for support - i finished them.<br><br>rene
+10-03-03 19:07
+Helgeboy
+Hi! 1. Can You make a ini file/cfg file that contains webadresses(www.cnn.com, weahter.com etc.), and that anybody self can change in at textfile and put their website on.<br>2. Icq message would be nice too to recieve on the display.<br>Thanks for a great program!
+11-03-03 11:32
+Stijn
+Movie information for a DIVX or DVD player, like POWER DVD or BSPLAYER
+11-03-03 17:17
+Chris
+How about having a Forum or something? Or setting up a Yahoo Group or something so users can help each other out
+11-03-03 18:04
+Chris
+How about having a Forum or something? Or setting up a Yahoo Group or something so users can help each other out
+11-03-03 18:07
+Machs_FueL
+I just started using lcd smartie on a p133 that i use for a server back home, and it works great. I want to use my LCD to display fan speeds and temps, but i find MBM is a bit of a system hog. is there any chance that smartie could interface with a smaller monitoring app, like MBProbe? what about write in support for reading off the I2C bus? just a thoght,
+12-03-03 4:54
+Frecca
+How about ICQ support? For example received messages and online users. What do you think?
+12-03-03 16:22
+Weiman
+Smartie doesn't seem to work too well with hibernation. I get a "priviliged instruction" error when my computer wakes up.<br>
+12-03-03 18:57
+KingOfDos
+some idee, file support via internet.<br>ex: http://www.yoursite.com/file.php<br><br>file.php returns some lines, like $File do's<br>$FileURL(http://www.yoursite.com/file.php,2)<br><br>Get data from any textfile(.php;.html;.txt;more).
+14-03-03 0:47
+Rob
+Support for a proper MP3 player like Zinf. WinAmp died when they put a '3' in the version.<br><br>Support for 4 line data so we can use the other 4 lines for input or output control.<br><br>UPS status maybe? (many UPS use the same protocol)<br><br>ZoneAlarm messages(?)<br><br>Volume control levels.<br><br>Make coffee and get doughnuts :)<br>
+15-03-03 4:57
+Glassman
+I'll be glad if you add support for Genome@home too :) if it can be done with SETI@home and even Folding@home, why not to be complete ;)
+17-03-03 22:11
+syk
+SOME FUCKING REPLYS WOULD BE NICE!
+18-03-03 2:37
+cablex2
+Wow Relax Buddy...
+18-03-03 4:36
+U.N.
+Syk; Go invade a country or something. Ask for a refund :)<br>
+21-03-03 16:42
+And0
+I second Frecca's suggestion; in addition to the email support, I'd really like to see support for the popular IM programs (AIM, ICQ, MSN). Any chance? :)
+22-03-03 6:14
+Ashsama
+I suggest a feature to slow the timings down so it will work with more displays.<br>the winamp plugin can change the bustimings - jaLCD you can start with<br>-slow. Smartie just displays garbage on this fast p4... its too bad...
+22-03-03 22:09
+Kronchev
+Doesnt work with WA3 for me<br><br>Ashsama - you change them yourself in the config. if its parallel then you broke it, if its serial, make sure the unit is set to its absolute max, then adjust smartie accordingly.
+24-03-03 8:44
+Sivvus
+Could you add support for 3x24 LCD that has to be controlled as 1x48 and 1x24? 
+28-03-03 9:34
+Bodziak
+Add Support for Girder. Giredr is fantastic software for remote controling PC using e.g your TV remote. If will be great if I can compute message uign Girder then output some messages to LCD using Smartie. See <br>http://www.girder.nl
+28-03-03 11:17
+LWK
+seti to work with there new user stats url/page plz<br><br>http://setiathome.ssl.berkeley.edu/fcgi-bin/fcgi?email=uesr@serve.com&cmd=user_stats_new<br><br>ut2k3 serever support on qstat plz<br>qstat -ut2s<br><br>other than that great prog keep up the work, looking forward to more updates<br><br>lwk
+05-04-03 2:55
+richard
+Will there be support for more lcd's in the future?? Such like the Graphical LCD with a t6963c??? 
+11-04-03 14:14
+zimple
+Instead of specific support for CNN and weather.com I think that LCD Smartie should have support for RSS feeds. That way it would support all news sites which expose their headlines as RSS feeds.
+11-04-03 16:50
+Job
+Examples of good "strings" to use, so you can borrow pieces of code which look good.<br><br>Sort of template for beginners...
+12-04-03 0:12
+UnLoGiC
+Nice to see some activity the new version looks promising, and the best of all it doesnt seem to LEAK memmory like the last version!<br><br>
+15-04-03 16:18
+UnLoGiC 
+I've foudn a pretty serius bug here and I've managed to reproduce it.<br><br>While setting up the screens one by one when i reach about 12 it gives me and I/O error and says " is not a valid integer value and after that i chops of the config file after then 10th screen so if you restart smartie it gives you loooots of I/O errors and then quits.<br><br>Running win2k sp2 with a paralell 2*20 LCD.<br><br>/Greeting from sweden keep up the good work!
+16-04-03 13:34
+Zacha
+Hi!<br><br>Smartie shows up only the load of the first cpu on my Dual Pentium III System. Would be nice if there was a variable for cpu0, cpu1, cpu2....<br><br>regards, Zacha
+17-04-03 21:33
+stig
+I have a celeron 500 server box, running Win2000 server with NAT routing enabled on a demand dial, but for some reason, the Networks stats dont work. Any ideas? Network stats work for me with the moo.dll plugin for mIRC, could you support this dll in LCDsmartie?<br>-I am running a 2x24 LCD<br>Thanks for the great program.
+22-04-03 8:47
+Tomek PL
+Using LPT status lines (like Paper OUT,Selected etc) as additional switches for HD44780. It would be very usefull. Best wishes. tkowalkowski$poczta.onet.pl
+22-04-03 23:45
+Dan Wendell
+It would be great if you could build in support for the Noritake 800 series parallel interface VFD.
+24-04-03 15:37
+LWK
+i found UnLoGiC's bug and a fix!!!!<br><br>UnLoGiC wrote<br>---<br>I've foudn a pretty serius bug here and I've managed to reproduce it. <br><br>While setting up the screens one by one when i reach about 12 it gives me and I/O error and says " is not a valid integer value and after that i chops of the config file after then 10th screen so if you restart smartie it gives you loooots of I/O errors and then quits. <br>_____<br><br>the bug is down to the config file that is included in with smartie5.2<br><br>the fix is simple, open the config.cfg<br>add a space, delete the space and save the file,<br><br>im guesin theres a crouptin some were in the binray of the file, and odd bit may have been changed, but it's causeing smarite to crash out,<br><br>hope this helps<br><br>lwk
+25-04-03 16:10
+Gabe
+Hi,<br>first: Great Programm, love it.<br>No the Suggestions:<br>I think it is not possible, but maybe somebody find d a way?<br><br>The Temp. of the 3D-Card as shown in the new driver from Nvidia and ATI (on newer Cards).<br><br>Greeting from middle-Germany :-)
+27-04-03 10:42
+HackeR_54
+get the external ip ??<br><br>from http://www.whatismyip.org
+27-04-03 16:50
+Malek
+I would like support for one of the most popular ICQ clients out there, Miranda Icq (miranda-icq.sourceforge.net).<br><br>Alot of features would be appreciated.<br>Like "How many messages waiting", "Who wrote the last message", "What was in the last message?" and so on.<br>Alot of thing so simplify communication when playing.<br>E.g. not tabbin out when unnecessary.
+27-04-03 21:44
+Magic
+Mirc support would be nice eg: Highlights displayed on lcd<br><br>Thx for the hard work m8 ;)
+28-04-03 9:44
+Lameduck
+Could you put out the word for people running LCD Smartie for CS Stats to send you images. I Would love to see this in action, Would be great for LAN Parties
+30-04-03 5:13
+Jason
+Support for Windows Media Player 9 would be really great. Not only can it be used for music like Winamp but also for movies.
+03-05-03 21:38
+herman
+Hey, why do I get an error with all the HD funtions? Doesn't work well with NTFS? To bad, the previous version worked perfectly... :(
+04-05-03 0:13
+swherdamn
+Anyone Having problems with custom characters?
+05-05-03 8:18
+[GoT]Hurricane
+Can you make Smartie Compatibl with the 8x24 serial vt100 lcd's? LcdStudio has it working, maybe you can contact them for more info.
+05-05-03 10:10
+Someone Else
+A way to define wich screen should be shown when would be great. Something like when in idle mode screen 1 is displayed, when program x is running screen 2 is displayed and so on. Would that be possible?
+16-05-03 11:40
+scrolllock
+ikzelf zou smartie (geniaal progje goezo!) graag zien voor de grafische LCD's van crystalfontz, dat zou echt handig zijn voor vele onder ons tweakers
+18-05-03 0:27
+rkpindia
+First thank you for a perfect program. second please someone start a forum for software development.
+19-05-03 5:45
+Josh
+How about a link to the software to download to fix the dlportio error?<br><br>Thanks
+24-05-03 2:14
+gerwin
+maybe a option for MSN that a contactperson online is? 
+24-05-03 15:05
+J-Fu
+First, nice proggie! It's my full-time lcd software. I do have a couple of suggestions:<br>1) QStat refresh time in seconds, would this display realtime stats from games? <br>2) Auto-hide on startup <br>3) Add a spectrum display for winamp (like LC Display plugin http://www.markuszehnder.ch)<br><br>Thanks, keep up the good work!
+01-06-03 0:26
+Robert (Vienna)
+1. The possibility to repeatedly check an internet connection would be great, via ip address who is pinged at a certain rate would be flexible. Output on LCD (Up/Down).<br><br>2. USB-LCD Support would also be great, looking into the future...<br><br>Very good work done so far !!!!
+03-06-03 2:54
+AZBEST
+Could you add support for 1x16 LCD split version :-) (very good program)
+05-06-03 13:28
+Leiser
+LCD Smartie shows me weird stuff on my P4 System e.g. CPU load etc. Probably the 3GHz is too fast? I had no Problem on my older AMD System with 2 GHz, so perhaps you could check this?
+05-06-03 23:17
+giin
+VBScript support would be really nice!<br>Please implement this :)
+10-06-03 0:06
+Fred
+Is it possible to ad support for for example Mediaplayer, so we can from the display see what movie whe are wathing and the time? Have you been thinking about the ICQ support? And I'd love to have for Winamp the opportunity to have "Artist" and "Songname" as separate, most users have them in standard form "Artist - Songname" so it shouldn't be so difficult. Then it would be nice to know next song in playlist... Keep up the good work, we're all waiting for a new version of this great software! =)
+11-06-03 22:34
+Keven Tipping
+Would like to see a option to drive Pin 17 under the Parallel port HIGH, so those of us that spent the time to incorperate a Backlight control via this pin (High=On, Low=Off) can actually control it. Look at the circuit with the BC547 under the circuit page, thats the one.
+11-06-03 23:27
+Eaterofpies
+invert the suggestion list so that the most recent suggestion is on the top ;)<br><br>and a screen with all of the standard characters on (all 256) with the chr$ next to them<br><br>Pies
+13-06-03 12:31
+Orger
+Hi, great Program.<br>Could you add support for KS0108(128x64 Display).<br>Thanks<br>Orger
+13-06-03 19:43
+Knochi
+Hi<br><br>Is it possible to show the current Process of Seti@Home like SetiSpy (http://cox-internet.com/setispy/) does ? (Time remaining, Spikes, gaussians, triplets found)<br><br>Thx Knochi<br>
+14-06-03 15:56
+DeaTH-MeTaL
+Maybe you can add an e-mail checker for IMAP mailboxes?<br><br>I also want to report 2 bugs.<br>When i'm trying to setup smartie 5.2 I get the error' " is not a valid intreger ' a 1000 times over my screen and then smartie shuts down.<br>5.1 works fine here.<br>The other bug is that the weather in holland doesn't work.<br><br>smartie rulez!:P
+14-06-03 17:51
+UnLoGiC
+DeaTH-MeTaL, i get the same error and I even mailed basie about but he didnt seem to pay much attention to it =(
+15-06-03 0:19
+ghost
+all are talking about seti@home but by the way support for Communty TSC would be nice ! <br><br>I think it would be a good idear to add some other languages. German for example :-) if you need help to translate ghotsmail@gmx.net!
+17-06-03 15:45
+Hish747
+Windows XP Media Center Edition <br>Multimedia Application...For listing song <br>name/ dvd chapter/time etc. Is this possible? <br>If so it means that we can build better HTPCs <br>than HP & Microsoft combined! :)
+18-06-03 1:58
+AmodedomA
+Yo, how 'bout some dual processor support in sysinfo and mbm5
+18-06-03 9:26
+yair
+icq plugin would be GREAT!
+20-06-03 20:52
+Remboooo
+On the suggestions list it said that the spectrum analyzer couldn't be done, but it can, check the WM_USER commands for Winamp 2x again ;)
+24-06-03 0:55
+Remboooo
+On the suggestions list it said that the spectrum analyzer couldn't be done, but it can, check the WM_USER commands for Winamp 2x again ;)
+24-06-03 0:55
+Psycho
+Don't forget MS-Dos...The OS that never crashes !!!! ;)
+26-06-03 12:52
+NOT - OnlyJoeKing
+Great Software, great functions. keep it up, but how about a 5 frame intro sequence at boot up so you get a little animation or just prewritten hello message, 
+27-06-03 23:45
+Prozac
+hmm Basie has been awfully quiet lately...give us a hello at least to know that this program is still alive<br>
+29-06-03 19:21
+Adam
+The NetStats seem to be broken in the latest version. Either that or I'm a dummy.
+30-06-03 4:45
+Dan
+I really would appreciate Windows Media Player Support. Thanks A Lot!
+30-06-03 4:53
+James S
+Could You make possible to change LCD size for 3 X 24 ?
+03-07-03 1:45
+Rut216
+make smartie work with the seetron serial lcd
+03-07-03 19:46
+Parag0n
+simple suggestion... £ sign... iv heard u can display it on a paralell LCD, but i just get a block :|
+06-07-03 0:54
+Parag0n
+oh, and also, maybe a skin which just shows the virtual LCD, and a hide button thet can "dock" a la winamp ;)
+06-07-03 0:57
+KES
+Fading LCD to % light brightness after user idle time.
+07-07-03 3:06
+Frecca
+A BIG clock, for example, using all for rows on the LCD... I've seen it done, but on software just crap compared to LCDSmartie... And as Dan said, a Mediaplayer support would be very awesome!
+07-07-03 22:19
+InsanityInside
+It has been said often, but pleeeeezzzz add support for a 1x16LCD that has to be controlled as 2x8. or add support for 2x8 so i could use the continue on next line option. <br>And Smartie locks up when trying to run the demo without parameters...
+15-07-03 11:05
+ 
+Please Basie, answer your fans! And if you have the time, please make this software even better!
+16-07-03 0:29
+Philip
+Could you add support for 3x24 LCD that has to be controlled as 1x48 and 1x24?
+16-07-03 23:06
+Tumppi
+Hi i am using smartie 5.2 and windows xp with ntfs discs... netstats and hdstats does not work... can you fix it? in smartie 5.0 hdstats works and i think netstats works in smartie 5.1 ... but hd stats dont work in 5.1
+17-07-03 1:27
+Cyril
+Could you add a $global var menu with info from Meuh Meuh TV! software ( with TV station names, teletext...)
+17-07-03 14:17
+Cyril
+I'm using your last 5.2 with Win XP, and I noticed a bug when I forget entering a "time" value in the interaction menu. It always happen when there were no interaction style selected before for a given screen. A warning message appears, and then you cannot modify anything, you can't close smartie. And when you launch it the next time, program don't run, and error messages are all around the win screen..
+18-07-03 11:04
+razer
+could you make a plugin for powerdvd or divxplayer 2.0alpha...<br>lcdsmartie=best program ever :)
+19-07-03 3:49
+Steve
+I bought a nice-looking and inexpensive 3x24 display but have problem controlling it using LCDSmartie :( It behaves like 1x48+1x24 display and, as such, can't be properly controlled. Could you do something about it?
+20-07-03 10:46
+Mike Rock
+An aol instant messanger plugin to scroll your online buddy list or show who logged on.
+20-07-03 21:09
+MMaster23
+Add support for the KS0108 ... i can beta test it for you<br><br>take a look @ http://www.skippari.net/lcd/ks0108.html and http://www.skippari.net/lcd/lcdinfo.html<br><br>lcdinfo already support the ks0108 but it's features are limited<br><br>contact me : MMaster23 [@t) Hotmail.com
+24-07-03 3:28
+az_max
+Showshifter (www.showshifter.com) support.<br> Showshifter is a Tivo-like interface for PCs.<br><br>Caller ID support (info from modem)<br>
+26-07-03 4:50
+alz123
+<br> will noitake vfds be supported<br> serial and printer port<br><br> alan b
+27-07-03 10:24
+Daniel
+AIM support would be great!!!
+28-07-03 22:08
+martijn
+the plugin for winamp3 has an error whit winrar so jullian has to upload it again or make an new archive becouse i cant unzip,unrar it <br><br>martijn 
+29-07-03 16:37
+edros
+Have smartie support pci based parallel port cards under windows xp 
+30-07-03 5:02
+edros
+Smartie does support pci based parallel cards under windows xp. I just fixed it! This is a great program. Weather.com does not seem to work????
+30-07-03 7:14
+Herrner
+Instead of hardcoding newsproviders into LCD-Smartie, you could think about adding a rdf-headline-browser - that would be so great!
+30-07-03 23:14
+ChrisTou
+That's great help for me no need to write a program to control it.<br><br>But there's some problems...<br>First, the $CustomChar function can't excetly make one char. the last line of the char become 'carzy'. and the arrangement are not in order(the chr(1) become the five char in the memory...). there's some problem with this function.<br>And the other problem is that when i put the download speed value into the $bar func. it display 'error'. May be it can't support floating point? Still can't find a solution. Also, the value of the network speed doesn't display correctly. And then after certain time it will display correct-.-|||<br>And the... Just a little bit suggestion... Can you make it support Japanese? Because HT44700 can display Japanese Characters...<br>Please Fix them! Thanks!
+01-08-03 17:41
+Mitch L
+not really a suggestion but anyone have problems while playing games?? My VFD (Noritake parallel) just freezes until I stop playing...<br><br>thanks
+02-08-03 12:54
+Michell
+Support for Graphic LCD´s would be REALY cool. It could show little icons of how the weather is or cool bargraph´s. <br>Regards
+05-08-03 17:14
+mpad
+hey. great programm. for ultimate pleasure autorun and autohide(!) function should be added ;-)
+05-08-03 19:00
+Rosco
+I second the suggestion for media center support or at least win media player support for song/movie title, album, artist, time played and remaining, etc so full featured media boxes can give info like a receiver/dvd<br><br>Thanks
+12-08-03 3:42
+Rene D.
+I'd like to see a plugin or support for windows media player as well. Thanks for a great program.
+12-08-03 16:26
+Eric R
+I would like to see a small applet or plugin to control High Power GPO's like with some Matrix Orbital displays with a simple button press or check box for on/off. 
+12-08-03 23:41
+Michael
+Support for L.I.S LCD please. Thanks
+17-08-03 1:42
+PhatMonkey
+It would be great to see it showing the lcd results on a pocket pc screen via the sync cable!
+17-08-03 12:26
+themebones
+Support for Dial-up modem cards, not only NICs.<br><br>cheers themebones<br>themebones@webmail.co.za
+18-08-03 22:38
+themebones
+Support for reading temperatures / fan speeds of other machines on the network, and then displaying them on the display - i.e. the display will tell me what my machine is doing in the bedroom. Anyhelp appreciated<br><br>cheers<br>themebones@webmail.co.za
+18-08-03 22:41
+fish
+Fraps, from www.fraps.com, can be used to write the current FPS and game title to a .txt file. Could anyone create a Smartie plugin that could display game name and FPS on an LCD? <br><br>Then we could have:<br><br>You are playing [Game Name]<br>FPS [Frames Per Second]<br>
+21-08-03 23:51
+fish
+Fraps, from www.fraps.com, can be used to write the current FPS and game title to a .txt file. Could anyone create a Smartie plugin that could display game name and FPS on an LCD? <br><br>Then we could have:<br><br>You are playing [Game Name]<br>FPS [Frames Per Second]<br>
+22-08-03 0:00
+Tim
+top little program.<br><br>can there be a "run minimized" option so the program starts without bringing up its window (perfect for us stealth users) ? cheers
+22-08-03 12:20
+Kelly
+Can you please make smartie with some command line switches? or does it allready hanve them?<br>I need to run smartie from a batch file but i want it to start hidden??can it be done? email me at gonefishen@bigpond.com please
+26-08-03 14:09
+Kelly
+I have smartie running as a service by using firedeamon so it runs at xp's starup logon screen it would be nice if it could say like when at the logon screen eg. please logon then date etc but then when a user logons it says welcome *username*.<br><br>I know it can shows user loged on but whne it runs as a service it says welcme SYSTEM<br>because its loged on as a system service
+26-08-03 14:31
+bobpage
+Hey, GREAT program, but how about a simple miminize to tray bar on startup option? Simple and yet soooo needed<br><br>Thanks!
+27-08-03 8:07
+Eagle
+Support for SpeedFan. I think its better than MBM. And some circuit to include buttons in Paralel. Thanx 
+29-08-03 18:33
+Vinis_JP
+LCD Smartie is compatible with L.I.S. LCD (www.vlsys.co.kr)? email: vinis_ms@msn.com
+30-08-03 19:28
+fishthecat
+How to automatically minimise Smartie on startup. (Win2000/xp)<br><br>1) Right click on the shortcut to Smartie in your startup folder (or where ever you keep it) and choose 'Properties'.<br>2) Where it says 'Run:' drop the combo box from 'Normal Window' down to 'Minimized'.<br>3) Click OK.<br><br>This works a treat for me.
+01-09-03 19:59
+Fish
+Could you put the synax for $Time and all the commands into a help file/page in the next release? Maybe with simple examples?
+01-09-03 20:07
+fish
+Great program! Keep up the good work!<br><br>Suggestions:<br><br>1)Winamp track time $WinampPosh would be nice as 0:01 rather than just 1.<br><br>2) $Time, say I've got the time with out seconds counting up like this: '12:30'. Could you have the ':' flash on and off every second/half second, to show the seconds pass by? <br><br>3) I'd love a two line 'big clock'<br><br><br>
+01-09-03 20:19
+Someone
+Support for Fahrenheit temperatures would be great!
+03-09-03 2:08
+BlaRock86
+I have a little problem.<br>At the beginning my display worked verry well. But now it shows all different characters. It seems like the computer has a little problem with the data transfer, or is that a memory leak.<br>I use MBM also.
+08-09-03 23:21
+Colin
+Is it possible to support HD44780 devices which connect using an LCD serial backpack? I'm a novice at this, but it seems that this is basically a device which allows the parallel-port based HD44780 to be driven via the serial port. I have one of these; it hooks up to the serial port although the display is an HD44780 one. I use the driver from here: http://lcdriver.pointofnoreturn.org/<br><br>There is information about the serial backpack here: http://www.seetron.com/bpk_faq.htm<br><br>Many thanks.
+09-09-03 16:47
+Jackal
+I am running 5.2 and the HD reporting doesnt seem to work for NTFS Partitions. Is there a fix? jackal_49@hotmail.com
+10-09-03 7:49
+Fazi
+The weather links doesn't work !!!<br>Can you put some international weather links in the newest version please!!!<br>                THX
+11-09-03 15:56
+Dopefish
+I would love if it was support for something like this:<br>HP:      <br>AMMO:<br>ARMOR:<br>FRAGS:<br><br>and I love to see how many fps I may have :)
+12-09-03 17:38
+Fazi
+I have new 2x16 lcd but only half of it works???<br>The oder half is just dark???<br>Can you help me??
+12-09-03 19:29
+ylp78
+Wery nice programThank you<br>Bu I have a little problem:<br>1.Can't dispaly harddisk information<br>2.Can't dispaly network information<br>It can display in JaLCDs,can you help me? E-mial:yangliping_78@263.net<br>Operating system:win2000 simplified chinese<br>Thank!<br>
+13-09-03 7:24
+Linux_inside v2
+lol, havent seen BasieP around for about half a year, has he abandoned us? or is he dead?
+16-09-03 9:52
+Mdobbins
+Maybe have support for Deep Metrix Live Stats...who's on, total hits, etc. Great product!
+18-09-03 9:00
+Dakti
+Hay! I have cool 3x34 LCD (exactly 1x48+1x24) model: DM157a - very popular, but Smartie 5.2 can use only 1xX 2xX 4xX not 3xX :( and X = max40 not 48 :(<br><br>Please make such option if it possible:<br>01-24 of 1 line = 1 line,<br>25-48 of 1 line = 2 line,<br>01-24 of 2 line = 3 line.<br><br>it will be very helpfull for controling 3x24 (1x48+1x24) LCD<br><br> PLEASE PLEASE PLEASE :) ?<br><br>ps. i saw 5 other people on this forum who have this LCD, and many others in my country, who have the same problem so I... :( help
+20-09-03 12:16
+Simonuca
+Great free software. Intuitive and the like. Much beter than some paid stuff (IMHO)<br><br>Plugin for Foobar2000?<br>http://www.foobar2000.org/
+25-09-03 5:09
+Stefano
+I would like a BIG CLOCK as JALcd.<br>
+25-09-03 11:07
+Jon Bennett
+First: I want to say I LOVE LCD Smartie. It's amazing.<br><br>Here's my suggestion:<br>In the setup have it be able to read from a txt file like $txtline1, $txtline2, $txtline3 ...<br>That way you can put in whatever text you want.<br><br>Specifically, I want to write a php script so that users on my website can enter a phrase, it'll be put into the txt file and then it'll show up on the lcd.<br><br>Also, if you add txt file support, people can write their own programs to get their own statistics or whatever and have their own program dump info into the txt file - then LCD smartie can read from it. It opens a whole new world of possibilities for ammateur programmers like myself.<br><br>BTW,<br>My LCD Project will soon be on my site with my other projects. I'd be interested to know what you think, Basie.<br><br>Thanks! Please consider it.<br><br>Jon Bennett<br>www.JBProjects.net
+26-09-03 6:23
+Jon Bennett
+Very Very Sorry.<br><br>Just Re-Read the features list.<br><br>It's already there! Wow. Sorry I missed that.<br><br>Anyway,<br>Simply amazing work on LCD Smartie.<br><br>I believe I have a copy of Win95nt if you need it and I can host it if you want.<br><br>Jon
+26-09-03 6:29
+Frecca
+Let's start using this as a forum for LCD Smartie... I need help with using this weather-thing.. Csn someone tell me how I can use it in Finland and know what kind of whather it's coming?<br>Please inform me!
+28-09-03 1:57
+Mai
+Hoi,<br>I realy can't find anything about the '$CustomChar' function how does this work? and Ive got some probs with the I-Net things like CNN or Weather.Com the wont work sometimes. <br>Relly great Programm !
+30-09-03 18:49
+Mai
+Hoi,<br>I realy can't find anything about the '$CustomChar' function how does this work? and Ive got some probs with the I-Net things like CNN or Weather.Com the wont work sometimes. <br>Relly great Programm !
+30-09-03 18:49
+Mai
+Hoi,<br>I realy can't find anything about the '$CustomChar' function how does this work? and Ive got some probs with the I-Net things like CNN or Weather.Com the wont work sometimes. <br>Relly great Programm !
+30-09-03 18:50
+Daniel
+4-bits interface needed
+01-10-03 19:37
+sab
+Sugestion: Change the picture in the Commands > Credits screen so that it shows the correct version number ;)
+07-10-03 19:08
+eFreak
+Hi, it would be cool if the Weather would work over http://weather.yahoo.com/ because it has the weather of the whole world. <br>Greetings
+08-10-03 11:59
+Dakti
+Hay! About weather... Maybe use tool from http://www.weatherscope.com/ ???<br>And choose Country/City temperature (and other information if it possible)<br>Greetings!
+11-10-03 22:07
+Frecca
+Basie, are you still alive? What are you working on now when we don't get any answers, please keep your fans satisfied! We're expecting a newer and even better LCD Smartie, we're seriously waiting for it, give it to us!
+12-10-03 23:48
+FireFly
+i would love to see support for 2x8 LCD's, i have a 16 char text LCD (one line) which actually is a 2x8 LCD. Now i'm using the 2x16 setting but isn't a great solution.
+13-10-03 14:18
+MintyFresh
+I would like to see support for DVD Player software (PowerDVD, WinDVD and TheaterTek) which are used in HTPCs.<br><br>It would be similar to the Winamp features but for display of DVD information during playback.
+22-10-03 22:44
+greg
+Please add the support for 3x24 display!
+24-10-03 0:15
+Doritos
+Math Functions. The $Count Function is a nice addition. But, I would like to do other math with values (add, subtract, multiply, divide).<br><br>Main reason. I would like the Temps from MBM to be displayed in Fahrenheit (Not Celsius like MBM does). The Math would be ($Temp1,*9,/5,+32). 
+26-10-03 3:45
+Doritos
+Math Functions. The $Count Function is a nice addition. But, I would like to do other math with values (add, subtract, multiply, divide).<br><br>Main reason. I would like the Temps from MBM to be displayed in Fahrenheit (Not Celsius like MBM does). The Math would be ($Temp1,*9,/5,+32). 
+26-10-03 4:28
+Frank
+I wish me a online timer!<br>Thanks<br>Frank from Hannover
+26-10-03 12:15
+Steve
+Could you consider adding support for the Virtuosa jukebox (IMHO one of the best bits of MP3 software available). They (www.virtuosa.com) can supply the SDK so maybe the two of you could do a bit of a deal!<br><br>Many thanks<br>Steve (Leicestershire, UK)
+31-10-03 2:03
+Lucien Wells
+Hi,<br>I am also having problems on Win2k/XP with hibination. Perhaps if you could add some code to 'reinitialise' Smartie after coming out of hibination.. ?<br><br>Cheers,<br>Lucien.
+02-11-03 0:35
+Lucien Wells
+Winamp 5 support. See: http://forums.winamp.com/showthread.php?s=8d90b74d28b74e695e5c8a15618136e8&threadid=154385<br><br>Currently song/title scrolling seems a bit screwed, ie. scolling goes fast and slow, doesn't displa the whole song/title.<br><br>LW.
+03-11-03 8:26
+MKO
+What about support for serial Alpha LED Display's? Bigger can be better :-)<br>I have the used protocol for these display's if you want more info.<br>http://www.ams-i.com/Pages/a_two.htm
+03-11-03 23:32
+Mäcen
+I wish support for showing info from BSPlayer, and as MintyFresh already said, support for PowerDVD. Nice program. I like it ALOT! :-)
+13-11-03 0:59
+Cossie
+Great App. but i miss a Backlight control on a 4x40 Circuit.<br><br>LCDHype is useing PIN 14 on LPT for that and R/W (PIN 10 on LCD) is set to GND.
+16-11-03 14:03
+Dave
+For those of you who have problems with getting LCDSmartie to work, try LCDPro, it has alot of great features like LCDSmartie. I believe the URL is "http://ertw.dhis.org/LCDPro/"
+23-11-03 15:29
+Cossie
+Winamp Spectrum analizer can be done, just use WinAmp VBLink. (http://www.softwarecave.nl/products.php?product=winamplink) 
+23-11-03 19:52
+Stef
+How can i use nero to see the evolution of my cd writing?
+24-11-03 16:37
+Angel
+Have MBM 5.3.5.0<br>When will there be an option to display the temps, volts and so on in Smartie ? 
+06-12-03 14:47
+Alec
+Please add Winamp-like media playback stats capability (e.g. playback progress time % or bar; CD track or DVD chapter number; bitrate, etc.) to:<br><br>* Windows Media Player 9 (latest)<br>* Latest DivX player<br>* ATI DVD player<br>* InterVideo WinDVD players (version 5 and on)<br><br>Many thanks!!
+12-12-03 22:25
+Alec
+You have a useful wiring diagram allowing to turn the VFD on and off programmatically. <br><br>Would it be possible to have a wiring diagram where the VFD brightness could be controlled programmatically from Smartie? Even having 2 levels ("normal" and "dim") would be great; 3 or 4 levels would be ideal. I would imagine some simple circuit might be required as part of the wiring. That would be OK. Thanks!!
+12-12-03 22:29
+Jonas
+Hi<br>It would be nice to slow down the timing for parallell mode from the gui. Now, all I see is random characters, sometimes a word or to appears.<br>The display works fine with Crystal Control's slow mode.<br>Is there a way to do this with config.cfg?
+13-12-03 1:15
+Turtleshell
+ive set up a forum. it's kinda dead because no one is joining. i emailed basilep asking if he wanted me to make an exclusive forum .... but he never got back to me its at www.hartdesign.biz/lcd join!!
+20-12-03 17:50
+Timo
+Nice program, i'm just having a LCD but it is nice:-D Power comes totally from a Molex. This week I'll mod it so I can switch the backlight:-D<br><br>On that forum I can't register. Username wrong, but I can't give up an username :-S. <br><br>
+24-12-03 3:42
+Timo
+I've forgot something, the link in de WinAMP 3 plugin is dead (the one called in the zip).<br><br>Timo
+24-12-03 3:44
+Timo
+Me again, make an installer:-D<br><br>Timo
+24-12-03 3:44
+Alec
+Again, what a great software!<br><br>Got it to work fine on my DIGN/D.VINE HTPC VFD.<br><br>There are a few issues that I am having on my hardware:<br><br>* CPU load % always shows 0 (and I did try to load it and saw XP task manager show high% CPU load)<br><br>* Hard drive stats do not work; adding them to the display area instead displays what looks like Smartie's syntax error.<br><br>* Fan RPM and temperature readings are all 0; fan / temp zone names are all blank.<br><br><br>My hardware:<br>Intel P4 3.2GHz CPU,<br>Intel D875PBZ motherboard,<br>Maxtor 250GB Serial ATA hard drive, <br>Windows XP Pro (NTFS partition).<br><br>Many thanks!<br><br>Alec
+24-12-03 3:54
+wishmaster
+Hi i have an hd44100h 2x20 lcd display.<br>i got light i got i see blocks but it wont wanna work on my pc<br>i have the I/O drivers installed and using lcd hype and yours and other lcd programs but having no luk.<br>please help! :(<br><br>you can mail me on roysudmeijer@hotmail.com you also may add me on msn messenger.<br><br>Greetz wishmaster
+24-12-03 15:18
+wishmaster
+Hi i have an hd44100h 2x20 lcd display.<br>i got light i got i see blocks but it wont wanna work on my pc<br>i have the I/O drivers installed and using lcd hype and yours and other lcd programs but having no luk.<br>please help! :(<br><br>you can mail me on roysudmeijer@hotmail.com you also may add me on msn messenger.<br><br>Greetz wishmaster
+24-12-03 16:39
+Andriejh
+Are there any plans of adding 3x24 support?
+26-12-03 19:07
+neufeldtklaus@compuserve.de
+Nice to hear about smartie.Is it useable for Microsofr Flightsim 2002 (i.e. display of COM+NAV+ADF Frequency and Autopilot Settings)? How to link to Flightsim by "Dp it yourself? Thanks for answer, Klaus
+28-12-03 23:22
+Dave
+Quote from wishlist:<br>Winamp Spectrum analizer - Can't be done see: http://www.winamp.com/nsdn <br><br>This feature can be done using a vis plug in. Rather than rendering to screen, send the spectrum infomation to LCD Smartie.
+29-12-03 19:44
+SpooL
+Expand the screen skip/don't skip function to include process detection so when say, ZoomPlayer is running, it will stay on a screen that displays the zoomplayer information and when you shut it off, smartie will starting running through different screens. That way, smartie could be set to run application specific automatically, without having to enable/disable screen manually. Thanks for this great software, by the way!!
+02-01-04 21:22
+PROF
+J have DM157A LCD display (3x24). LCDsmartie can control two lines of my LCD (2x24), but cant't controling third line. Can you change this ??
+04-01-04 11:12
+junior
+Media Player support would be nice?!<br><br>in that way one could see (like winamp i suppose) details of the current track playing like songname, artist, length, tracknr, bitrate, etc.<br><br>in addition (if correct codecs are installed) one could see dvd information like chapter, length, title, etc<br><br>Thanks for the program and keep up the good work!
+08-01-04 0:22
+MinD|_eSs
+I have a suggestion, maybe you can implement Frame Progress while rendering in 3d Studio MAX? It would be invaluable for our office, where most of the rendering machines don't have montors...<br>By the way, i have a question, in what language should the plug-ins be written in?
+10-01-04 10:35
+Simryc
+Will you make support fot LCD DM157a it is 3x24charter, I buy sth like http://dm157a.webpark.pl/dm157a2.jpg, Is it a lot of work to add this LCD ?<br>If you have a time I will be thankful.
+11-01-04 1:47
+FlyingGimp
+May have been mentioned before, but I would like to see XP Media Center Support...<br><br>Stuff like Artist/Album/Song info and the like...<br><br>Everyone is itching for it, especially if you own a CyberPower MCE machine with the VFD built in...<br><br>Please, Please, Please, Please, Please!!!
+13-01-04 1:52
+MinD|_eSs(stefank@phreaker.net)
+Another suggestion: How about implementing Nero Burning ROM support, would be nice to be able to see the::Track Label;Recording Progress;Buffer State;Track Size and such details. Also, would be nice to see support for Get Right::Progress, segments,file Name, as well as ICQ: Current Online users, new message alert, or maybe even display of the incoming messages? Again i put forward the question about 3dStudioMax support, that would be KICKASS<br><br>Thanks in advance,<br>MinD|_eSs
+13-01-04 9:43
+SomeLCDuser
+Could you please look again after the cause of the errormessage "'' is not a valid integer value"? Many W98(SE) users, including me have this message comming up while starting Smartie. Smartie can then only be terminated by shooting it down in the task manager.<br>Thank you!
+13-01-04 14:03
+Ziele
+Could you add support for 3x24 LCD that has to be controlled as 1x48 and 1x24?<br>PLEASE!<br>Could you add support for 3x24 LCD that has to be controlled as 1x48 and 1x24?<br>PLEASE!<br>Could you add support for 3x24 LCD that has to be controlled as 1x48 and 1x24?<br>PLEASE!
+14-01-04 17:38
+Maybe
+It seems like Smartie is dead. Switching to LCDHype.
+15-01-04 22:34
+Jarx
+Hi!<br>Could you add some code to reinitialise Smartie after coming out of hibination?<br>& What about the new wersion? <br><br>
+15-01-04 23:38
+Arcom
+It would be nice if you could add the option to automatically hide the main window after the program has started.
+15-01-04 23:40
+Leonardo Garibaldi!
+Great Program! You´re the man! Congratulations! and ThkX! Im waiting for spectrum analyser! for winamp! i know you can! huaihuaihaui
+16-01-04 22:33
+SeeJay
+Screen Res For duel Monitors<br>BS Player support<br>maybe support for applications that are open<br>I'm new to this.. 
+17-01-04 6:10
+Leonardo Garibaldi
+There are anyway to startup Smartie minimized in systemtray? (Hide)
+17-01-04 16:04
+Leonardo
+Sorry about my last topic! I just saw the topic with a tip to hide smartie at starup now! 
+19-01-04 1:21
+Link
+If you could find a way to support the Samsung USB VFD (SASEM OnAir VFD) that comes with the Ahanix D-Vine series of HTPC cases, you would be da man! ;-)
+20-01-04 12:45
+Uwe Freese
+The Samsung LSI KS0076 is mainly HD44780 compatible and works with LCDSmartie. But all custom chars (also the bar characters) are moved one line up round robin. So I wish a "KS0076" option that fixes this (writes custom chars correctly to this controller).
+20-01-04 21:14
+Uwe Freese
+For my Athlon Barton 2500+ in a Shuttle SK41G, the CPU usage is not working (showing a fixed high value).
+20-01-04 21:17
+Andi
+Hallo. The link to Tweak-LCD (http://tweak-lcd.barracuda-central.org/) seems to be broken. Do know how to reach the shop? Even a search with google didn't bring a result.
+21-01-04 17:02
+Dakti
+Could you add support for 3x24 LCD (model DM157A -> 1x48 and 1x24) that has to be controlled as 1x48 + 1x24 or 1x24 + 1x24 + 1x24 ?<br><br>  PLEASE<br><br>   PLEASE<br><br>     PLEASE
+21-01-04 17:15
+Jochum Willemsen
+"Could you please look again after the cause of the errormessage "'' is not a valid integer value"? Many W98(SE) users, including me have this message comming up while starting Smartie. Smartie can then only be terminated by shooting it down in the task manager. <br>"<br><br>Same goes for me!<br><br>Waanzinnig programma trouwens!!!<br><br>BTW My Samsung VDF in my Dign 3E HPTC Case works fine, allthough with a few shortcomings.<br><br>Ga zo door!
+23-01-04 0:06
+kronchev
+hey man, when can we expect a new version?
+25-01-04 9:21
+Jochum Willemsen
+I would like to provide some feedback on the "is not a valid integer value" error reported by WindowsME users like me.<br><br>This error only exists if a shortcut was placed in the startup-folder by rightclicking the smartie.exe icon in the folder it is installed in, and consequently copying the thus created desktopshortcut in the startupfolder.<br><br>There is however a workaround to have smartie launched at startup in a proper way: Go to start -> settings -> taskbar and startmenu -> advanced tab -> advanced button and create a new shortcut manually in the startupfolder. It worked for me!<br><br>I would though like to report that the CNN headlines link doesn't work here. (stocks and tweakers do!)
+26-01-04 23:20
+Eric Mulder
+I wish I could read the BATCH info from the program GrabIt, like the download speed, items downloaded, items remaining, byte's downloaded, bytes remaining, time remaining, time elapsed.<br><br>Because I'm downloading pretty big files, my computer is downloading during the night. Sometimes when I wake up or something I wish to see the status of the batch without leaving my warm bed :D
+27-01-04 0:11
+Jason
+It would be nice to have the option to start the program in the hide mode. I placed LCD Smartie in the startup folder so that it starts when I turn on the computer. It is annoying to have to minimize everytime I startup. Just a suggestion.
+28-01-04 20:31
+Jochum Willemsen
+Jason.<br><br>You can start smartie minimized by editing the properties of the shortcut you placed in the startupfolder.
+28-01-04 23:11
+D][><][ Ice
+Nice program, A lot of features. but...... not on my LCD display :(<br><br>I've got a powertip2002a (LPT). There are characters on the display but not the right ones and it takes a long time before the seconde character shows up. <br>Is this a bug in the program or do I have a F#cked up LCD display?
+29-01-04 18:54
+LCD FREEK
+Best LCD software to date, full marks.<br>only 2 questions however,<br>Is there going to be any support for serial (SATA) HD controllers?.<br>Has anyone else had the total upload download counters reset at 4 gig, happens every time.<br><br>
+30-01-04 16:55
+Zero55
+I'm trying to startup Smartie, but with the latest version i get the error " is not a valid integer value; and with version 5.1 i get te message "are you missing some pictures?" what is wrong ??? Can someone help me please ?
+01-02-04 13:46
+Koffie
+LCD Freek,<br>"Has anyone else had the total upload download counters reset at 4 gig, happens every time"<br>That is your OS (Windows) resetting the counters, not the program :)
+02-02-04 12:35
+Alistair
+Support for showshifter ver 3/dvb would be great. www.showshifter.com
+02-02-04 14:18
+Mike
+Can't get ther weather.com thing to work right.
+05-02-04 5:56
+Phil
+When computer is in ACPI suspend type "S3" power to the lcd is lost. Upon waking power is restored to the LCD but it does not continue to show any data. Would it be possible for the lcd to 'refresh' and start receiving data again?<br><br>Regards,<br><br>Phil
+07-02-04 0:44
+Peter L
+I have a 44780 2x40. Smartie doesn't remember that setting and restarts with 4 lines. Some screens use all CPU and then the Setup screen doesn't show up. In this case you have to kill the program with task manager, and replace the config.cfg file with the default.<br>Solution: Open the source, there are many people wanting to help you!<br>/Peter
+08-02-04 15:26
+Joch_um_all
+wanna see my Dign3E lcd screen in action? watch the following animated gif:<br><br>http://home.planet.nl/~jwillemsen/images/vdf640.gif
+08-02-04 23:15
+imipenem
+Could you add support for Windows XP Media Center?
+09-02-04 22:16
+Simomax
+Would it be possible for ya to add an external button (connected to a couple of pins on the parallel port) so you can scroll through the screens?<br><br>Well cool util!! :-)
+12-02-04 0:58
+Nenne
+LcdSmartie is amazing keep up the good work!
+16-02-04 0:16
+Simomax
+Possibly make LCD Smartie run as a service on win2k / xp, or have it so it automatically minimises and sits in the system tray...
+16-02-04 22:36
+Fogcutter
+I also would like to see LCD Smartie work after hibernating in XP. I think this is the best LCD software out there and it sux because I can't use it. Some BB style forums would be great for exchanging ideas and new uses. Great program!!
+20-02-04 6:45
+thdrummer
+Support of 2 * 8 Display
+21-02-04 10:47
+Marco
+Nice features in smartie :)<br>My wishlist :)<br>* System Information for dual CPU setup. <br>* Support for iTunes<br>
+22-02-04 15:54
+dave
+would be nice if u support 4-bit access for the displays. there would be less wiring. <br><br>great programm :-) 
+25-02-04 22:54
+Jim Nelin
+* If "ip" is online then show ???<br>* If Not "ip"" is online then ???<br><br>Example:<br><br>*Server 100.0.0.1 is upp and running<br>*WARNING SERVER 100.0.0.1 IS DOWN!!!
+28-02-04 19:50
+Marco
+I Want to use my M50530 Display 8*24 Par. with Smartie ! I have a Datasheet for Seiko and Samsung Types of this Display also i have a LCD Testprogramm ! Maybe you can write a driver for ist ?? ! Thanks <br><br>Marco<br><br>diver2k_at_t-online.de
+03-03-04 14:50
+Marco
+I Want to use my M50530 Display 8*24 Par. with Smartie ! I have a Datasheet for Seiko and Samsung Types of this Display also i have a LCD Testprogramm ! Maybe you can write a driver for ist ?? ! Thanks <br><br>Marco<br><br>diver2k_at_t-online.de
+03-03-04 14:50
+oIfInd
+I would like the program to be able to get info from iTunes. That would be great!
+03-03-04 19:45
+DMC Denissen
+Your Prog is great but maybe a IRC plugin or something like that is nice.<br>and maybe a plugin for flashfxp or another ftp client... <br><br>keep up the good work!
+04-03-04 15:34
+Dr_Label
+Hello Great Program<br>But I can't get weather.com thing to work right
+06-03-04 1:37
+Glen
+Not to bad at all. One single request which i'm sure has been voiced:<br><br>MEDIA PLAYER title and time support for movies; like in use as a home thearter pc. Maybe it could happen just a plugin?
+10-03-04 3:17
+panos
+I have a problem using Smartie 5.2<br>when my computer resumes from stand-by the lcd isn't working properly (it shows only the top row full of black sqares) only if I restart the application works again properly
+11-03-04 6:24
+Biro
+I wrote a small helper for smartie and suspending (or hibernating) so please try it out and let me know how it works. <br>Link is: http://www.inet.hr/~dbirovlj/smartiehelper.rar <br>It needs to be running all the time.<br> And my e-mail is: biro (at) vip (dot) hr
+11-03-04 23:15
+Biro
+A little correction. I recompressed it with zip so link is: http://www.inet.hr/~dbirovlj/smartiehelper.zip
+13-03-04 0:23
+Trnquill
+The $bar doesn't work with decimal numbers. That's annoying because it would be nice to draw bars from network traffic. Like This:<br>$Bar($NetSpDownK(1),100,10)<br>But that doesn't work, because there is one decimal in NetSpDownK. And that causes an error.<br><br>Well, I found one situation when the bar & netsp combination works: When the network traffic is 0. :D<br><br>It would also be nice to be able to calculate things before showing them on the screen. Something like $Count, but with decimal numbers ($Count(1.1#1.2) causes an error..). Also multiplying and dividing would be nice!<br><br>But thanks for a good program, anyway! Haven't found better yet! :)
+14-03-04 23:05
+Biro
+For Trnquill:<br>You've got demo.dll for calculations. <br>IIRC function1 is subtraction, function2 is difference, function3 is multiplying and function4 is dividing.
+14-03-04 23:26
+Steven
+Amount of time that the computer has been powered/ in use.
+19-03-04 21:04
+ZomBee
+Hi<br>Plz help , I have an 3x24LCD and Smartie doesn't work 4 me. If there are some plugin or somethin plz help.
+20-03-04 19:40
+imgrib
+you should add some support for winamp. One of the things is to show if you hawe enabled shuffle or repeat. an other thing is to show next item in the playlist and previous track. <br><br>You made a super program keep going!
+22-03-04 22:45
+fisofo
+Lots o' suggestions ;) Not sure if this is already possible, can the $Bar be customized? Can I use specific characters for fill, half fill, not fill instead of the block, half block, and dash? Thanks
+23-03-04 4:33
+Erik Swaans
+Could you make a framerate counter?<br>Or support for Fraps, that's maybe easier.<br><br>Btw i tried a lot of lcd controlers but none can do the job as good as smartie!<br>Keep up the good work, we love it!
+23-03-04 23:30
+Klaus
+Is it possible to make smartie control a FUTABA VFD (m-series with futaba commands)? 
+28-03-04 15:57
+Klaus
+Is it possible to make smartie control a FUTABA VFD (m-series with futaba commands)? 
+28-03-04 15:57
+crash
+Is it possible to make custom characters in $Bar() function?
+29-03-04 12:29
+dole
+I think he died...
+30-03-04 10:00
+LameazZ
+Could you make an option that turns the whole display upside down!? i made a (BIG) mistake when i installed the display in my computer, its placed upside down, and i cant turn it.. theres no room.. but just a suggestion.. :D
+02-04-04 18:18
+Skaaltel
+If it's not there already- please please add support for the bgmicro 2x20 VFD in serial mode. it simplifies wiring no end. <br>vfdworld has a program that already does.. I know I'm being hopelessly vague-<br><br>but please do try. alternatively, expand upon your list of supported displays (in detail)<br><br>thx for the wonderful free program!
+04-04-04 7:18
+Frecca
+LCD Smartie seems to be dead...
+06-04-04 19:49
+Ben Hardy
+Matrix Orbital GPO Control!
+07-04-04 0:15
+pyro
+I'd like to see the ability to add any perf mon stat on the screen.
+08-04-04 2:43
+eghost
+My folding@home stats don´t appear :(
+09-04-04 17:59
+lillbear
+i'd like to have 2 or more ( 4x20 ) displays. So we need to add selectable LCD-EN option for that ;) and there should be pins left for that.
+11-04-04 20:37
+Bo
+Is there a way to use Smartie with a usb-vfd? My vfd came with my HTPC case from Ahanix, and its connected to a usb-control board. I think it's the same controller as the Sasem Remocon.
+12-04-04 22:41
+xVw
+I want USB support:D<br>in the german magazine called "c`T" (www.heise.de) was an article where a curcuit translated the serial datra from usb 2 paralell data for the lcd...<br>if u want more information about that mail 2 _ stupid.bender@gmx.de _<br>xVw
+13-04-04 11:56
+Spacewagon
+I thank LCD smartie is the best one.<br>But if it can support that is better . <br>For example : windows media player , power DVD . <br>Add a shortcut key to cycle the LCD display's screen . 
+13-04-04 12:15
+Gavin
+how does LCDSmartie work? does it write the config to the LCD itself?
+13-04-04 22:15
+Pixal
+Support for Windows media player, dvd software and BSPlayer should be very cool.<br><br>Now Playing:<br>Ghost Ship<br><br>and so on..
+15-04-04 13:25
+Jarx
+Wake UP !!!
+15-04-04 21:35
+csmarley
+Support for 24x4 LCD's
+18-04-04 3:39
+LLIaJIyH
+Hello people! Help me please: How to bind buttons in Actions?<br>PS sorry for my mistakes... ;)
+18-04-04 13:53
+sverdisk
+make me happy
+18-04-04 20:48
+opticus
+windvd and mediaplayer support
+22-04-04 15:02
+Tanis143
+You might want to see how Coolbits runs without having to have MBM run as well. They have a way to start the .dll MBM uses to gather info. If I could figure out how, I would start the .dll so I dont have to have MBM run with lcd smartie. But, kudos to you man, lcd smartie is by far the best program I've found for my lcd
+22-04-04 20:51
+Neo
+Saw this one up there but wanted to re-voice since this is one of the few I've seen that has QStat working right(I've been working on my own software and I'm about to give up on qstat and figure out the protocols on my own!) but I need something that works for the 8x24 vt100 serial LCD found at earthLCD - specificly the one used at www.pjrc.com in thier mp3 player. You can find these (NOW WITH THE SERIAL CONNECTER - I wish that was offered when I got mine) on ebay for about $19.99 by searching for "serial LCD"
+23-04-04 20:07
+Grant
+- RSS News feeds<br>- Disconnect from display when winamp loads (so I can use winamp LCD plugins)<br>
+25-04-04 20:20
+Adam from Warsaw/POLAND
+Please, add any external key for switching between themes.<br>Best if there are 2 switches or more<br>than can be detected by SmartieLCD.<br>Example:<br>button 1 - next theme<br>button 2 - previous theme<br>button 3 - automatic switching themes on/off<br><br>best greetings!<br>Adam
+03-05-04 1:32
+nEuTrOn
+Can you please add a support for 4x27 LCD's ? 
+12-05-04 19:27
+mazda
+Support for WinTV so you can see which channel is on on the lcd.
+16-05-04 13:18
+Dave Daytona
+Power DVD support, so we can see film info. :-)
+17-05-04 21:59
+Stephq
+make it work with the :<br>L.I.S.2 Indicator series from :<br><br>http://www.vlsys.co.kr/
+19-05-04 15:39
+jarekn
+New size of LCD 3x24 ( DM157A )in LCD SMARTIE ?!?<br>Memory organization similar to 2x48. Line two is continuation of first line. Line three start @ 40h
+19-05-04 16:25
+nryoung
+I've come across an excellent plugin for WMP9 that writes the current track to a text file enabling this to be displayed on my VFD. However there I have no way of getting LCDsmartie to establish whether this app is active or not. Any chance a dialog could be added to allow any .exe to be added to the active/not active pull down list?<br><br>thanks in advance
+20-05-04 13:26
+Bloodhound
+Hey!<br><br>Cool prog.!<br><br>What about stats from http://dolphin.twistification.net/ ?
+23-05-04 10:23
+Bloodhound
+Hey!<br><br>Cool prog.!<br><br>What about stats from http://dolphin.twistification.net/ ?
+23-05-04 10:23
+André Maruska
+Sorry for my english, I'm from Brasil. I have been having some problems with the customchar... even the example in the site doens't work. It show only crazy caracters. Please any one knows about it???<br><br>Thanks!
+25-05-04 16:09
+André Maruska
+Not a suggest just answering the nryoung.. well I got this plugin to and my one detects if the wmp9 is active or not and even show if I stop the music... try to find some other plugin that works or send me a email: almaruska@hotmail.com<br><br>See ya.
+25-05-04 16:12
+Weissbierwaldi
+I would suggest to add a funktion to start smartie in hidden mode.<br>Does this command exsist?<br>Pleas mail me markus-mi@web.de<br>Thanks
+27-05-04 19:27
+Leonardo
+I like to put Artist in one line and trackname in oder... 
+29-05-04 1:19
+Toskoman
+Gimme error on all info about memory, HD, adapter name, ip, up and downstreams, customchar dont work, and lots of other stuff
+29-05-04 5:46
+broderp
+How about some instructions? Unless your an UBER-GEEK, this aint so straight forward, dealing with the reqired program for the ports and this one for the LCD, and no incling on what to do with each. It took over 5 hours to get a dispay that LOOKED right, but still the data is not correct. example: CPU USAGE =0%?? Not when MS XP tells me it's 24% while I record TV, surf the web, and compile a CD!
+29-05-04 14:44
+Ward wardje20@hotmail.com
+Can anyone please mail a little more info about the circuits? I'm a n00b.<br><br>Greetz and thanx in advance
+02-06-04 23:05
+Ward again
+I meant i don't know wich cirquit to use for wich LCD and controller<br><br>Greetz
+02-06-04 23:06
+Eric Mulder
+My suggestion is to make a function to let smartie start as a service. I'm running Smartie on a Win2K3 server, but smartie will only be started after I logon. 
+06-06-04 18:23
+luckless sucker
+how about a process status? I would like to check if several processes are running to switch so other screens.<br><br>and a html/xml reader would be great in order to read newstickers from specified websites... (reading without xml/html code :) )
+08-06-04 12:14
+supermzn
+i don't know how to use actions and Buttons ... help please/ send me e-mail to super_mzn@hotmail.com
+08-06-04 15:31
+nk-nk-nk
+How about a file (or url) listing variables that work with the LCD Smartie functions such as "$Right(ins variable(s) here,$3%)"? Or how to know what to use?<br><br>Looks great ... now I need to dig up an LCD and wire it in.
+10-06-04 5:01
+nk-nk-nk
+Santa ... What I want long before Christmas is:<br>Support for a 1-wire network of sensors (temperature and digitalat a min)<br><br>Thanks Santa
+10-06-04 5:03
+Richard May
+I love this app, and would like to add my voice to the requests for an XP Media Centre Edition plugin.<br><br>I would be very cool to be able to display the TV Prog that MCE is recording, or you are watching!
+10-06-04 12:05
+nk-nk-nk
+The Plugin ling to "julian" appears to be broken & needs fixin.<br><br>Is there any info available for writing .dlls?
+10-06-04 19:46
+Jay
+i has Noritake (CU20045SCPB-T23A)<br>Can you support Next ver.?<br>im use STLCD(http://stlcd.curz.com/)now<br>i thing better ur software..<br><br>thanks<br>
+13-06-04 9:30
+Ghost
+Hi there...i have a problem....why when i try to show hd info he show me "error"... ex: $HDFreg(C) return "errorC)"... $HDFree(C) return notthing....same thing with networc adapter info....ty
+16-06-04 4:03
+Psycho
+Maybe you can make a new circuit,so you can attach the lcd display to a USB port.Or with button so you can scroll through musiclists and choose a song to play.
+23-06-04 14:35
+Psycho
+Maybe you can make a new circuit,so you can attach the lcd display to a USB port.Or with button so you can scroll through musiclists and choose a song to play.
+23-06-04 14:35
+Pedro V. T. Trevisan (www.mecatrom.cjb.net)
+Hello, I have a great suggestion : In a winamp plugin, we see a explorer(brownser) simulator like a windows ... My sugestion is the same for the smartie (is the best). A brownser with the functions copy, rename, delete, move,tree of directories, etc. Thanks !!!! See ya !!!
+29-06-04 5:42
+Chris McEwan
+Anyone else workign on things for smartie LCD.<br>i am looking for a Media Player plug in so my HTPC can display media player file names.<br>I cant go to win amp because the HTPC software isnt supported
+03-07-04 19:24
+Lydecker
+Martix Orbital USB products support please!!!
+06-07-04 11:12
+Lydecker
+Martix Orbital USB products support please!!!
+06-07-04 11:12
+Raymond 
+Is it possible that you could somehow display the title of a DVD Movie or a Audio CD somehow by getting the info from the OS? If its possible please let me know.<br><br>Thanks<br><br>email - rct62871@hotmail.com
+08-07-04 5:35
+GLO
+Thanks for the program! <br><br>Just wanted to ask if this should automatically start up when booting the PC? thanks!<br><br>enquiry@ glo-racing.com 
+10-07-04 0:18
+Eric Mulder
+ My suggestion is to make a function to let smartie start as a service. I'm running Smartie on a Win2K3 server, but smartie will only be started after I logon. Is that possible?
+12-07-04 9:40
+Daniel Liljeblad
+Me and my friends has got 4x12 lcd screen, ur program don suppeort that kind of dsisplay, could u fix that. BTW I appriciate all that u have done to the folks around the world with all these lcd screens. PLEASE PLEASE fix a plugin or something so my and my friends 4x12 lcd screens will work. / daniel Liljeblad Inz_@hotmail.com THANK YOU!
+16-07-04 2:20
+rocko
+Please make a support for 3x24 signs LCD or tell me where to change it (which file modify)
+20-07-04 23:52
+magic
+How make network load bar?<br>The up/down speed not integer, and the bar() say error.
+26-07-04 12:58
+psylo@o2.pl
+Can You make Smartie work with Foobar mp3 player as well as with Winamp? Foobar is IMO much better... Here's it's homesite: http://www.foobar2000.org<br>:-)
+26-07-04 13:44
+jon@hartdesign.biz
+I have a suggestion, update your site? You have one of the best LCD programs, why not update your site or release the source code? If needed, I will make you a domain LCDsmartie.com and host the binaries and source for you!
+31-07-04 20:01
+Javo
+I have tried all the others LCD programs and this one is the best by far.<br>Here I have some sugestions for the wish list.<br>1-Interaction, from middle to the corners.<br>2-Interaction, from the corners to the middle.<br>3-Intercation, droping the characters.<br>4-Space on Drive (x)GB, whit some decimals. I have this case UsedSpace/TotalSpaceGB, and i see 9/19GB, i would like to see 9,5/18,6GB or 9,52/18,62GB.<br>5-Used, free, total, % and bar for video memory (VRAM).<br>6-Current aplication on use.<br>7-Number of aplications running.<br>8-And finaly is it posible to visualize informatión from the Windows Media player? The only thing i have done is to see the current track playing, but i would like to see remaining and total times<br><br>Also would be great to update the site, and display the sugest by pages!!!<br>Anyway thanks for the program and keep up the good work!<br>
+01-08-04 3:11
+BasieP
+Hi there All, sorry I haven't been able to reply to all of you who took so much of your time to try my product out and write your comments and suggestions, but I actually passed away tragically late last year and have been working on a new plugin to reply to your requests from the other side...
+05-08-04 22:52
+BasieP
+Hi there All, sorry I haven't been able to reply to all of you who took so much of your time to try my product out and write your comments and suggestions, but I actually passed away tragically late last year and have been working on a new plugin to reply to your requests from the other side...
+05-08-04 22:55
+BasieP
+I'm not actually dead, but like every other LCD software....it was a fad and lost interest. Suckers.
+09-08-04 19:56
+Will
+Hi,<br>For a Home Theater PC (HTPC) a great tool is showshifter (http://www.showshifter.com)<br><br>It would be really cool if LCD Smartie could show current playing item (mainly album & track in MP3 mode, but also name of DIVX / photo etc.)<br><br>Oh Yeah.. and the BasieP comments above... Does the "fake BasieP" really think that anyone would believe that pile of crap?<br>
+12-08-04 21:38
+BasieP
+Test
+12-08-04 21:38
+Mike H
+I have half written an IMAP plugin but the functions just get called everytime the LCD is updated (hence checking mail happens every second)<br><br>Since the last update was nearly 18 months ago and all contact info has now gone, how about releasing the source code ??
+13-08-04 11:17
+BxM
+Hi. My English is not very good, so I won't talk so much. I think the Programm is better, when there is a support for MBM 5.3.7.0. Thank you, bye.
+14-08-04 18:37
+EVOlution
+Any chance of supporting iTunes, or is there no way to extract information?<br><br>Cheers.
+17-08-04 11:36
+koko
+hi ,<br>what about rss feed format .<br>it would be great .<br>it will suport all site that have rss .<br>thanks 
+18-08-04 0:04
+sephiroth
+I like the 'skip this screen if is not running' feature. To be able to add another to the list would be awesome.
+20-08-04 15:38
+ipalmer
+I have trouble with my 16x1 DataVision LCD! When I select 16x1 mode in Smartie only half of my Lcd is working! I think that it's bug
+28-08-04 23:57
+mike_klms
+It would be great if there were a plugin to extract information from WinTV... If its dead and not going to be updated the least the source code should be released so people can work on their own updates and plugins
+29-08-04 2:01
+mike_klms
+oh....and information from WMP like winamp
+29-08-04 2:02
+mike_klms
+In the "Skip if is not running" feature it would be great if you could choose whatever program you wanted, by giving the file name. Also if there were something like "display only this screen if is running" so it would only only display certain screens if a certain program were running. Also another would be disk activity meter, such as a HDD or CD-ROM drive. Another is support for Nero, like when you are watching a DVD. Support for AIM, MSN, Yahoo, etc. to display screen name, time online, who you are talking to, away message, etc. Support to be able to take any piece of data out of System Information, although i dont know how useful that would be. Outlook support-listing current tasks or calender events. Fix the CPU usage thing! Support for Symantec, or Windows XPSP2 Security Center, to show anti-virus status, if updates are ready to be installed, if symantec is defraging and % of fragmentation, etc...i dont really know about that one. current headlines from google news. Display only email stuff if there is new email until you check it. Thats all i can think of right now...
+30-08-04 4:10
+Daniel
+Hey BasieP, really great app. I would love LINUX support for it. Will there ever be such? :)
+30-08-04 16:35
+Kalmar
+How about a Linux version?<br><br>
+31-08-04 0:38
+mike_klms
+By the way, if anyone knows where i can get any of those things that i mentioned above, especially the WinTV one, please email me at mike_klms@cox.net
+31-08-04 2:33
+Jimmy C
+Add my vote for WMP support!!!! I use BeyondTV (And Beyond Media), which uses WMP code. I would be willing to pay for this feature (or would write it, if I knew how.<br><br>Also noticed that program hangs on startup, but if I close and re-open it's OK...
+31-08-04 7:41
+Hako
+Support for other system COM ports besides just 1-4
+01-09-04 12:57
+Elo
+Please include support for the L.I.S 2 LCDs from VLsystems. Looking good!
+08-09-04 23:40
+Syridian
+Supporting a second Enable pin (E2) would allow some of the KS0066U controlled 4*40 displays to work. As well as opening up the possibility of driving 2 seperate displays from the same parrallel port.<br><br>The software is great, I love it, thanks, and if I wasn't sctratching arround for a big fat cheque myself I would send you a donation to say thanks.<br><br>P.S. I love the contact page. ;)
+09-09-04 8:20
+stoned
+hi great program<br>i just miss the i-tunes support.<br>if you don't know it: try!<br>much better then winamp<br>thanks stoned
+13-09-04 8:26
+Lord Kano
+What would it take to get Noritake gu128x32-311 support? This program looks really slick, but I don't know how to use it with my vfd.
+20-09-04 4:40
+Jio
+anyone have the pin configuration of a HD66710FS chip LCD?<br><br>Here is a picture<br>http://forums1.itrc.hp.com/service/forums/getattachment.do?attachmentId=143309&ext=.JPG;<br><br>It has 20 pins the bugger! let me know<br>Email me at ioannis dot anastasiadis at cpbbflex dot co dot uk
+21-09-04 13:23
+muhason
+HI nice SW<br>please ad a ping option to n(min 5) host<br>
+22-09-04 20:22
+muhason
+HI nice SW<br>please ad a ping option to n(min 5) host<br>
+22-09-04 20:56
+insider
+Please, make this program reading russian names!!!!<br><br>=:>
+23-09-04 6:13
+flash
+support for L.i.s LCD
+25-09-04 13:43
+djool
+you must had 1k resistor in pull up on 5V on pin RS E(if E is necessery) and RW to get the lcd fonctionnal. And be careful with some lcd which have negative Vo for contrast....(MDLS LCD)<br>Very nice software go on this way.....
+26-09-04 19:57
+Josh
+ITUNES<br><br>When is this baby gonna work with itunes
+01-10-04 1:50
+red_mamba
+Any IIS 6.0 stats planed?
+03-10-04 13:29
+piranha
+make this progamm work with the   LPH 7550-1!
+04-10-04 14:54
+Edwin
+I don't know if it is already possible but ..<br>can smartie make a connection to the Hauppauge WinTV PVR 350 so that the radio information(frequenties or RDS) can be displayed...<br><br><br>
+04-10-04 19:24
+Edwin
+I don't know if it is already possible but ..<br>can smartie make a connection to the Hauppauge WinTV PVR 350 so that the radio information(frequenties or RDS) can be displayed...<br><br><br>
+04-10-04 19:24
+Marc van den Akker, Nijmegen Nederland
+Thanks first for making Smartie! I've used it with the Powertip PC1601F 1x16 lcd display with 14 pins. It works, but the first 8 characters are seen by Smartie as line 1; and the next 8 characters as line 2; I cannot use the full display roling. It would be nice if you programmed a 1x(2x8) mode.<br>Greetins, Marc<br>
+06-10-04 0:51
+yo
+fuk u dik
+07-10-04 21:08
+Xmenator
+Anyone heard of Logitech Dinovo Desktop?<br>it's a mulitmedia keyboard with a display that shows AIM, Y! and MSN logons.<br><br>anyway this kan be done here?<br><br>i also like something that desplays the current user and e-mail. can this be done?
+08-10-04 12:16
+newbee
+Tv/radio station name<br><br>and suport for win dvd
+11-10-04 23:14
+polszki
+I have a lot of suggestions! :)<br><br>1, I would like to separate the track title and the artist name into two lines in winamp.<br><br>2, winamp remaining time should be (ex) 0:26 instead of 26... ( I think so)<br><br>3, network stats sometimes work, sometimes not, it cant find the lan card, and if it works it shows wrong data... higher download speed, etc (I have cable net)<br><br>4, CNN, weather and other net stuff wont work... what could the problem be? Email detecting is working jsut perfect, I love it with blinkin text! :)<br><br>5, harddisk stats wont work... :(<br><br>(I feel like a real lama... ;)
+13-10-04 14:03
+Evert
+Mail me for a Mirror in the netherlands, on a 1Gbit Connection, <br>and maybe programming support, for Smartie.<br>Evert At Vanharten Dot Nu
+24-10-04 11:53
