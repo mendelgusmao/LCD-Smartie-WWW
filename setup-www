@@ -7,6 +7,6 @@ chmod 444 $TO/*
 chmod 775 $TO/images
 chmod 444 $TO/images/*
 
-ln -s index.htm index.html
+ln -s index.htm $TO/index.html
 
 echo "DO NOT EDIT THESE FILES HERE - EDIT THEM IN CVS" > $TO/README
