@@ -6,6 +6,7 @@ chmod 775 $TO
 chmod 444 $TO/*
 chmod 775 $TO/images
 chmod 444 $TO/images/*
+chmod 444 $TO/menu.htm
 
 ln -s index.htm $TO/index.html
 
