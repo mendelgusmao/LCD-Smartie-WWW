@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <title>LCD Smartie - A free open-source LCD program!</title>
+  <!-- start of head.html -->
+  <!--#include virtual="head.html" -->
+  <!-- end of head.html -->
+</head>
+<body>
+  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2005/01/02 20:42:47 $ \$Revision: 1.1 $" -->
+  <!--#set var="file" value="menuplugin" -->
+
+  <!-- start of header.html -->
+  <!--#include virtual="header.html" -->
+  <!-- end of header.html -->
+
+  <!-- start of sidebar.html -->
+  <!--#include virtual="sidebar.html" -->
+  <!-- end of sidebar.html -->
+  <div id="content">
+	  <h1>Menu Plugin for LCD Smartie</h1>
+	  <img border="1" src="menu1" /> Pressed menu key - menu appears.<br />
+	  <img border="1" src="menu2" /> Pressed next key - cursors moves down<br />
+	  <img border="1" src="menu3" /> Pressed next key - menu scrolls up<br />
+	  [I need some pictures of this plugin]<br />
+
+	  <p>This is a plugin that makes it possible to use menus on your display. The plugin will show the currently selected menu option, and perform specified actions (goto screen, turn gpo on/off, etc) when a menu option it activated. The plugin supports menus larger than the screen, the menu will automatically scroll up and down. It also supports horizontal and vertical menus.</p>
+
+	<h2>Limitations</h2>
+	<p>This plugin requires display keypad input to work, so only displays with keypads that are supported by LCD Smartie will be able to use this plugin. [At the time of writing supported displays were Crystalfontz CFA631 &amp; CFA633, Matrix Orbital displays with a keypad, and Palm PDAs.]</p>
+
+	<h2>Download</h2>
+	<p>Menu Plugin <a href="http://prdownloads.sourceforge.net/lcdsmartie/menuplugin.Alpha1.zip?download">Alpha 1 can be downloaded here.</a></p>
+	<h2>Install</h2>
+	<p>To install this plugin copy the menu.dll into the plugins directory of LCD Smartie. [Only the 5.3 beta 2 and above builds are supported.]</p>
+	<p>The zip file also includes demo config files for Crystalfontz displays CGA631 &amp; CFA633, that show how the plugin can be used - backup your config.ini file before renaming these as your config.ini.</p>
+
+	<h2>Usage - Overview</h2>
+	<p>To use the plugin you will need to insert commands into the your screens (so the menu can be created and displayed) and add actions (so the plugin can receive input and carry out actions).</p>
+
+	<h2>Usage - Actions</h2>
+	<p>The plugin needs actions to be setup so it can receive key presses and notification of screen changes.</p>
+	<h3>KeyPad actions</h3>
+	<p>The menu plugin needs to know when the keys for &quot;Previous menu item&quot;, &quot;Next menu item&quot; and &quot;Select menu item&quot; are pressed. This is done by tieing a keypress condition {$MObutton([key])} to a plugin call {$dll(menu,9,[keytype],[non-menu action])}.</p>
+	<p>The form of this command is: $dll(menu,9,[keytype],[non-menu action])<br/>
+	Where:
+	<ul>
+		<li>[keytype] - is one of p, n, s [p=Previous menu item, n=Next menu item, s=Select menu item]</li>
+		<li>[non-menu action] - this is the action to perform is a menu is not currently active. This is useful for using the keys for non-menu tasks when not in a menu.</li>
+	</ul>
+	</p>
+	<p>An example set of key actions are:
+	<ul>
+		<li>$MObutton(E) = 1 then $dll(menu,9,p,WALastTrack)</li>
+		<li>$MObutton(F) = 1 then $dll(menu,9,n,WANextTrack)</li>
+		<li>$MObutton(I) = 1 then $dll(menu,9,s,0)</li>
+	</ul>
+	On a Crystalfontz 633 this sets up key E (smartie's name for the 633's Up key) to cause the previous menu item to be selected (or if we're not in a menu then to select the previous winamp track). Key F (smartie's name for the 633's Down key) to cause the next menu item to be selected (or if we're not in a menu then to select the next winamp track). Key I (smarite's name for the 633's Tick key) to cause the currently selected menu option to be activiated (or do nothing if we're not in a menu).</p>
+
+	<h3>Screen changed actions</h3>
+	<p>The Menu plugin needs to know when the active screen changes, this is so it knows when we're no longer in a menu. To do this an action must be added to call our plugin when the screen changes</p>
+	<p>The command takes this form: $dll(menu,8,0,0)</p>
+	<p>An example action is:
+	<ul>
+		<li>$ScreenChanged = 1 then $dll(menu,8,0,0)</li>
+	</ul></p>
+
+	<h3>Enter/Leave menu actions</h3>
+	<p>This step is optional, but it's nice to have a key setup to enter and leave the menu. This plugin provides a command that takes two actions, it will execute one of them if we're in a menu and otherwise execute the other. This can be used to setup a menu key</p>
+	<p>The command takes this form: $dll(menu,7,[non-menu action],[menu action])</p>
+	<p>An example action is:
+	<ul>
+		<li>$MObutton(J) = 1 then $dll(menu,7,GotoScreen(19),GotoScreen(2))</li>
+	</ul>
+	If on screen 19 we place the menu and on screen 2 a standard screen, then the above would take us to the menu screen when button J was pressed (on a CFA633 that is the X button) if we're weren't already in a menu, otherwise it would take us out of the menu (to screen 2).</p>
+
+	<h3>Action Summary</h3>
+	<img src="menuactions.jpg" />
+	<p>An example set of required actions are:
+	<ul>
+		<li>$ScreenChanged = 1 then $dll(menu,8,0,0)</li>
+		<li>$MObutton(J) = 1 then $dll(menu,7,GotoScreen(19),GotoScreen(2))</li>
+		<li>$MObutton(E) = 1 then $dll(menu,9,p,WALastTrack)</li>
+		<li>$MObutton(F) = 1 then $dll(menu,9,n,WANextTrack)</li>
+		<li>$MObutton(I) = 1 then $dll(menu,9,s,0)</li>
+	</ul>
+	Button J enters/leaves the menu. Button E takes us to the previous menu item. Button F takes us to the next menu item. Button I select that active menu item. [Button E and F will also do winamp functions when not in a menu].
+	</p>	
+
+	<h2>Usage - Screen</h2>
+	<p>To create and display a menu, one command is needed to setup the menu and display the first item, and another is needed for each extra line there is in the menu.</p>
+
+	<h3>Creating</h3>
+	<p>The command for creating menus takes the form: $dll(menu,1,[displayed length]#[item1name]=[item1action]#[item2name]=[item2action], [menuname])</p>
+	<p>There can be as many [itemname]=[itemaction] pair as you need.</p>
+	<p>where:
+	<ul>
+		<li>[displayed length] - is how many menu items you're going to display. The plugin needs to know this so it can correctly scroll the menu if it is longer than the displayed length.</li>
+		<li>[item1name] - this is the text to display for the menu item</li>
+		<li>[item1action] - this is the action to perform when this menu item is selected.</li>
+		<li>[menuname] - this is a unique name for this menu, this name must not be used on any other screen. This name is never displayed, and is needed for internal maintainance reasons.</li>
+	</ul>
+	</p>
+	<p>An example is:
+	<ul>
+		<li>$dll(menu,1,2#Test=GotoScreen(1)#Test2=GotoScreen(2)#Test3=GotoScreen(3), MyMenu)</li>
+	</ul>
+	This example creates a menu of 3 items where only 2 will be displayed on the display at a time.</p>
+
+	<h3>Remaining items</h3>
+	<p>To display the remaining menu items, you need to use command $dll(menu,2,[line],0) where [line] is the required line; 2 is the second item, 3 the third.</p> 
+	<h3>Summary</h3>
+	<img src="menuscreen.jpg" />
+	<p>An example menu:
+	<ul>
+		<li>Line1: $dll(menu,1,2#Winamp...=GotoScreen(20)#Disk info=GotoScreen(4)#Memory info=GotoScreen(5),Menu1)</li>
+		<li>Line2: $dll(menu,2,2,0)</li>
+	</ul></p>
+
+	<h2>Tips</h2>
+	<ul>
+		<li>Uncheck 'Enabled' on menu screens - you don't want them appearing during the automatic screen cycle.</li>
+		<li>To implement a menu with a timeout, set a 'Time to show'.</li>
+		<li>To implement a menu with without a timeout, check  the 'Sticky' option.</li>
+		<li>To implement submenus simply add a menu option that takes you to a screen with another menu defined.</li>
+	</ul>
+
+	<h2>More images</h2>
+	<p>This is from one of the demo menus, setup for a 2 line display.</p>
+	<img border="1" src="menu1" /> Pressed menu key - menu appears.<br />
+	<img border="1" src="menu2" /> Pressed next key - cursor moves down.<br />
+	<img border="1" src="menu3" /> Pressed next key - menu scrolls up.<br />
+	<img border="1" src="menu4" /> Pressed prev key - cursor moves up.<br />
+	<img border="1" src="menu2" /> Pressed prev key - menu scrolls down.<br />
+	<img border="1" src="menu5" /> Pressed select key - sub menu appears.<br />
+	<img border="1" src="menu6" /> Pressed next key - cusor moves down.<br />
+	<img border="1" src="menu7" /> Pressed next key - menu scrolls up.<br />
+	<img border="1" src="menu8" /> Pressed next key - menu scrolls up.<br />
+
+
+</div>
+  <!-- start of footer.html -->
+  <!--#include virtual="footer.html" -->
+  <!-- end of footer.html -->
+</body>
+</html>
