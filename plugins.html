@@ -7,7 +7,7 @@
   <!-- end of head.html -->
 </head>
 <body>
-  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2005/01/22 23:38:27 $ \$Revision: 1.13 $" -->
+  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2005/01/23 01:26:02 $ \$Revision: 1.14 $" -->
   <!--#set var="file" value="index" -->
 
   <!-- start of header.html -->
@@ -103,6 +103,8 @@
 	<p><strong>Tip:</strong> Plugins can cause actions to happen, place a $dll command in the condition part of an action.</p>
 
 	<p><strong>Tip:</strong> Plugins can be used in the command part of an action - the string it returns will be parsed as an action [So if the plugin returns WAPlay then winamp will play...</p>
+
+	<p><strong>TIP:</strong> Catch all exceptions in your code and return a string as usual - allowing an exception to escape into Smartie's code will cause a crash.</p>
 
 	<p><strong>Warning:</strong> Your dll will be called when ever the screen that references your dll is displayed and as often as the &quot;DLL check interval&quot; on the Misc settings tab (or your dll's limit if it's higher, which defaults to 300ms). It's wise not to do any work that will take a long period of time because the whole of smartie will be blocked until the function returns. It's best to create a thread to do the real work, and the exported function simply copys out the cached result. </p>
 
