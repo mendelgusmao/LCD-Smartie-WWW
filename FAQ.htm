@@ -49,13 +49,15 @@
 	<li>Smartie currently only support <a href="http://lcdsmartie.sourceforge.net/circuits.htm">8bit wiring</a>.</li>
 	<li>First off all: check, check and recheck your <a href="http://lcdsmartie.sourceforge.net/circuits.htm">wirings</a>!</li>
 	<li>if you get ANYTHING on your LCD, your wiring is likely to be (almost) correct.</li>
-	<li>Second: check your bios, and turn your LTP port settings to EPP (sometimes ECP does work, but EPP is better)</li>
+	<li>Second: Try setting the "timing multiplier" (in HD44780 options) to 5 and restarting.</li>
+	<li>Third: check your bios, and turn your LTP port settings to EPP (sometimes ECP does work, but EPP is better)</li>
 	<li>still not good? then you should take a good look at your LCD. The controller, and if it it REALY compatible with a HD44780 (the standard)</li>
 	<li>If than your LCD don't work, it's proberbly broken or you didn't make the correct wiring</li>
 </ul>
 
 <h2>In what language is it written?</h2>
 <p>In Delphi 7</p>
+<p>Plugins can be written in any language that allows you to build a DLL. Current Plugins are written in Delphi and C++.</p>
 
 <h2>Why is my CPU Usage always at 0?</h2>
 <p>LCD Smartie uses the CPU Usage Performance counters to get the current CPU load. These are disabled on some machines - please check the registry key "HKEY_LOCAL_MACHINE\SYSTEM
