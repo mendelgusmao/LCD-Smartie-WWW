@@ -19,7 +19,7 @@
 	<p>This plugin redefines the custom characters, so only one type of graph can be on the display at once (i.e. you can have two or more graphs but they must use the same barstyle and direction). [Except, there can only be one &quot;Tiny graphs&quot; at a time on screen].</p>
 
 	<h2>Download</h2>
-	<p><a href="http://prdownloads.sourceforge.net/lcdsmartie/perfplugin.Alpha1.zip?download">Alpha 1 can be downloaded here.</a></p>
+	<p>Perf Plugin <a href="http://prdownloads.sourceforge.net/lcdsmartie/perfplugin.Alpha1.zip?download">Alpha 1 can be downloaded here.</a></p>
 	<h2>Install</h2>
 	<p>To install this plugin copy the perf.dll into the plugins directory of LCD Smartie. [Only the 5.3 beta 1 and above builds are supported.]</p>
 	<p>The zip file also includes a config-perf.ini file which shows how the plugin can be used - backup your config.ini file before renaming this as config.ini.</p>
@@ -56,11 +56,11 @@
 	<p>All options are optional except HeightxWidth, but the order must be maintained - so to leave BarStyle out, you must also leave out Sampletime, min, max and CounterName.</p>
 	<p>Examples:
 	<ul>
-		<li>$dll(pref,1,2x16#u#1#5#\Processor(0)\% Processor Time,Test1)</li>
-		<li>$dll(pref,1,2x16#u#1#5,Test2)</li>
-		<li>$dll(pref,1,4x20#d#1,Test3)</li>
-		<li>$dll(pref,1,2x16#u,Test4)</li>
-		<li>$dll(pref,1,4x40,Test5)</li>
+		<li>$dll(perf,1,2x16#u#1#5#\Processor(0)\% Processor Time,Test1)</li>
+		<li>$dll(perf,1,2x16#u#1#5,Test2)</li>
+		<li>$dll(perf,1,4x20#d#1,Test3)</li>
+		<li>$dll(perf,1,2x16#u,Test4)</li>
+		<li>$dll(perf,1,4x40,Test5)</li>
 	</ul></p>
 
 
@@ -85,6 +85,6 @@
 	<h3>Function 4</h3>
 	<p>This function fetches the value of a performance counter.</p>
 	<p>The format of function 4 is: $dll(perf,4,[SampleTime],[CounterName])</p>
-	<p>Example: $dll(pref,4,5,\Processor(0)\% Processor Time)</p>
+	<p>Example: $dll(perf,4,5,\Processor(0)\% Processor Time)</p>
 </body>
 </html>
