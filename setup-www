@@ -6,7 +6,10 @@ chmod 775 $TO
 chmod 444 $TO/*
 chmod 775 $TO/images
 chmod 444 $TO/images/*
-chmod 444 $TO/menu.htm
+chmod 775 $TO/js
+chmod 444 $TO/js/*
+chmod 555 $TO/menu.htm
+chmod 444 $TO/.htaccess
 
 ln -s index.htm $TO/index.html
 
