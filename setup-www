@@ -11,7 +11,7 @@ chmod 444 $TO/js/*
 chmod 555 $TO/*.htm
 chmod 555 $TO/*.html
 chmod 444 $TO/.htaccess
-chmod 444 $TO/da/*
+chmod 775 $TO/da
 chmod 555 $TO/da/*.htm
 
 ln -s index.htm $TO/index.html
