@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>LCD Smartie docs - parameters</title>
+  <link href="lcdsmartie.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div id="content">
+	<h1>Command line options and hidden config options</h1>
+
+	<h2>Command line options</h2>
+	<p>LCD Smartie takes the following options:</p>
+	<ul>
+		<li><strong>-hide</strong>: On startup, minimise to the system tray.</li>
+		<li><strong>-totalhide</strong>: On startup, disappear! but remain running in the background.</li>
+	</ul>
+
+	<h2>Hidden config options</h2>
+	<p>This section describes any settings that can be placed in the config.ini file but don't (yet) appear in the user's interface.</p>
+	<ul>
+		<li>In the [General Settings] section:
+			<ul>
+				<li><strong>MinFadeContrast</strong>: This setting defines the lowest point of the contrast when using the contrast fade screen interaction. Many LCD screen go blank long before reaching 0 contrast - so contrast fade may appear to be doing nothing for a long period of time. If you set this to your LCD's lowest visible contrast then the contrast fade interaction will greatly improve.</li>
+			</ul>
+		</li>
+	</ul>
+</body>
+</html>
