@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <title>LCD Smartie - A free open-source LCD program!</title>
+  <!-- start of head.html -->
+  <!--#include virtual="head.html" -->
+  <!-- end of head.html -->
+</head>
+<body>
+  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2005/01/17 20:23:55 $ \$Revision: 1.1 $" -->
+  <!--#set var="file" value="index" -->
+
+  <!-- start of header.html -->
+  <!--#include virtual="header.html" -->
+  <!-- end of header.html -->
+
+  <!-- start of sidebar.html -->
+  <!--#include virtual="sidebar.html" -->
+  <!-- end of sidebar.html -->
+  <div id="content">
+  	<h1>Winamp Spectrum Analyzer Plugin for LCD Smartie</h1>
+  <p>[I need some pictures of this plugin in use!]</p>
+
+	  <h2>FAST START GUIDE</h2>
+	  <p>If you hate reading instructions then here's the fast start guide:
+	  <ul>
+		  <li><a href="http://prdownloads.sourceforge.net/lcdsmartie/perfplugin.Alpha3.zip?download"><strong>Download</strong> zip file</a></li>
+		  <li><strong>Exit</strong> Smartie</li>
+		  <li>Extract <strong>winamp.dll</strong> to smartie's plugins subdirectory</li>
+		  <li>Extract <strong>winamp_lcdsmartie.dll</strong> to <strong>winamp's</strong> plugins subdirectory</li>
+		  <li>Extract <strong>config-winamp.ini</strong> to smartie's top directory</li>
+		  <li>Backup the existing config.ini to <strong>config.ini.bak</strong></li>
+		  <li>Rename <strong>config-winamp.ini</strong> to <strong>config.ini</strong></li>
+		  <li><strong>Start</strong> Smartie, see demo screens</li>
+		  <li><strong>Start</strong> Winamp and start the winamp plugin &quot;Spectrum Analyser for LCDSmartie&quot; (press shift-cntrl-k).
+		  <li>Edit/Copy demo screens</li>
+	  </ul>
+
+	  <h2>Introduction</h2>
+
+	  <p>This is a plugin that makes it possible to display a winamp spectrum analyzer. </p>
+
+	<h2>Limitations</h2>
+	<p>This plugin redefines the custom characters, so only one type of graph can be on the display at once (i.e. you can have two or more graphs but they must use the same barstyle and direction). [Except, there can only be one &quot;Tiny graphs&quot; at a time on screen].</p>
+
+	<h2>Download</h2>
+	<p>Winamp Plugin <a href="http://prdownloads.sourceforge.net/lcdsmartie/winampplugin.Alpha1.zip?download">Alpha 1 can be downloaded here.</a></p>
+	<h2>Install</h2>
+	<ul>
+		<li>To install this plugin copy the winamp.dll into the plugins directory of LCD Smartie. [Only the 5.3 beta 2 and above builds are supported.]</li>
+		<li>Also copy the winamp_lcdsmartie.dll to the winamp plugin directory (usually something like: C:\Program Files\Winamp\Plugins).</li>
+	</ul>
+	<p>The zip file also includes a config-perf.ini file which shows how the plugin can be used - backup your config.ini file before renaming this as config.ini.</p>
+
+	<h2>Basic Use</h2>
+	<p>To use the plugin you will need to insert commands into the your screens - please ensure that all lines have a consistant scroll setting (i.e. all on or all off)!<br />
+	<ul>
+		<li>Defining the size of the graph: <strong>$dll(winamp,1,[height]x[width],0)</strong> - this will create a spectrum graph that is [height] high and [width] wide, it will also display the top line of the spectrum graph. Example: $dll(winamp,1,2x20,0)</li>
+		<li>(only needed if graph is higher than 1 line) Displaying line 2 of the spectrum graph: <strong>$dll(winamp,2,0,0)</strong></li>
+		<li>(only needed if graph is higher than 2 lines) Displaying line 3 of the spectrum graph: <strong>$dll(winamp,3,0,0)</strong></li>
+		<li>(only needed if graph is higher than 3 line2) Displaying line 3 of the spectrum graph: <strong>$dll(winamp,4,0,0)</strong></li>
+	</ul></p>
+
+	<p>On a 2 line display, the lines entered into smartie will look something like this:</p>
+	<img src="2lineexamplewinamp.jpg" />
+	<p>On a 4 line display, the lines entered into smartie will look something like this:</p>
+	<img src="4lineexamplewinamp.jpg" />
+	
+	<h2>Advance Use</h2>
+
+	<h3>Function 1</h3>
+	<p>The full format of function 1 is: $dll(winamp,1,[height]x[width],[options])</p>
+	<p>[options] takes the form: Direction#BarStyle#SpectrumOpts#max#fallSpeed<br />
+	Where: <br />
+	<ul>
+		<li>Direction is one of: d, u, l, r   [for down/up/left/right]. [default: u]</li>
+		<li>BarStyle selects the custom characters to use. 0 means no custom characters (so you can define your own), 1 means a solid bar, 99 is for &quot;Tiny graphs&quot;, etc. The full list of styles is at the end of this page. [default: 1]</li>
+		<li>SpectrumOpts - consists of the letters WFL, where W is adjust spectrum to use 'A' Weighting (to make it more consistant with our hearing), F is to use a slower fallback (slow down how fast a peak can fall), L is use linear frequency scale. To disable an option use the lower case version of the letter, so 'l' is non-linear frequency scaling. Default: WFl.</li>
+		<li>max - used for scaling spectrum. [default: 80]</li>
+		<li>fallSpeed - if fallback is selected in SpectrumOpts then this defines how fast it can fall. [lower is slower] Default: 200.</li>
+	</ul>
+	</p>
+	<p>All options are optional the order must be maintained - so to leave BarStyle out, you must also leave out SpectrumOpts, max and fallspeed.</p>
+	<p>Examples:
+	<ul>
+		<li>$dll(winamp,1,2x16,u#1#WFl#40#15)</li>
+		<li>$dll(winamp,1,2x16,u#1#WFl#40)</li>
+		<li>$dll(winamp,1,2x16,u#1#WFl)</li>
+		<li>$dll(winamp,1,2x16,u#1#wfL)</li>
+		<li>$dll(winamp,1,2x16,u#1)</li>
+		<li>$dll(winamp,1,2x16,u)</li>
+		<li>$dll(winamp,1,2x16,0)</li>
+	</ul></p>
+
+
+
+	<h3>Tiny Spectrum Graphs</h3>
+	<p>When a barStyle of 99 or above is used then a tiny graph will be produced, where each bar is only 1 pixel wide. The graph can be up to 8 characters wide and only 1 character high (so, 1x8 or less).</p>
+	<p>Users with Crystalfontz displays that are gapless between character cells (i.e. 631, 632, 634) can use a barStyle of 100 to get a gapless graph!</p>
+	<p><strong>NB: </strong> Only directions up and down are supported with tiny graphs.</p>
+	<p>Here is the full list of Tiny graph styles:
+	<ul>
+		<li>99 - a normal tiny graph. [Uses characters of 5 by 8 pixels].</li>
+		<li>100 - Crystalfontz special! Produces gapless graphs on supported displays. [Uses characters of 6 by 8 pixels].</li>
+		<li>101 - Crystalfontz special! As 100, but leave bottom pixels empty (so to leave a vertical gap on gapless screens, such as the 631). [Uses characters of 6 by 7 pixels].</li>
+		<li>102 - As 99 but leave bottom pixels empty. Useful for displays where the bottom line is a solid bar rather than pixels (badly implemented HD44780 lcds). [Uses characters of 5 by 7 pixels].</li>
+	</ul>
+
+	<h3>Bar Styles</h3>
+	<p>For Tiny graphs styles see Tiny graphs section.</p>
+	<p>The following styles are defined:
+	<ul>
+		<li>0 - none; define your own characters.</li>
+		<li>1 - solid.
+		<ul>
+			<li>2 - Crystalfontz special! Solid and gapless on supported displays.</li>
+			<li>3 - Crystalfontz special! As 2, but leaves bottom row empty (so to leave a vertical gap on gapless displays).</li>
+			<li>4 - Solid but leaves bottom row empty . This is useful on displays where the bottom row is a solid bar rather than pixels (badly implemented HD44780 lcds).</li>
+		</ul></li>
+		<li>5 - Thin bars.</li>
+		<li>9 - Outlined bars.</li>
+	</ul>
+
+</div>
+  <!-- start of footer.html -->
+  <!--#include virtual="footer.html" -->
+  <!-- end of footer.html -->
+</body>
+</html>
