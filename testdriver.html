@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <title>LCD Smartie - A free open-source LCD program!</title>
+  <!-- start of head.html -->
+  <!--#include virtual="head.html" -->
+  <!-- end of head.html -->
+</head>
+<body>
+  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2005/01/03 16:09:10 $ \$Revision: 1.1 $" -->
+  <!--#set var="file" value="testdriver" -->
+
+  <!-- start of header.html -->
+  <!--#include virtual="header.html" -->
+  <!-- end of header.html -->
+
+  <!-- start of sidebar.html -->
+  <!--#include virtual="sidebar.html" -->
+  <!-- end of sidebar.html -->
+  <div id="content">
+	  <h1>Test Driver</h1>
+	  <p>The test driver is mostly a development tool, but it can also be used to get unsupported serial displays working with LCD Smartie. <strong>NB: </strong> No support will be offered for any display using this driver.</p>
+
+	  <h2>Limitations</h2>
+	  <ul>
+		<li>This driver does not currently support custom characters.</li>
+	  	<li>This driver has no user interface (ie. no driver setting dialog), all settings are done by changing the config.ini file by hand.</li>
+		<li>This driver is not suitable for any device that is sensitive to timings.</li>
+		<li>This driver does not do input - i.e. keypads.</li>
+	</ul>
+
+	<h2>Usage</h2>
+	<p>To use the test driver, set LCDType in [General Settings] to 5 in the config.ini file.</p>
+
+	<p>To set the baudrate set Baudrate in [Communication Settings] to 0-14, where:
+	<ul>
+		<li>0 = 110 baud</li>
+		<li>1 = 300 baud</li>
+		<li>2 = 600 baud</li>
+		<li>3 = 1200 baud</li>
+		<li>4 = 2400 baud</li>
+		<li>5 = 4800 baud</li>
+		<li>6 = 9600 baud</li>
+		<li>7 = 14400 baud</li>
+		<li>8 = 19200 baud</li>
+		<li>9 = 38400 baud</li>
+		<li>10 = 56000 baud</li>
+		<li>11 = 57600 baud</li>
+		<li>12 = 115200 baud</li>
+		<li>13 = 128000 baud</li>
+		<li>14 = 256000 baud</li>
+	</ul></p>
+	<p>Set COMPort to 1 for COM1, 2 for COM2, etc</p>
+
+	<h2>Settings</h2>
+	<p>The Test Driver has it's own ini file section [Test Driver], it doesn't exist by default so you will have to create one.</p>
+	<p>All values take a string of the form of values between 0 and 255 seperated by commas (i.e. 10,20,30). These values represent the byte value to send to the serial port.</p>
+	<p>Currently available settings are:
+	<ul>
+		<li>Init - Sent when the serial port is first opened, this can be used to initialize your display, set contrast/brightness, etc</li>
+		<li>Fini - Sent just before the serial port is closed, this can be used to de-initialize your display, turn off the backlight, etc.</li>
+		<li>GotoLine1 - Sent just before writing text for line 1. This should be used to set the cursor position to the beginning of line 1.</li>
+		<li>GotoLine2 - like GotoLine1 but for line 2.</li>
+		<li>GotoLine3 - like GotoLine1 but for line 3.</li>
+		<li>GotoLine4 - like GotoLine1 but for line 4.</li>
+		<li>CharMap - This can be used to remap character positions. The values are in pairs with the first being the character to be reassigned and the second value being the new value. (eg: 65,66,67,68 will map A to B and C to D - so when smartie wants a A to be displayed your display will display B.) This is useful if your character set is not ascii.</li>
+		<li>StopBits - Set the serial stopbits to 1 or 2 stop bits. [default is 1]</li>
+		<li>Parity - Set the serial parity (0 for none, 1 for odd, 2 for even). [default is 0]</li>
+	</ul></p>
+	<h2>Examples</h2>
+	<p>The following config is suitable for driving a Crystalfontz 632:
+	<ul>
+		<li>Init=4,20,24,22,255,1,50,3,12,15,50,14,50</li>
+		<li>Fini=14,0,12</li>
+		<li>GotoLine1=17,0,0</li>
+		<li>GotoLine2=17,0,1</li>
+		<li>GotoLine3=17,0,2</li>
+		<li>GotoLine4=17,0,3</li>
+		<li>CharMap=36,162,64,160,91,250,92,251,93,252,95,196,96,39,146,39,123,253,124,254,125,255,126,206,163,161</li>
+	</ul>
+	On startup it sets hides the cursor, turns scroll off, wrap off, disables scrolling marquees, restores the display, clears the screen, sets the contrast to 50 and the brightness to 50. On shutdown it turns off the backlight and clears the screen.</p>
+	<p>The following config is suitable for driving a Matrix Orbital display:</p>
+	<ul>
+		<li>Init=254,66,0,254,84,254,88,254,75,254,82,254,68,254,254,65,254,152,125,254,80,125</li>
+		<li>Fini=254,70,254,88</li>
+		<li>GotoLine1=254,71,1,1</li>
+		<li>GotoLine2=254,71,1,2</li>
+		<li>GotoLine3=254,71,1,3</li>
+		<li>GotoLine4=254,71,1,4</li>
+	</ul></p>
+</div>
+  <!-- start of footer.html -->
+  <!--#include virtual="footer.html" -->
+  <!-- end of footer.html -->
+</body>
+</html>
