@@ -22,6 +22,7 @@
 1x10, 1x16, 1x20, 1x24, 1x40, <br />
 2x16, 2x16, 2x20, 2x24, 2x40, <br />
 4x16, 4x20, 4x40</p>
+<p>Currently for HD44780 devices, only 8bit wiring is supported.</p>
 
 <h2>How do I get LCD Smartie working with my PalmOS PDA?</h2>
 <p>Install <a href="http://palmorb.sourceforge.net">PalmOrb</a> on your palm, and configure smartie as if it was a Matrix Orbital 4x20 display.</p>
@@ -36,9 +37,10 @@
 <h2>Why doesn't my HD44780 controlled LCD work?</h2>
 <p>A short guide:
 <ul>
-	<li>First off all: check, check and recheck your wirings!</li>
+	<li>Smartie currently only support <a href="http://lcdsmartie.sourceforge.net/circuits.htm">8bit wiring</a>.</li>
+	<li>First off all: check, check and recheck your <a href="http://lcdsmartie.sourceforge.net/circuits.htm">wirings</a>!</li>
 	<li>if you get ANYTHING on your LCD, your wiring is likely to be (almost) correct.</li>
-	<li>Second: check your bios, and turn your LTP port settings to <U>EPP</U> (sometimes ECP does work, but EPP is better)</li>
+	<li>Second: check your bios, and turn your LTP port settings to EPP (sometimes ECP does work, but EPP is better)</li>
 	<li>still not good? then you should take a good look at your LCD. The controller, and if it it REALY compatible with a HD44780 (the standard)</li>
 	<li>If than your LCD don't work, it's proberbly broken or you didn't make the correct wiring</li>
 </ul>
