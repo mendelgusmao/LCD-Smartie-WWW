@@ -46,5 +46,10 @@
 	<p><strong>Tip:</strong> Although only strings are passed, you can still use numbers.  You simply convert the strings into numbers, perform your calculation and then convert the result back to a string.</p>
 
 	<p><strong>Warning:</strong> Your dll will be called when ever the screen that references your dll is displayed and as often as the scroll timer (by default this is every 200ms). It's wise not to do any work that will take a long period of time because the whole of smartie will be blocked until the function returns. It's best to create a thread to do the real work, and the exported function simply copys out the cached result. </p>
+ <!--  Weblog stuff -->
+  <div id="weblog">
+    <!--#include virtual="/pslogger2.php" -->
+    <script type="text/javascript" src="/js/awstats_misc_tracker.js"></script>
+  </div>
 </body>
 </html>
