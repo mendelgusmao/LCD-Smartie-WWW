@@ -11,7 +11,13 @@ chmod 444 $TO/js/*
 chmod 555 $TO/*.htm
 chmod 555 $TO/*.html
 chmod 444 $TO/.htaccess
+chmod 444 $TO/da/*
+chmod 555 $TO/da/*.htm
 
 ln -s index.htm $TO/index.html
+
+ln -s ../head.html da/head.html
+ln -s ../header.html da/header.html
+ln -s ../footer.html da/footer.html
 
 echo "DO NOT EDIT THESE FILES HERE - EDIT THEM IN CVS" > $TO/README
