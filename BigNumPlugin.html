@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <title>LCD Smartie - A free open-source LCD program!</title>
+  <!-- start of head.html -->
+  <!--#include virtual="head.html" -->
+  <!-- end of head.html -->
+</head>
+<body>
+  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2004/12/29 17:12:39 $ \$Revision: 1.1 $" -->
+  <!--#set var="file" value="bignum" -->
+
+  <!-- start of header.html -->
+  <!--#include virtual="header.html" -->
+  <!-- end of header.html -->
+
+  <!-- start of sidebar.html -->
+  <!--#include virtual="sidebar.html" -->
+  <!-- end of sidebar.html -->
+  <div id="content">
+	  <h1>BigNum Plugin for LCD Smartie</h1>
+	  <p>[I need some good pictures of this plugin in use!]</p>
+
+		<p><strong>NB: </strong> A bug in Beta1 means you may need to change references of &quot;$dll(perf,&quot; to &quot;$dll(perf.dll,&quot; [i.e. add the '.dll' to the end of perf]</p>
+		<p>This is a plugin that makes it possible to display big numbers, currently numbers that are two and four lines high are supported.</p>
+
+	<h2>Limitations</h2>
+	<p>This plugin redefines the custom characters, so no graphs can be displayed on the same screen. Also Only one type of big number can be displayed on a screen at a time.</p>
+
+	<h2>Download</h2>
+	<p>BigNum Plugin <a href="http://prdownloads.sourceforge.net/lcdsmartie/bignumplugin.Alpha1.zip?download">Alpha 1 can be downloaded here.</a></p>
+	<h2>Install</h2>
+	<p>To install this plugin copy the bignum.dll into the plugins directory of LCD Smartie. [Only the 5.3 beta 1 and above builds are supported.]</p>
+	<p>The zip file also includes a config-bignum.ini file which shows how the plugin can be used - backup your config.ini file before renaming this as config.ini.</p>
+
+	<h2>Usage</h2>
+	<p>To use the plugin you will need to insert commands into the your screens - please ensure that all bignum lines have a consistant scroll setting (i.e. all on or all off)!</p>
+	<p>The command takes the following form: $dll(bignum,1,[linenum]#[height]#[font],[text])<br />
+	<ul>
+		<li>[linenum] - is the line you want drawn (so 1 is the top of the number, 2 the next line, etc)</li>
+		<li>[height] - is the height of the big number. This can currently be 2 or 4 lines. [Defaults to 2]</li>
+		<li>[font] - is the style wanted for the bars. 0 is none (allow you to define your own), 1 is standard, 2 is bold for 2 line high numbers. [Defaults to 1]</li>
+	</ul>
+	The [height] and [font] settings are optional - but if [height] is not given then [font] must also be left off. 
+	</p>
+	<p>Examples:
+	<ul>
+		<li>$dll(bignum,1,1#2,$CPUUsage%)</li>
+		<li>$dll(bignum,1,2#2,$CPUUsage%)</li>
+		<li>$dll(bignum,1,1#4,$CPUUsage%)</li>
+		<li>$dll(bignum,1,1,$CPUUsage%)</li>
+		<li>$dll(bignum,1,1#2#1,$CPUUsage%)</li>
+	</ul>
+	</p>
+	<p>
+	On a two line display you would use something like this:<br />
+	<img src="bignum2lines.jpg" /></p>
+	<p>
+	On a four line display you would use something like this:<br />
+	<img src="bignum4lines.jpg" /></p>
+
+</div>
+  <!-- start of footer.html -->
+  <!--#include virtual="footer.html" -->
+  <!-- end of footer.html -->
+</body>
+</html>
