@@ -7,7 +7,7 @@
   <!-- end of head.html -->
 </head>
 <body>
-  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2004/12/28 01:26:42 $ \$Revision: 1.6 $" -->
+  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2005/01/03 00:02:43 $ \$Revision: 1.7 $" -->
   <!--#set var="file" value="index" -->
 
   <!-- start of header.html -->
@@ -55,11 +55,11 @@
 		
 	<p><strong>Tip:</strong> Although only strings are passed, you can still use numbers.  You simply convert the strings into numbers, perform your calculation and then convert the result back to a string.</p>
 
-	<p><strong>Warning:</strong> Your dll will be called when ever the screen that references your dll is displayed and as often as the scroll timer (by default this is every 200ms). It's wise not to do any work that will take a long period of time because the whole of smartie will be blocked until the function returns. It's best to create a thread to do the real work, and the exported function simply copys out the cached result. </p>
+	<p><strong>Warning:</strong> Your dll will be called when ever the screen that references your dll is displayed and as often as the &quot;DLL check interval&quot; on the Misc settings tab (by default this is every 250ms). It's wise not to do any work that will take a long period of time because the whole of smartie will be blocked until the function returns. It's best to create a thread to do the real work, and the exported function simply copys out the cached result. </p>
 
 </div>
   <!-- start of footer.html -->
   <!--#include virtual="footer.html" -->
   <!-- end of footer.html -->
 </body>
-</html>>
+</html>
