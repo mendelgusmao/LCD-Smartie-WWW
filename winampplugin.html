@@ -7,7 +7,7 @@
   <!-- end of head.html -->
 </head>
 <body>
-  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2005/01/18 00:47:41 $ \$Revision: 1.6 $" -->
+  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2005/01/18 11:32:19 $ \$Revision: 1.7 $" -->
   <!--#set var="file" value="index" -->
 
   <!-- start of header.html -->
@@ -26,8 +26,8 @@
 	  <ul>
 		  <li><a href="http://prdownloads.sourceforge.net/lcdsmartie/winampplugin.Alpha1.zip?download"><strong>Download</strong> zip file</a></li>
 		  <li><strong>Exit</strong> Smartie</li>
-		  <li>Extract <strong>winamp.dll</strong> to smartie's plugins subdirectory</li>
-		  <li>Extract <strong>winamp_lcdsmartie.dll</strong> to <strong>winamp's</strong> plugins subdirectory</li>
+		  <li>Extract <strong>winamp.dll</strong> to <strong>smartie's</strong> plugins subdirectory</li>
+		  <li>Extract <strong>winamp_lcdsmartie.dll</strong> to <strong>**winamp's**</strong> plugins subdirectory</li>
 		  <li>Extract <strong>config-winamp.ini</strong> to smartie's top directory</li>
 		  <li>Backup the existing config.ini to <strong>config.ini.bak</strong></li>
 		  <li>Rename <strong>config-winamp.ini</strong> to <strong>config.ini</strong></li>
@@ -48,7 +48,7 @@
 	<h2>Install</h2>
 	<ul>
 		<li>To install this plugin copy the winamp.dll into the plugins directory of LCD Smartie. [Only the 5.3 beta 2 and above builds are supported.]</li>
-		<li>Also copy the winamp_lcdsmartie.dll to the winamp plugin directory (usually something like: C:\Program Files\Winamp\Plugins).</li>
+		<li>Also copy the <strong>winamp_lcdsmartie.dll</strong> to <strong>winamp's</strong> plugin directory (usually something like: C:\Program Files\Winamp\Plugins).</li>
 	</ul>
 	<p>The zip file also includes a config-winamp.ini file which shows how the plugin can be used - backup your config.ini file before renaming this as config.ini.</p>
 
@@ -58,7 +58,7 @@
 		<li>Defining the size of the graph: <strong>$dll(winamp,1,[height]x[width],0)</strong> - this will create a spectrum graph that is [height] high and [width] wide, it will also display the top line of the spectrum graph. Example: $dll(winamp,1,2x20,0)</li>
 		<li>(only needed if graph is higher than 1 line) Displaying line 2 of the spectrum graph: <strong>$dll(winamp,2,0,0)</strong></li>
 		<li>(only needed if graph is higher than 2 lines) Displaying line 3 of the spectrum graph: <strong>$dll(winamp,3,0,0)</strong></li>
-		<li>(only needed if graph is higher than 3 lines) Displaying line 3 of the spectrum graph: <strong>$dll(winamp,4,0,0)</strong></li>
+		<li>(only needed if graph is higher than 3 lines) Displaying line 4 of the spectrum graph: <strong>$dll(winamp,4,0,0)</strong></li>
 	</ul></p>
 
 	<p>On a 2 line display, the lines entered into smartie will look something like this:</p>
@@ -66,7 +66,7 @@
 	<p>On a 4 line display, the lines entered into smartie will look something like this:</p>
 	<img src="4lineexamplewinamp.jpg" />
 
-	<p>You will also want to change your refresh interval (on Screens page) and dll check interval (on Misc tab) rate as low as possible (12 is perfect, 25 is v.good, 75 fair...).  Some displays (9600 baud and below) may not be able to handle the high volume of information - in this case raise the intervals.</p>
+	<p>You will also want to change your refresh interval (on Screens page) and dll check interval (on Misc tab) rate as low as possible (12 is perfect, 25 is v.good, 75 fair...).  Some displays (9600 baud and below) may not be able to handle the high volume of information - in this case raise the intervals. [NB: There is no need to raise the Scrolling interval! If you find scrolling speeds up as you lower the refresh interval, then you should raise the scroll interval.]</p>
 
 	<p>You will need to start the winamp plugin &quot;Spectrum Analyser for LCDSmartie&quot; (in winamp, press shift-cntrl-k).
 
@@ -76,6 +76,7 @@
 		<li>CPU load of winamp and LCD Smartie can be reduced by minimising their windows.</li>
 		<li>Raising the process prority of LCD Smartie (using task manager) to "Above average" or "High" (but never "real time") will help avoid choppyness when other programs are using the cpu.</li>
 		<li>You can cause the plugin to auto run by selecting the winamp option 'Auto execute visualization plugin on playback' which can be found in Perferences-&gt;Plugins</li>
+		<li>UNINSTALL any winamp plugins that access the your display (lcd/vfd) - such as 'lcd plugin'. Otherwise they will interfer with the LCD smartie plugin (i.e. multiple plugins will be trying to control the same display!)</li>
 	</ul>
 	
 	<h2>Advance Use</h2>
