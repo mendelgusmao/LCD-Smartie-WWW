@@ -48,15 +48,17 @@
 		<li>Direction is one of: d, u, l, r   [for down/up/left/right]. [default: u]</li>
 		<li>SampleTime is how often the counter value is fetched, in 1/10 seconds. [default: 5 (i.e. 0.5 seconds)]</li>
 		<li>BarStyle selects the custom characters to use. 0 means no custom characters (so you can define your own), 1 means a solid bar, 99 and 100 are special cases for &quot;Tiny graphs&quot;, see below for details. [default: 1]</li>
-		<li>CounterName is a name of a performance counter. [default: \Processor(0)\% Processor Time] </li>
 		<li>min - used for scaling graph. [default: 0]</li>
 		<li>max - used for scaling graph. [default: 100]</li>
+		<li>CounterName is a name of a performance counter. [default: \Processor(0)\% Processor Time] </li>
 	</ul>
 	</p>
 	<p>All options are optional except HeightxWidth, but the order must be maintained - so to leave BarStyle out, you must also leave out Sampletime, min, max and CounterName.</p>
 	<p>Examples:
 	<ul>
-		<li>$dll(perf,1,2x16#u#1#5#\Processor(0)\% Processor Time,Test1)</li>
+		<li>$dll(perf,1,2x16#u#1#5#0#100#\Processor(0)\% Processor Time,Test1)</li>
+		<li>$dll(perf,1,2x16#u#1#5#0#100,Test1)</li>
+		<li>$dll(perf,1,2x16#u#1#5#0,Test1)</li>
 		<li>$dll(perf,1,2x16#u#1#5,Test2)</li>
 		<li>$dll(perf,1,4x20#d#1,Test3)</li>
 		<li>$dll(perf,1,2x16#u,Test4)</li>
