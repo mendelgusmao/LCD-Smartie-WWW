@@ -7,7 +7,7 @@
   <!-- end of head.html -->
 </head>
 <body>
-  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2004/12/28 01:26:41 $ \$Revision: 1.11 $" -->
+  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2004/12/29 00:13:40 $ \$Revision: 1.12 $" -->
   <!--#set var="file" value="index" -->
 
   <!-- start of header.html -->
@@ -38,7 +38,7 @@
 	<p>To use the plugin you will need to insert commands into the your screens - please ensure that all graph lines have a consistant scroll setting (i.e. all on or all off)!<br />
 	The basic form of the commands will only display a graph of the percentage of CPU use:<br />
 	<ul>
-		<li>Function 1: <strong>$dll(perf,1,[height]x[width],[name])</strong> - this will create a graph object called [name] that is [height] high and [width] wide, it will also display the top line of the graph.  [name] can be anything you want, it is only used to tie the different commands to the same graph.Example: $dll(perf,1,2x20,Test)</li>
+		<li>Function 1: <strong>$dll(perf,1,[height]x[width],[name])</strong> - this will create a graph object called [name] that is [height] high and [width] wide, it will also display the top line of the graph.  [name] can be anything you want BUT must be unique (no other graph on any screen can have the same name), it is used to tie the different commands to the same graph. Example: $dll(perf,1,2x20,Test)</li>
 		<li>Function 2: <strong>$dll(perf,2,[name],[line])</strong> - this command is only needed if your graph is higher than 1 line high. This command displays a line from an already created (using the function above) graph object. The name must match that given in function 1. Line 1 is the bottom of the graph, line 2 second from bottom etc. Example: $dll(perf,2,Test,2)</li>
 	</ul></p>
 
@@ -51,6 +51,7 @@
 
 	<h3>Function 1</h3>
 	<p>The format of function 1 is: $dll(perf,1,[options],[name])</p>
+	<p>[name] can be anything you want BUT must be unique (no other graph on any screen can have the same name), it is used to tie the different commands to the same graph.</p>
 	<p>[option] takes the form: HeightxWidth#Direction#BarStyle#SampleTime#min#max#CounterName<br />
 	Where: <br />
 	<ul>
