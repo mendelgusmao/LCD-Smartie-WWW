@@ -7,7 +7,7 @@
   <!-- end of head.html -->
 </head>
 <body>
-  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2005/01/07 22:06:24 $ \$Revision: 1.10 $" -->
+  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2005/01/11 17:05:56 $ \$Revision: 1.11 $" -->
   <!--#set var="file" value="index" -->
 
   <!-- start of header.html -->
@@ -78,6 +78,8 @@
 	<p><strong>Tip:</strong> Although only two parameters are passed, you can use more by parsing the parameters, for example $dll(demo.dll,5,param1#param2,param3) could be used and the real 1st parameter (param1#param2) could be parsed into two parameters (param1 and param2).</p>
 		
 	<p><strong>Tip:</strong> Although only strings are passed, you can still use numbers.  You simply convert the strings into numbers, perform your calculation and then convert the result back to a string.</p>
+
+	<p><strong>Tip:</strong> Plugins can return other commands in their result string, so you can define custom characters by inserting $CustomChar(...etc into your result string.</p>
 
 	<p><strong>Tip:</strong> Plugins can receive display keypad presses by using a $dll command in the command part of an action; i.e. set an action so when a specific button is pressed it calls the plugin.</p>
 

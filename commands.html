@@ -7,7 +7,7 @@
   <!-- end of head.html -->
 </head>
 <body>
-  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2004/12/31 12:12:01 $ \$Revision: 1.5 $" -->
+  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2005/01/11 17:05:55 $ \$Revision: 1.6 $" -->
   <!--#set var="file" value="index" -->
 
   <!-- start of header.html -->
@@ -925,6 +925,12 @@
 			<td>Insert spaces so the text [text] is right justified in a space of [num] characters. The extra $ and % are required.</td>
 			<td>AA$Right(hi,$5%)B</td>
 			<td>AA&nbsp;&nbsp;&nbsp;hiB</td>
+		</tr>
+		<tr>
+			<td>$Center([text],[num])</td>
+			<td>Insert spaces so the text [text] is centered in a space of [num] characters. If the [num] parameter is missing, such as $Center(hi), then the displays width is used.</td>
+			<td>AA$Center(hi,5)B</td>
+			<td>AA&nbsp;&nbsp;hi&nbsp;&nbsp;B</td>
 		</tr>
 
 		<tr>
