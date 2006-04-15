@@ -4,9 +4,24 @@
   <!-- start of head.html -->
   <!--#include virtual="head.html" -->
   <!-- end of head.html -->
+  <style type="text/css">
+<!--
+.style1 {
+	color: #FF0000;
+	font-weight: bold;
+}
+.style5 {
+	color: #009933;
+	font-weight: bold;
+}
+.style8 {color: #000000}
+.style14 {color: #009933}
+.style15 {color: #FFFFFF}
+-->
+  </style>
 </head>
 <body>
-  <!--#set var="changed" value="\$Author: limbo666 $ \$Date: 2006/03/04 19:00:39 $ \$Revision: 1.49 $" -->
+  <!--#set var="changed" value="\$Author: limbo666 $ \$Date: 2006/04/15 18:26:42 $ \$Revision: 1.50 $" -->
   <!--#set var="file" value="smartied" -->
 
   <!-- start of header.html -->
@@ -46,8 +61,12 @@
     <p>The latest beta is: 5.3.2. This release is 5.3 plus a few bug fixes. <a href="http://prdownloads.sourceforge.net/lcdsmartie/smartie5.3.2.zip?download">Download</a>.</p>
 
 
-    <h2>Plugins</h2>
+    <h2>Plugins <span class="style1">UPDATED</span> </h2>
+    <p>&nbsp;</p>
     <p>Some of these plugins will only work on Smartie 5.3 and above.</p>
+    <p class="style1">If you have problems <span class="style1">using</span> the plugins please read this <a href="http://www.lansley.co.uk/forum/phpBB2/viewtopic.php?t=245">thread.</a>    </p>
+    <p><span class="style1">Broken link? report it <a href="http://www.lansley.co.uk/forum/phpBB2/viewtopic.php?p=9664#9664">here</a></span></p>
+    <p>&nbsp;</p>
     <h3>Official plugins - made by the Smartie team</h3>
     <ul>
 	    <li><a href="PerfPlugin.html">Perf Plugin</a>: bar-graphing of cpu-load (and others) over time.</li>
@@ -61,33 +80,111 @@
     <h4>Interfacing plugins</h4>
     <p>The following plugins provide LCD Smartie with data from other programs</p>
     <ul>
-	    <li><a href="http://www.lansley.co.uk/forum/phpBB2/viewtopic.php?t=111">TeamSpeak</a> by vesa.</li>
-	    <li><a href="http://www.lansley.co.uk/forum/phpBB2/viewtopic.php?t=125">MSN Messenger</a> by IFR.</li>
-	    <li><a href="http://www.nolberger.se/Sage/LCDSmartie/">Sage TV Plugin</a> by Anders Nolberger. Plugin and source provided!</li>
-	    <li><a href="http://www.meedio.com/maid/detail.php?mode=detail&plugin_id={0ACE0952-DE4C-4F01-967F-1161D249AD1E}">Meedio Plugin</a> by Harald Wagner. The Smartie plugin is part of his add-in for Meedio.</li>
-	    <li><a href="http://www.limbo-online.tk">iTunes Plugin</a> by Gareth Price</li>
-	    <li><a href="http://www.planetquake.com/darkside/tools/btvsmartie.html">Beyond TV Plugin</a> by Kevin Worrel</li>
-	    <li><a href="http://tomspeirs.com/gameex/download.htm">GameEx</a> by tspeirs: GameEx Front-End and HTPC software</li>
-     	    <li><a href="http://www.lansley.co.uk/forum/phpBB2/viewtopic.php?t=87">ATI Tray Tools</a> by Ray Adams.</li>
-	    <li><a href="http://www.lansley.co.uk/forum/phpBB2/viewtopic.php?t=104">CountDown</a> by Dunner: Count down to a date.</li>
-   	    <li><a href="http://www.lansley.co.uk/forum/phpBB2/viewtopic.php?t=44">RegistryReader</a> by AlexV: read values from the registry.</li>
-	    <li><a href="http://www.limbo-online.tk">Maxim</a> by Limbo: Reads lines from an ini file and display them to LCD. The original Idea was to provide something like &quot;tip of the day&quot;</li>
-	    <li><a href="http://www.limbo-online.tk">DayTip</a> by Limbo: displays different messages each day to LCD Screen. (all messages stored into an ini file).</li>
-	    <li><a href="http://www.limbo-online.tk">Enallax</a> by Limbo: It changes between two values in a given time (function id).  This is very useful when you want to use one screen steady in LCD Smartie and you want to change just one line! </li>
-	    <li><a href="http://www.evillabs.sk/forum/about1078.html">EvilLyrics</a> by UTerror: displays lyrics from EvilLyrics.</li>
-	    <li><a href="http://www.lansley.co.uk/forum/phpBB2/viewtopic.php?t=138">Zoom Player</a> by ?? (if you know the author contact <a href="http://www.lansley.co.uk/forum/phpBB2/">LCD Smartie Team</a>) : display messages from zoom player.</li>
-	    <li><a href="http://www.avsforum.com/avs-vb/showthread.php?s=&threadid=538690">JRMC (J. River Media Center)</a> by RedDom.</li> </ul>
+	    <li><a href="http://erlis.se/lcdsmartie/processes.dll">Process Lister / Checker</a> by <strong class="style5">e</strong><span class="style5"><strong>rlis: </strong></span>Displays a list of your system proccesses, it can be used for checking if a specific application is running. More info <a href="http://erlis.se/lcdsmartie/info.html">here</a>.</li>
+	    <li> <a href="http://hejmowski.ovh.org/winamp_vol.zip">Winamp volume</a> by        <span class="style5">hejmowski: </span>Gives the level of winamp volume. More info <a href="http://www.lansley.co.uk/forum/phpBB2/viewtopic.php?t=601">here</a>.</li>
+	    <li><a href="http://erlis.se/lcdsmartie/itunes2.zip">I-Tunes2</a> by <span class="style5">erlis</span>: Get info from the famus I-tunes player. More info <a href="http://erlis.se/lcdsmartie/info.html">here</a>.</li>
+	    <li><a href="%20http://erlis.se/lcdsmartie/volume.dll%20">System volume</a> by <span class="style5">erlis:</span> Returns the volume level of the system! More info <a href="http://www.lansley.co.uk/forum/phpBB2/viewtopic.php?t=546">here</a>.</li>
+	    <li><a href="http://www.axcis.com.au/shop/index.php?main_page=products_all&zenid=725890b8dfda1744c5a9b8d983f3d950">Windows Media Center Edition</a> by <span class="style5">masb: </span><span class="style8">Get info from Windows XP Media Center Edition.</span></li>
+	    <li><a href="http://kaesar.3x.ro/nvtemp.php">Nvidia Temperature</a> by <span class="style5">caesar:</span> Get the temps shown by nvidia drivers on the properties tab.</li>
+	    <li> <a href="http://jongrieve.net/code/lcdsmartie/wmp/wmp_plugin.zip">Windows Media Player</a> by        <span class="style5">Jumpin' Jon</span>: 
+
+
+ Reads the Album, Artist, Title and Duration information for the track currently playing in Windows Media Player</li>
+	    <li><a href="http://www.filehost.ro/79993/plugin_rar/">BS Player</a> by <span class="style5">swimm3r: </span><span class="style8">Integrates to BS Player.</span></li>
+	    <li><a href="http://penguinman.no-ip.org/downloads/usbb.zip">Velleman I/O Board Buttons</a> by <span class="style5">penjuin: </span><span class="style14"><span class="style8">Helps to use 
+
+
+ the buttons on the velleman usb i/o board.</span></span></li>
+	    <li><a href="http://www.lansley.co.uk/forum/phpBB2/viewtopic.php?t=111">TeamSpeak</a> by <span class="style5">vesa</span>.</li>
+	    <li><a href="http://www.lansley.co.uk/forum/phpBB2/viewtopic.php?t=100">MSN Messenger</a> by <span class="style5">IFR</span>.</li>
+	    <li><a href="http://www.nolberger.se/Sage/LCDSmartie/">Sage TV</a> by <span class="style5"><strong>Anders</strong> <strong>Nolberger</strong></span>. Plugin and source provided!</li>
+	    <li><a href="http://www.meedio.com/maid/detail.php?mode=detail&plugin_id={0ACE0952-DE4C-4F01-967F-1161D249AD1E}">Meedio</a> by <span class="style5"><strong>Harald</strong> <strong>Wagner</strong></span>. The Smartie plugin is part of his add-in for Meedio.</li>
+	    <li><a href="http://www.limbo-online.tk">iTunes</a> by <span class="style5"><strong>Gareth Price</strong></span></li>
+	    <li><a href="http://www.planetquake.com/darkside/tools/btvsmartie.html">Beyond TV</a> by <span class="style5"><strong>Kevin</strong> <strong>Worrel</strong></span></li>
+	    <li><a href="http://tomspeirs.com/gameex/download.htm">GameEx</a> by <span class="style5"><strong>tspeirs</strong></span>: GameEx Front-End and HTPC software.</li>
+     	    <li><a href="http://www.lansley.co.uk/forum/phpBB2/viewtopic.php?t=87">ATI Tray Tools</a> by <span class="style5"><strong>Ray</strong> <strong>Adams</strong></span>.</li>
+	    <li><a href="http://www.lansley.co.uk/forum/phpBB2/viewtopic.php?t=104">CountDown</a> by <span class="style5"><strong>Dunner</strong></span>: Count down to a date.</li>
+   	    <li><a href="http://www.lansley.co.uk/forum/phpBB2/viewtopic.php?t=44">RegistryReader</a> by <span class="style5"><strong>AlexV</strong></span>: read values from the registry.</li>
+	    <li><a href="http://www.limbo-online.tk">Maxim</a> by <span class="style5"><strong>Limbo</strong></span>: Reads lines from an ini file and display them to LCD. The original Idea was to provide something like &quot;tip of the day&quot;.</li>
+	    <li><a href="http://www.limbo-online.tk">DayTip</a> by <span class="style5"><strong>Limbo</strong></span>: displays different messages each day to LCD Screen. (all messages stored into an ini file).</li>
+	    <li><a href="http://www.limbo-online.tk">Enallax</a> <em>updated</em> by <span class="style5">Limbo</span>: It changes between two values in a given time (function id).  This is very useful when you want to use one screen steady in LCD Smartie and you want to change just one line! </li>
+	    <li><a href="http://www.evillabs.sk/forum/about1078.html">EvilLyrics</a> by <strong class="style5">UTerror</strong>: displays lyrics from EvilLyrics.</li>
+	    <li><a href="http://www.lansley.co.uk/forum/phpBB2/viewtopic.php?t=138">Zoom Player</a> by <strong class="style5">??</strong> (if you know the author contact <a href="http://www.lansley.co.uk/forum/phpBB2/">LCD Smartie Team</a>) : display messages from zoom player.</li>
+	    <li><a href="http://www.avsforum.com/avs-vb/showthread.php?s=&threadid=538690">JRMC (J. River Media Center)</a> by <strong class="style5">RedDom</strong>.</li> </ul>
 
     <h4>Utility plugins</h4>
     <ul>
-            <li><a href="http://www.lansley.co.uk/forum/phpBB2/viewtopic.php?t=100">Custom Char Editor</a> by IFR: not a plugin but a useful tool for editing custom characters!</li>
-	    <li><a href="http://www.limbo-online.tk">Split Title</a> by Limbo: For breaking the winamp track title (or any other string) into substrings (artist, etc)</li>
-	    <li><a href="http://www.limbo-online.tk">Warn If Plugin</a> by Limbo: Displays a message when a condition is true.</li>
-	    <li><a href="http://www.limbo-online.tk">Hold n Scroll Plugin</a> by Limbo: Scroll part of a line!</li>
-	    <li><a href="http://www.limbo-online.tk">Textwriter</a> by Limbo: displays text letter by letter, giving a sense of typing.</li>
-	    <li><a href="http://www.limbo-online.tk">Round</a> by Limbo: Rounds numbers.</li>
-	    <li><a href="http://www.lansley.co.uk/forum/phpBB2/viewtopic.php?t=76">animate</a> by _X7JAY7X_: lets you "animate" any characters, up to 8.</li>
-	    <li><a href="http://www.lansley.co.uk/forum/phpBB2/viewtopic.php?t=28">Text Uncover</a> by _X7JAY7X_: It &quot;Uncovers&quot; text starting in the middle of the screen then spans outward. When it gets to the edges of the screen it starts back over.</li>
+            <li><a href="http://web44.server-drome.com/progs/picturepg.zip">Picture</a> by <strong class="style5">nsa666666:</strong> Displays a picture (bmp, jpg, gif or animated gif ) to your display!</li>
+	        <li> <a href="www.limbo-online.tk">Tiny Bar</a> by <span class="style5">Limbo</span>: Makes a tiny vertical proccess bar using only one character placeholder.</li>
+	        <li> <a href="http://web44.server-drome.com/progs/bigtext.zip">Big Text</a> by <strong class="style5">nsa666666: </strong><span class="style8">Makes a four line text appear in your screen!</span></li>
+	        <li><a href="http://www.freewebs.com/rafaelcamacho/HoraMundial.dll">Word Time</a> by<span class="style5"> Rafael: </span><span class="style8">Gives any international timeby selecting a time zone! More info <a href="http://www.lansley.co.uk/forum/phpBB2/viewtopic.php?t=590">here</a>.</span></li>
+	        <li><a href="http://www.highrez.co.uk/downloads">Netstuff</a> by            <span class="style5">Philg: 
+
+
+ </span><span class="style8">Reads values from SNMP enabled devices, pings  
+
+
+ an internet/network host and gets the response time.</span></li>
+	        <li><a href="http://lcdsmartie.homestead.com/">Yahoo Weather Report</a> by 
+
+ 
+              <span class="style5">Christopher Hill:</span> Displays weather information using the yahoo weather channel.</li>
+	        <li><a href="http://web44.server-drome.com/progs/verticalscr.zip%20">Vertical Scroll </a>by <strong class="style5">nsa666666</strong>: Scrolls the lines from the bottom to upper line of your display. More info <a href="http://www.lansley.co.uk/forum/phpBB2/viewtopic.php?t=577">here.</a></li>
+	        <li><a href="http://www.vcorp.it/downloads/lcdsmartie_wanip_byvcorp.rar">Wan IP</a> by <span class="style5">vcorp:</span> Returns the wide area network IP.</li>
+	        <li><a href="http://home.fast351.com:4141/bignum2.dll">Bigger Numbers (BigNum2)</a> by <span class="style5">Fast351:</span> Display big and bold numbers to your LCD.</li>
+	        <li><a href="www.limbo-online.tk">FX</a> by <strong class="style5">Limbo</strong>: Adds a typing effect to your screen.</li>
+	        <li><a href="www.baruba.com/lcdsmartie.htm">Web Service</a> by
+
+ 
+      <span class="style5">guinness: </span><span class="style8">Allows web services to be consumed from within LCD Smartie.</span></li>
+	        <li><a href="http://krisp.com/plugins/webtxt.zip">Web Text</a> by <span class="style5">krisp:</span> Reads a text file from the internet.</li>
+	        <li><a href="http://jongrieve.net/code/lcdsmartie/if_scroll_swap/if_scroll_swap.zip">Swap Scroll If</a> by <strong class="style5">krisp: </strong><span class="style8">Swap screens, scroll text, if statement. More info <a href="http://www.lansley.co.uk/forum/phpBB2/viewtopic.php?t=429">here</a> </span></li>
+	        <li><a href="http://jongrieve.net/code/lcdsmartie/bloglines/bloglines_plugin.zip">Blog lines</a> by<strong class="style5"> Jumpin' Jon: 
+
+
+ </strong>Connects to the Bloglines online feed reader service and checks whether you have any unread items.</li>
+	        <li><a href="http://www.lansley.co.uk/forum/phpBB2/viewtopic.php?t=100">Custom Char Editor</a> by <strong class="style5">IFR</strong>: not a plugin but a useful tool for editing custom characters!</li>
+	        <li><a href="http://www.limbo-online.tk">Split Title</a> <em>updated</em> by <strong class="style5">Limbo</strong>: For breaking the winamp track title (or any other string) into substrings (artist, etc)</li>
+	    <li><a href="http://www.limbo-online.tk">Warn If</a> by <strong class="style5">Limbo</strong>: Displays a message when a condition is true.</li>
+	    <li><a href="http://penguinman.no-ip.org/lcd/pingplugin.zip">Ping</a> by <span class="style5">Penjuin:</span> Pings google.com and returns true or false.</li>
+	    <li><a href="http://members.shaw.ca/jamescooper/smartie/regexp-1.0.zip">Regular Expressions</a> by <span class="style5">Reverse Engineered:</span> Use regular expressions within your lines.More info <a href="http://www.lansley.co.uk/forum/phpBB2/viewtopic.php?t=440">here.</a></li>
+	    <li><a href="www.limbo-online.tk">Search And Replace</a> by <span class="style5">Limbo:</span> Replace any returned string with another. Useful to replace characters with custom ones and remove unneed parts of text. More info <a href="http://www.lansley.co.uk/forum/phpBB2/viewtopic.php?t=391">here.</a></li>
+	    <li><a href="www.limbo-online.tk">Reserve</a> by <span class="style5">Limbo: </span>This plugin adds a text effect to your screens.</li>
+	    <li><a href="http://www.devever.net/pegercer/akx/dl/lcdsmartie/key.zip">Key</a> by <span class="style5">akx:</span> Read keystrokes from the keyboard, can be used for hotkey plugin.</li>
+	    <li> <a href="http://members.shaw.ca/jamescooper/smartie/width-1.0.zip">Width</a> by <span class="style5">Reverse Engineered: 
+
+
+ </span><span class="style8">Allows you to format a string such that it takes up an exact width.</span> </li>
+	    <li><a href="http://krisp.com/plugins/myip.zip">My IP</a> by krisp: 
+
+
+ This plugin gets data from <em>http://www.showmyip.com/xml/</em></li>
+	    <li><a href="http://lcdsmartie.org/">Screen Man</a> by <span class="style5">IFR:</span> Change screens even if you don't have focus on LCD Smartie window.</li>
+	    <li><a href="www.limbo-online.tk">Word By Word</a> by Limbo: 
+
+
+ Gives ability to display a text word by word.</li>
+	    <li><a href="www.limbo-online.tk">Escalate</a> by <span class="style5">Limbo:</span> This plugin can be used to switch on and back off the backlight when the winamp title is changed.</li>
+	    <li> <a href="http://www.james-austin.co.uk/bbcweather.zip">BBC Weather Forecast</a> by <span class="style5">jamesdoz:</span> Weather info from BBC.</li>
+	    <li><a href="http://pages.infinit.net/jsenk/PerfMonitor.zip">Perf Monitor Unofficial</a> by <span class="style5">josenk: </span>Performance monitor data plugin</li>
+	    <li><a href="http://jongrieve.net/code/lcdsmartie/formatting/formatting_plugin.zip">Formating</a> by <strong class="style5"> Jumpin' Jon: 
+
+
+      </strong><span class="style8">Allows the output from other plug-ins for be formatted to better suit the small size of LCDs.</span></li>
+	    <li><a href="http://www.byalexv.co.uk/ConditionalDisplay.zip">Conditional Display</a> by <span class="style5">AlexV:</span> It looks at the first parameter, and if it is not empty, or 0, returns the contents of the second parameter.</li>
+	    <li><a href="http://www.byalexv.co.uk/RegistryReader.zip">Registry Reade</a>r by <span class="style5">AlexV: </span>Reads values from registry.</li>
+	    <li><a href="http://www.wk-artworks.de/infect/hotkey_plugin.zip">Hotkey</a> by <span class="style5">smack: </span><span class="style8">Gives global hotkeys to LCD Smartie.</span></li>
+	    <li><a href="http://www.devever.net/pegercer/akx/dl/lcdsmartie/splitat.zip">Split At</a> by<span class="style5"> akx: 
+
+
+ </span><span class="style8">It split a string and only show part(s)</span> with custom start and end pointers.</li>
+	    <li><a href="www.limbo-online.tk">Change Case</a> by <span class="style5">Limbo:</span> Change any text to upper, lower or proper case!</li>
+	    <li><a href="http://lcdsmartie.org/">Scrolling Text</a> by <span class="style5">IFR:</span> Scroll your text like winamp title style. Right to left and vise versa. </li>
+	    <li><a href="http://www.limbo-online.tk">Hold n Scroll</a> by <strong class="style5">Limbo</strong>: Keep a text steady and scroll part of a line!</li>
+	    <li><a href="http://www.limbo-online.tk">Textwriter</a> by <strong class="style5">Limbo</strong>: Displays text letter by letter, giving a sense of typing.</li>
+	    <li><a href="http://www.limbo-online.tk">Round</a> by <strong class="style5">Limbo</strong>: Rounds numbers.</li>
+	    <li><a href="http://www.lansley.co.uk/forum/phpBB2/viewtopic.php?t=76">Animate</a> by <strong class="style5">_X7JAY7X_</strong>: lets you "animate" any characters, up to 8.</li>
+	    <li><a href="http://www.lansley.co.uk/forum/phpBB2/viewtopic.php?t=28">Text Uncover</a> by <strong class="style5">_X7JAY7X_</strong>: It &quot;uncovers&quot; text starting in the middle of the screen then spans outward. When it gets to the edges of the screen it starts back over.</li>
     </ul>
 
     <h2>Config files/Screen ideas</h2>
