@@ -7,7 +7,7 @@
   <!-- end of head.html -->
 </head>
 <body>
-  <!--#set var="changed" value="\$Author: clansley $ \$Date: 2005/02/13 17:08:54 $ \$Revision: 1.15 $" -->
+  <!--#set var="changed" value="\$Author: fast351 $ \$Date: 2006/04/23 12:10:17 $ \$Revision: 1.16 $" -->
   <!--#set var="file" value="bignum" -->
 
   <!-- start of header.html -->
@@ -20,12 +20,13 @@
   <div id="content">
 	  <h1>BigNum Plugin for LCD Smartie</h1>
 	  <img src="bignum2liness.jpg" /> 2 line high numbers<br />
+	  <img src="bignum2x2liness.gif" /> 2 line high  by 2 wide numbers<br />
 	  <img src="bignum4liness.jpg" /> 4 line high numbers [photos by <a href="http://www.watercoolingshop.com">WaterCoolingShop.com</a>]<br />
 
 	  <h2>FAST START GUIDE</h2>
 	  <p>If you hate reading instructions then here's the fast start guide:
 	  <ul>
-		  <li><a href="http://prdownloads.sourceforge.net/lcdsmartie/bignumplugin.v1.zip?download"><strong>Download</strong> zip file</a></li>
+		  <li><a href="http://prdownloads.sourceforge.net/lcdsmartie/bignumplugin.v2.zip?download"><strong>Download</strong> zip file</a></li>
 		  <li><strong>Exit</strong> Smartie</li>
 		  <li>Extract <strong>bignum.dll</strong> to smartie's plugins sub-directory</li>
 		  <li>Extract <strong>config-bignum.ini</strong> to smartie's top directory</li>
@@ -45,17 +46,22 @@
 	<p>This plugin redefines the custom characters, so no graphs can be displayed on the same screen. Also Only one type of big number can be displayed on a screen at a time.</p>
 
 	<h2>Download</h2>
-	<p>BigNum Plugin <a href="http://prdownloads.sourceforge.net/lcdsmartie/bignumplugin.v1.zip?download">v1.0 can be downloaded here.</a></p>
+	<p>BigNum Plugin <a href="http://prdownloads.sourceforge.net/lcdsmartie/bignumplugin.v2.zip?download">v2.0 can be downloaded here.</a></p>
 	<h2>Install</h2>
 	<p>To install this plugin copy the bignum.dll into the plugins directory of LCD Smartie. [Only the 5.3 and above builds are supported.]</p>
 	<p>The zip file also includes a config-bignum.ini file which shows how the plugin can be used - backup your config.ini file before renaming this as config.ini.</p>
 
 	<h2>Usage</h2>
 	<p>To use the plugin you will need to insert commands into the your screens - please ensure that all bignum lines have a consistant scroll setting (i.e. all on or all off)!</p>
-	<p>The command takes the following form: $dll(bignum,1,[linenum]#[height]#[font],[text])<br />
+	<p>The command takes the following form: $dll(bignum,[fontsize],[linenum]#[font],[text])<br />
 	<ul>
+		<li>[fontsize] - is the size of the font you want drawn<br />
+		<ul>
+			<li>1 is 2 line high by 1 wide (1x2)</li>
+			<li>2 is 2 line high by 2 wide (2x2)</li>
+			<li>3 is 4 line high by 3 wide (3x4)</li>
+		</ul>
 		<li>[linenum] - is the line you want drawn (so 1 is the top of the number, 2 the next line, etc)</li>
-		<li>[height] - is the height of the big number. This can currently be 2 or 4 lines. [Defaults to 2]</li>
 		<li>[font] - is the style wanted for the bars. [Defaults to 1]<br />
 		For 2 line high numbers:
 		<ul>
@@ -72,20 +78,22 @@
 			<li>2 is standard font but for displays where the bottom row of pixels are a solid bar (mostly for VFDs).</li>
 		</ul></li>
 	</ul>
-	The [height] and [font] settings are optional - but if [height] is not given then [font] must also be left off. 
+	The [font] setting is optional.
 	</p>
 	<p>Examples:
 	<ul>
-		<li>$dll(bignum,1,1#2,$CPUUsage%)</li>
-		<li>$dll(bignum,1,2#2,$CPUUsage%)</li>
-		<li>$dll(bignum,1,1#4,$CPUUsage%)</li>
 		<li>$dll(bignum,1,1,$CPUUsage%)</li>
-		<li>$dll(bignum,1,1#2#1,$CPUUsage%)</li>
+		<li>$dll(bignum,1,2,$CPUUsage%)</li>
+		<li>$dll(bignum,3,1,$CPUUsage%)</li>
+		<li>$dll(bignum,1,1#2,$CPUUsage%)</li>
+		<li>$dll(bignum,2,1#4,$CPUUsage%)</li>
 	</ul>
 	</p>
 	<p>
 	On a two line display you would use something like this:<br />
 	<img src="bignum2lines.jpg" /></p>
+	Or something like this for a 2x2 font::<br />
+	<img src="bignum2x2lines.jpg" /></p>
 	<p>
 	On a four line display you would use something like this:<br />
 	<img src="bignum4lines.jpg" /></p>
