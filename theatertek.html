@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <title>LCD Smartie - A free open-source LCD program!</title>
+  <!-- start of head.html -->
+  <!--#include virtual="head.html" -->
+  <!-- end of head.html -->
+</head>
+<body>
+  <!-- start of header.html -->
+  <!--#include virtual="header.html" -->
+  <!-- end of header.html -->
+
+  <!-- start of sidebar.html -->
+  <!--#include virtual="sidebar.html" -->
+  <!-- end of sidebar.html -->
+  <div id="content">
+  	<h1>Theatertek Plugin for LCD Smartie</h1>
+
+	<h2>Download</h2>
+	<p>Theatertek Plugin <a href="http://prdownloads.sourceforge.net/lcdsmartie/theatertek.zip?download">can be downloaded here.</a></p>
+	<h2>Install</h2>
+	<ul>
+		<li>To install this plugin copy the theatertek.dll into the plugins directory of LCD Smartie. [Only the 5.3 final and above builds are supported.]</li>
+	</ul>
+
+	<h2>Using the plugin</h2>
+
+         To use the plugin you will need to insert commands into the your screens.<br><br>
+         
+         The command takes the following form: $dll(theatertek,function,param1,param2)<br><br>
+         
+           Function 1:  first param = which value  second param = ignored<br><br>
+         
+             value<br>
+                0 = File name<br>
+                1 = Title number<br>
+                2 = Chapter number<br>
+                3 = Play state (text)<br>
+                4 = Play speed<br>
+                5 = Aspect ratio<br>
+                6 = Audio channels<br>
+                7 = Audio format (text)<br>
+                8 = Audio bitrate (Kbps)<br>
+                9 = Video bitrate (Mbps)<br>
+               10 = Disk ID<br><br>
+         
+           Function 2:  time on disc<br><br>
+         
+             first param = which time  second param = format<br><br>
+         
+                0 = Time<br>
+                1 = Time remaining<br>
+                2 = Total time<br><br>
+         
+             format = hh:nn:ss<br><br>
+         
+           Function 3: both params ignored<br><br>
+         
+              play state using custom characters<br><br>
+         
+           Function 4: both params ignored<br><br>
+         
+              Theatertek run state, returns 1 if Theatertek is active, 0 if it <br>
+              Theatertek is not active.<br><br>
+         
+         Examples:<br><br>
+         
+             * $dll(theatertek,1,1,0)<br>
+             * $dll(theatertek,1,7,0)<br>
+             * $dll(theatertek,3,0,0)<br>
+             * $dll(theatertek,2,0,hh:nn:ss)   <br><br>
+         
+         Skipping the Theatertek screen when Theatertek is not running:<br><br>
+         
+         1) set the Theatertek screen no disabled by unchecking the enabled box.<br>
+         2) add the following two functions to the actions screen:<br><br>
+         
+            if $dll(theatertek.dll,4,0,0) = 1 enablescreen(1)<br>
+            if $dll(theatertek.dll,4,0,0) = 0 disablescreen(1) <br><br>
+         
+         Change the screen number to the appropriate number for whatever screen
+         you are using.<br><br>
+         
+</div>
+  <!-- start of footer.html -->
+  <!--#include virtual="footer.html" -->
+  <!-- end of footer.html -->
+</body>
+</html>
