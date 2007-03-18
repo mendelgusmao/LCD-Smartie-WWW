@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <title>LCD Smartie - A free open-source LCD program!</title>
+  <!-- start of head.html -->
+  <!--#include virtual="head.html" -->
+  <!-- end of head.html -->
+</head>
+<body>
+  <!-- start of header.html -->
+  <!--#include virtual="header.html" -->
+  <!-- end of header.html -->
+
+  <!-- start of sidebar.html -->
+  <!--#include virtual="sidebar.html" -->
+  <!-- end of sidebar.html -->
+  <div id="content">
+  	<h1>wmpblog Plugin for LCD Smartie</h1>
+
+	<h2>Download</h2>
+	<p>WMPBlog Plugin <a href="http://prdownloads.sourceforge.net/lcdsmartie/wmpblog.zip?download">can be downloaded here.</a></p>
+	<h2>Install</h2>
+	<ul>
+		<li>Add the Microsoft Windows Media Player Blogging plugin to your WMP install and enable it.
+                    (<a href="http://www.microsoft.com/windowsxp/downloads/powertoys/wm_create.mspx">Download the plugin from Microsoft here</a> and follow included directions)
+		<li>To install this plugin copy the wmpblog.dll into the plugins directory of LCD Smartie. [Only the 5.3 final and above builds are supported.]</li>
+	</ul>
+
+	<h2>Using the plugin</h2>
+
+         To use the plugin you will need to insert commands into the your screens.<br><br>
+
+         The command takes the following form: $dll(wmpblog,function,param1,param2)<br><br>
+
+           Function 1:  first param = which value  second param = ignored<br><br>
+
+             value<br>
+                0 = Author<br>
+                1 = Album<br>
+                2 = Duration<br>
+                3 = Name<br>
+                4 = Title<br><br>
+
+           Function 4: both params ignored<br><br>
+
+              WMPlayer run state, returns 1 if WMPlayer is active, 0 if it <br>
+              WMPlayer is not active.<br><br>
+
+         Examples:<br><br>
+
+             * $dll(wmpblog,1,0,0)<br>
+             * $dll(wmpblog,1,1,0)<br>
+             * $dll(wmpblog,1,2,0)<br>
+             * $dll(wmpblog,1,3,0)<br>
+             * $dll(wmpblog,1,4,0)<br>
+             * $dll(wmpblog,2,0,0)<br><br>
+
+         Skipping the wmpblog screen when Windows Media Player is not running:<br><br>
+
+         1) set the wmpblog screen no disabled by unchecking the enabled box.<br>
+         2) add the following two functions to the actions screen:<br><br>
+
+            if $dll(wmpblog.dll,2,0,0) = 1 enablescreen(1)<br>
+            if $dll(wmpblog.dll,2,0,0) = 0 disablescreen(1) <br><br>
+
+         Change the screen number to the appropriate number for whatever screen
+         you are using.<br><br>
+
+         Example Setup:<br><br>
+         
+         <img src="wmpsetup.jpg" height=103 width=423 alt="wmpblog setup"><br><br>
+
+         Result using WMP11 playing an MP3 of Ozzy Ozbourne's Mr. Tinkertrain....<br><br>
+
+         <img src="wmpresult.jpg" height=116 width=391 alt="wmpblog result"><br><br>
+
+
+</div>
+  <!-- start of footer.html -->
+  <!--#include virtual="footer.html" -->
+  <!-- end of footer.html -->
+</body>
+</html>
