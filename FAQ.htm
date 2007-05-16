@@ -7,11 +7,11 @@
   <!-- end of head.html -->
 </head>
 <body>
-  <!--#set var="changed" value="\$Author: limbo666 $ \$Date: 2006/04/14 18:38:24 $ \$Revision: 1.21 $" -->
+  <!--#set var="changed" value="\$Author: fast351 $ \$Date: 2007/05/16 14:14:13 $ \$Revision: 1.22 $" -->
   <!--#set var="file" value="index" -->
 
   <!-- start of header.html -->
-  <!--#include virtual="header.html" -->  
+  <!--#include virtual="header.html" -->
 <!-- end of header.html -->
 
   <!-- start of sidebar.html -->
@@ -29,11 +29,12 @@
 	<li>All serial/usb Crystalfontz displays.</li>
 	<li>All serial/usb Matrix Orbital displays.</li>
 	<li>All parallel connected LCD's with a HD44780 compatible controller and with 8bit wiring (<a href="http://lcdsmartie.sourceforge.net/circuits.htm">using this wiring</a>).</li>
+	<li>Serial/usb displays with an HD44780 controller, such as Pertelian displays.</li>
 	<li>Most serial/usb/BT/IR PalmOS devices (when used with <a href="http://palmorb.sourceforge.net">PalmOrb</a>) [USB support is experimental]</li>
 </ul>
 <p>Currently supported sizes (can add more if required):
 <ul>
-	<li>1x10, 1x16, 1x20, 1x24, 1x40,</li> 
+	<li>1x10, 1x16, 1x20, 1x24, 1x40,</li>
 	<li>2x16, 2x16, 2x20, 2x24, 2x40,</li>
 	<li>4x16, 4x20, 4x40</li>
 </ul>
@@ -41,7 +42,7 @@
 
 <h2>My display isn't supported!</h2>
 <p>You may want to create a <a href="http://sourceforge.net/tracker/?func=browse&amp;group_id=122330&amp;atid=693139">Feature Request</a> for your display - if one doesn't already exist, but new hardware requests will be treated as low priority (very low if I don't have the hardware).</p>
-<p>But there is still hope, if you're technically minded and your display is serial (or has a virtual serial port) and it is command based (i.e you send a simple series of bytes to goto the beginning of line 1 and send 'A' to display 'A', rather than directly controlling the pins of a display). Check out the '<a href="testdriver.html">Test Driver</a>'. 
+<p>But there is still hope, if you're technically minded and your display is serial (or has a virtual serial port) and it is command based (i.e you send a simple series of bytes to goto the beginning of line 1 and send 'A' to display 'A', rather than directly controlling the pins of a display). Check out the '<a href="testdriver.html">Test Driver</a>'.
 
 <h2>How do I get LCD Smartie working with my PalmOS PDA?</h2>
 <p>Install <a href="http://palmorb.sourceforge.net">PalmOrb</a> on your palm, and configure smartie as if it was a Matrix Orbital 4x20 display.</p>
@@ -70,7 +71,7 @@
 
 <h2>Why is my CPU Usage always at 0?</h2>
 <p>LCD Smartie uses the CPU Usage Performance counters to get the current CPU load. These are disabled on some machines - please check the registry key "HKEY_LOCAL_MACHINE\SYSTEM
-\CurrentControlSet\Services\PerfOS\Performance" to check for existence of 
+\CurrentControlSet\Services\PerfOS\Performance" to check for existence of
 "Disable Performance Counters" Key. If this is set to 1 then try changing it
 to 0 and rebooting.</p>
 
@@ -79,7 +80,7 @@ to 0 and rebooting.</p>
 <p>Otherwise, run regedit and visit &quot;HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dlportio&quot;. Change the Start value to &quot;1&quot; and reboot.</p>
 <p>If that doesn't work then run regedit and visit &quot;HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services&quot;. Delete the key &quot;dlportio&quot;, reboot and reinstall port95nt.</p>
 <p><strong>Disclaimer: </strong> The use of regedit is at your own risk.</p>
-	
+
 </div>
   <!-- start of footer.html -->
   <!--#include virtual="footer.html" -->
